@@ -2,8 +2,10 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import isValidBrofile from '../lib/validatFunction';
+/*import { useLocalStorage } from '../hooks/useLocalStorage';*/
 
 export default function Form({ submitFunction, open }) {
+
     const userBrofile = {
         bro_username: '',
         bro_name: '',
@@ -74,7 +76,7 @@ flex-direction: column;
 margin: 1.2rem 2.3rem;
 gap: 0.2rem;
 opacity: ${({ open, valid }) => open || valid ? '40%' : '100%'};
-position: absolute; 
+position: absolute;
 
 input, select, textarea{
     margin-bottom: 1rem;
@@ -85,21 +87,21 @@ input, select, textarea{
     background: white;
     outline: none;
     font-style: italic;
-    color: var(--petrol);
+    color: var(--mainwhite);
     }
 
-    /*input:valid, 
-select:valid, 
+    /*input:valid,
+select:valid,
 textarea:valid{
-  box-shadow: 0 0 5px 1px var(--petrol);
+  box-shadow: 0 0 5px 1px var(--mainwhite);
 }*/
-textarea{
+/*textarea{
     height: 6rem;
     padding: 0.8rem;
 }
 label{
     margin-left: 0.5rem;
-    color: var(--petrol);
+    color: var(--mainwhite);
 }
 
 `
