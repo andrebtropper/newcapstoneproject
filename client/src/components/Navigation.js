@@ -4,7 +4,7 @@ import { ReactComponent as HomeIcon } from "../icons/home.svg";
 import { ReactComponent as NewsIcon } from "../icons/news.svg";
 import { ReactComponent as BrofileIcon } from "../icons/profile.svg";
 import { ReactComponent as TagIcon } from "../icons/tag.svg";
-
+import { ReactComponent as AddProfile } from "../icons/addprofile.svg";
 
 
 
@@ -25,6 +25,8 @@ export default function Navigation({ open, setOpen }) {
                 <BrofileIcon /> Brofile </a>
             <a href='/selecttags'>
                 <TagIcon /> BroTags </a>
+            <a href='/createbrofile'>
+                <AddProfile /> Create Brofile </a>
 
 
         </StyledNavigation>
