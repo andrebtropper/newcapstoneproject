@@ -1,10 +1,11 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import PropTypes from 'prop-types';
 import { ReactComponent as HomeIcon } from "../icons/home.svg";
 import { ReactComponent as NewsIcon } from "../icons/news.svg";
 import { ReactComponent as BrofileIcon } from "../icons/profile.svg";
 import { ReactComponent as TagIcon } from "../icons/tag.svg";
-import { ReactComponent as AddProfile } from "../icons/addprofile.svg";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -17,16 +18,15 @@ export default function Navigation({ open, setOpen }) {
         <StyledNavigation open={open}>
             <PseudoButton open={open} onClick={() => setOpen(!open)}>
                 &#10005; </PseudoButton>
-            <a href='/'>
-                <HomeIcon /> Home</a>
-            <a href='/newsfeed'>
-                <NewsIcon /> Newsfeed </a>
-            <a href='/brofile'>
-                <BrofileIcon /> Brofile </a>
-            <a href='/selecttags'>
-                <TagIcon /> BroTags </a>
-            <a href='/createbrofile'>
-                <AddProfile /> Create Brofile </a>
+            <Link exact path to='/'>
+                <HomeIcon /> Home</Link>
+            <Link to='/newsfeed'>
+                <NewsIcon /> Newsfeed </Link>
+            <Link to='/brofile'>
+                <BrofileIcon /> Brofile </Link>
+            <Link to='/selecttags'>
+                <TagIcon /> BroTags </Link>
+
 
 
         </StyledNavigation>

@@ -1,74 +1,83 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import isValidBrofile from '../lib/validatFunction';
+import { Link } from 'react-router-dom';
+
 /*import { useLocalStorage } from '../hooks/useLocalStorage';*/
 
 export default function Form({ submitFunction, open }) {
 
-    const userBrofile = {
+    const initialUserBrofile = {
         bro_username: '',
         bro_name: '',
         bro_location: '',
         image: ''
     }
-    const [newBrofile, setNewBrofile] = useState(userBrofile);
+    const [newBrofile, setNewBrofile] = useState(initialUserBrofile);
     const [valid, setValid] = useState(false)
 
-    const handleChange = event => {
+    const handleChange = (event) => {
         const field = event.target;
         const value = field.value;
         setNewBrofile({
             ...newBrofile,
-            [field.name]: value
-        })
+            [field.name]: value,
+        });
+    };
 
-        function submitForm(event) {
-            event.preventDefault();
-            if (isValidBrofile(newBrofile)) {
-                setValid(true);
-                submitFunction(newBrofile);
-                setNewBrofile(userBrofile);
-            }
+
+    function submitForm(event) {
+        event.preventDefault();
+        if (isValidBrofile(newBrofile)) {
+            setValid(true);
+            submitFunction(newBrofile);
+            setNewBrofile(initialUserBrofile);
         }
-        return (
-            <>
-                <FormWrapper open={open} valid={valid} onSubmit={submitForm}>
-                    <input
-                        type='text'
-                        name='bro_username'
-                        placeholder='Enter your desired Username'
-                        onChange={handleChange}
-                        value={newBrofile.bro_username} />
-
-                    <input
-                        type='text'
-                        name='bro_name'
-                        placeholder='Enter your full name'
-                        onChange={handleChange}
-                        value={newBrofile.bro_name} />
-                    <input
-                        type='text'
-                        name='bro_location'
-                        placeholder='Enter your city'
-                        onChange={handleChange}
-                        value={newBrofile.bro_location} />
-
-                    <label>Add image
-        </label>
-                    <input
-                        type='file'
-                        name='image'
-                        placeholder='Add image'
-                        onChange={handleChange}
-                        value={newBrofile.image}
-                    />
-                    <CreateBrofileButton valid={valid} type='submit'> Create Profile</CreateBrofileButton>
-                </FormWrapper>
-            </>
-        )
     }
-}
+    return (
+        <>
+            <FormWrapper open={open} valid={valid} onSubmit={submitForm}>
+                <input
+                    type='text'
+                    name='bro_username'
+                    placeholder='Enter your desired Username'
+                    onChange={handleChange}
+                    value={newBrofile.bro_username} />
+
+                <input
+                    type='text'
+                    name='bro_name'
+                    placeholder='Enter your full name'
+                    onChange={handleChange}
+                    value={newBrofile.bro_name} />
+                <input
+                    type='text'
+                    name='bro_location'
+                    placeholder='Enter your city'
+                    onChange={handleChange}
+                    value={newBrofile.bro_location} />
+
+                <label>Add image
+        </label>
+                <input
+                    type='file'
+                    name='image'
+                    placeholder='Add image'
+                    onChange={handleChange}
+                    value={newBrofile.image}
+                />
+                <CreateBrofileButton valid={valid} type='submit'> Create Profile</CreateBrofileButton>
+            </FormWrapper>
+            {valid && <SuccessMessage> <p>Awesome Bro! YOur Brofile is almost complete! CLick the link to select your preferred Brotags!</p>
+                <Link to='/selecttags'>  <ToTagsButton>Click here to select your Brotags!</ToTagsButton></Link></SuccessMessage>}
+        </>
+    )
+};
+
+
+
+
 
 const FormWrapper = styled.form`
 display:flex;
@@ -90,7 +99,7 @@ input, select, textarea{
     color: var(--mainwhite);
     }
 
-    /*input:valid,
+  /*  input:valid,
 select:valid,
 textarea:valid{
   box-shadow: 0 0 5px 1px var(--mainwhite);
@@ -102,7 +111,7 @@ textarea:valid{
 label{
     margin-left: 0.5rem;
     color: var(--mainwhite);
-}
+}*/
 
 `
 const CreateBrofileButton = styled.button`
@@ -116,6 +125,27 @@ box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 35%);
 cursor: pointer;
 width: 230px;
 font-size: 1.1rem;
+`
+const SuccessMessage = styled.div`
+background: var(--petrol);
+color: white;
+padding: 1rem;
+margin: 2rem;
+position: relative;
+border-radius: 0.3rem;
+`
+const ToTagsButton = styled.button`
+border: none; 
+outline: none;
+border-radius: 0.3rem;
+color: var(--petrol);
+padding: 0.5rem;
+margin-top: 1rem;
+background: var(--lightgrey);
+letter-spacing: 0.1rem;
+font-size: 0.7rem;
+text-transform: uppercase;
+cursor: pointer;
 `
 
 Form.propTypes = {
