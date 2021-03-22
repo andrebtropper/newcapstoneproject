@@ -1,8 +1,3 @@
-
-
-
-
-
 export const loadFromLocal = (key) => {
     try {
         const local = JSON.parse(localStorage.getItem(key));

@@ -1,12 +1,13 @@
 
-import { ReactComponent as bball } from '../images/bball.png'
+import Basketball from '../images/Basketball.png'
 
 
 
 export default function SelectTags() {
     return (
 
-        <img src={bball} alt="playing basketball" />
 
+
+        <img src={Basketball} alt="basketball" />
     )
 }

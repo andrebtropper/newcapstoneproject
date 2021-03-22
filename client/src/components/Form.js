@@ -4,9 +4,13 @@ import styled from 'styled-components/macro';
 import isValidBrofile from '../lib/validatFunction';
 import { Link } from 'react-router-dom';
 
-/*import { useLocalStorage } from '../hooks/useLocalStorage';*/
+
+//import { useLocalStorage } from '../hooks/useLocalStorage';//
 
 export default function Form({ submitFunction, open }) {
+
+
+
 
     const initialUserBrofile = {
         bro_username: '',
@@ -31,9 +35,16 @@ export default function Form({ submitFunction, open }) {
         event.preventDefault();
         if (isValidBrofile(newBrofile)) {
             setValid(true);
-            submitFunction(newBrofile);
-            setNewBrofile(initialUserBrofile);
+            //submitFunction(newBrofile);
+            //localStorage.setItem('username', newBrofile.bro_username);
+            //setNewBrofile(initialUserBrofile);
+            /* Object.keys(newBrofile).forEach(key => {
+                 localStorage.setItem(key, newBrofile[key]);
+             })*/
+            localStorage.setItem('broInfo', JSON.stringify(newBrofile));
         }
+
+
     }
     return (
         <>
@@ -58,8 +69,8 @@ export default function Form({ submitFunction, open }) {
                     onChange={handleChange}
                     value={newBrofile.bro_location} />
 
-                <label>Add image
-        </label>
+                <Label>Add image
+        </Label>
                 <input
                     type='file'
                     name='image'
@@ -69,15 +80,17 @@ export default function Form({ submitFunction, open }) {
                 />
                 <CreateBrofileButton valid={valid} type='submit'> Create Profile</CreateBrofileButton>
             </FormWrapper>
-            {valid && <SuccessMessage> <p>Awesome Bro! YOur Brofile is almost complete! CLick the link to select your preferred Brotags!</p>
-                <Link to='/selecttags'>  <ToTagsButton>Click here to select your Brotags!</ToTagsButton></Link></SuccessMessage>}
+            {valid && <SuccessMessage> <p>Awesome Bro! YOBrofile is almost complete! Click the link below to select YOBrotags!</p>
+                <Link to='/selecttags'>  <ToTagsButton>Click here to select YOBrotags!</ToTagsButton></Link></SuccessMessage>}
         </>
     )
 };
 
 
 
-
+const Label = styled.label`
+color:var(--mainorange);
+`
 
 const FormWrapper = styled.form`
 display:flex;
@@ -96,7 +109,7 @@ input, select, textarea{
     background: white;
     outline: none;
     font-style: italic;
-    color: var(--mainwhite);
+    color: var(--mainorange);
     }
 
   /*  input:valid,
@@ -115,7 +128,7 @@ label{
 
 `
 const CreateBrofileButton = styled.button`
-background: ${({ valid }) => valid ? 'var(--red)' : 'var(--lightgrey)'};
+background: ${({ valid }) => valid ? 'var(--mainwhite)' : 'var(--mainorange)'};
 padding: 1rem;
 border-radius: 0.4rem;
 border: none;
@@ -127,7 +140,7 @@ width: 230px;
 font-size: 1.1rem;
 `
 const SuccessMessage = styled.div`
-background: var(--petrol);
+background: var(--mainblue);
 color: white;
 padding: 1rem;
 margin: 2rem;
@@ -138,10 +151,10 @@ const ToTagsButton = styled.button`
 border: none; 
 outline: none;
 border-radius: 0.3rem;
-color: var(--petrol);
+color: var(--mainwhite);
 padding: 0.5rem;
 margin-top: 1rem;
-background: var(--lightgrey);
+background: var(--mainorange);
 letter-spacing: 0.1rem;
 font-size: 0.7rem;
 text-transform: uppercase;
