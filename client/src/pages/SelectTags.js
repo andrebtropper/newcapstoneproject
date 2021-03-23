@@ -1,21 +1,12 @@
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import DefaultButton from '../components/DefaultButton';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+
 import styled from 'styled-components/macro';
 
 import sportsImages from '../images/sportsImages';
-
-import playstation from '../images/playstation.png';
-import xbox from '../images/xbox.png';
-import nintendo from '../images/nintendo.png';
-import computer from '../images/computer.png';
-import hiking from '../images/hiking.png';
-import fishing from '../images/fishing.png';
-import camping from '../images/camping.png';
-import jamming from '../images/jamming.png';
-import travel from '../images/travel.png';
-import photography from '../images/photography.png';
+import gamingImages from '../images/gamingImages';
+import hobbyImages from '../images/hobbyImages';
 
 
 export default function SelectTags() {
@@ -44,9 +35,69 @@ export default function SelectTags() {
         {
             name: 'weightlifting',
             alt: 'fitness studio'
-        }
+        },
+        {
+            name: 'basketball',
+            alt: 'playing basketball'
+        },
+        {
+            name: 'football',
+            alt: 'football and cleats'
+        },
+        {
+            name: 'tennis',
+            alt: 'playing tennis'
+        },
     ]
 
+    const gameTags = [
+        {
+            name: 'playstation',
+            alt: 'playstation'
+        },
+        {
+            name: 'xbox',
+            alt: 'xbox'
+        },
+        {
+            name: 'nintendo',
+            alt: 'nintendo'
+        },
+        {
+            name: 'computer',
+            alt: 'computer'
+        },
+    ]
+    const hobbies = [
+        {
+            name: 'hiking',
+            alt: 'people hiking'
+        },
+        {
+            name: 'fishing',
+            alt: 'fishing rod'
+        },
+        {
+            name: 'camping',
+            alt: 'tent'
+        },
+        {
+            name: 'jamming',
+            alt: 'band playing'
+        },
+        {
+            name: 'travel',
+            alt: 'suitcase'
+        },
+        {
+            name: 'photography',
+            alt: 'camera'
+        },
+
+
+
+
+    ]
     return (
 
 
@@ -63,41 +114,34 @@ export default function SelectTags() {
                         className={doesTagExistInUserTags(tag.name.toUpperCase()) ? 'active' : ''} />
                 )}
 
-                {/* <TagImage onClick={e => saveTag([...userTag, 'BADMINTON'])}
-                    src={badminton} alt='Badminton rackets' />
 
-                <TagImage onClick={e => saveTag([...userTag, 'WEIGHTLIFTING'])}
-                    src={weightlifting} alt='fitness studio' />
-
-                <TagImage onClick={e => saveTag([...userTag, 'BASKETBALL'])}
-                    src={basketball} alt='' />
-
-                <TagImage onClick={e => saveTag([...userTag, 'FOOTBALL'])}
-                    src={football} alt='' />
-
-                <TagImage onClick={e => saveTag([...userTag, 'TENNIS'])}
-                    src={tennis} alt='' /> */}
 
             </SportsTags>
 
             <Category>GAMING</Category>
-            <SportsTags>
-                <img src={playstation}></img>
-                <img src={xbox}></img>
-                <img src={nintendo}></img>
-                <img src={computer}></img>
-            </SportsTags>
+            <GamingTags>
+                {gameTags.map(tag =>
+                    <TagImage
+                        onClick={e => selectTag(tag.name.toUpperCase())}
+                        src={gamingImages[tag.name]}
+                        alt={tag.alt}
+                        className={doesTagExistInUserTags(tag.name.toUpperCase()) ? 'active' : ''} />
+                )}
+
+
+            </GamingTags>
             <Category>HOBBIES</Category>
 
-            <SportsTags>
+            <HobbyTags>
+                {hobbies.map(tag =>
+                    <TagImage
+                        onClick={e => selectTag(tag.name.toUpperCase())}
+                        src={hobbyImages[tag.name]}
+                        alt={tag.alt}
+                        className={doesTagExistInUserTags(tag.name.toUpperCase()) ? 'active' : ''} />
+                )}
 
-                <img src={hiking}></img>
-                <img src={fishing}></img>
-                <img src={camping}></img>
-                <img src={jamming}></img>
-                <img src={travel}></img>
-                <img src={photography}></img>
-            </SportsTags>
+            </HobbyTags>
             <LastDiv>
                 <Link to='/brofile'> <DefaultButton buttonText='FINALIZE YOBrofile!'></DefaultButton></Link>
             </LastDiv>
@@ -140,6 +184,14 @@ a{
 }
 `*/
 
+const HobbyTags = styled.section`
+display:flex;
+flex-direction:row;
+margin-top:0.5rem;
+flex-wrap:wrap;
+`
+
+
 
 const SportsTags = styled.section`
 display:flex;
@@ -150,6 +202,13 @@ flex-wrap:wrap;
 
 
 `
+const GamingTags = styled.section`
+display:flex;
+flex-direction:row;
+margin-top:0.5rem;
+flex-wrap:wrap;
+`
+
 
 const Category = styled.h3`
 margin-top:1rem;

@@ -4,7 +4,7 @@ import styled from 'styled-components/macro';
 export default function Brofile() {
 
     const user = JSON.parse(localStorage.getItem('broInfo'));
-    const userTags = JSON.parse(localStorage.getItem('userTag'));
+    const userTags = JSON.parse(localStorage.getItem('userTags'));
 
 
     return (
@@ -18,14 +18,16 @@ export default function Brofile() {
 
             <h2>Yo selected Brotags!</h2>
 
-            {userTags.map(tag =>
+            <UserBroTags>
 
-                <div>
+                {userTags.map(tag =>
 
-                    {tag.name}
-                </div>
-            )}
+                    <div>
 
+                        {userTags}
+                    </div>
+                )}
+            </UserBroTags>
 
 
         </body>
