@@ -143,7 +143,7 @@ export default function SelectTags() {
 
             </HobbyTags>
             <LastDiv>
-                <Link to='/brofile'> <DefaultButton buttonText='FINALIZE YOBrofile!'></DefaultButton></Link>
+                <Link to='/brofile'> <DefaultButton buttonText='Subimt YOBroTags!'></DefaultButton></Link>
             </LastDiv>
         </body>
     )

@@ -1,10 +1,12 @@
 import styled from 'styled-components/macro';
 import profilepic from '../images/styledprofile.png'
+import EventButton from '../components/EventButton';
 
 export default function Brofile() {
 
     const user = JSON.parse(localStorage.getItem('broInfo'));
     const userTags = JSON.parse(localStorage.getItem('userTags'));
+    //const userEvents = JSON.parse(localStorage.getItem('newEvent'));//
 
 
     return (
@@ -41,6 +43,9 @@ export default function Brofile() {
                 </UserBroTags>
             )}
 
+
+
+            <EventButton buttonText="+" ></EventButton>
 
 
         </body>
@@ -99,6 +104,7 @@ border:var(--mainwhite) 3px solid;
 
 display:flex;
 flex-direction:column;
+
 background:var(--mainblue);
 align-items:center;
 margin-bottom:10px;

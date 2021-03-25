@@ -7,6 +7,9 @@ export default function DefaultButton({ buttonText, clickHandler }) {
     )
 }
 
+
+
+
 const Button = styled.button`
 background: var(--mainorange);
 padding: 1rem;

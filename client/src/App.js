@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Navigation from './components/Navigation';
 import SelectTags from './pages/SelectTags';
 import Brofile from './pages/Brofile';
+import Newsfeed from './pages/Newsfeed';
 
 
 
@@ -36,6 +37,7 @@ function App() {
 
           <Route path='/newsfeed'>
             <Header headline='YO Newsfeed Bro!' open={open} setOpen={setOpen} />
+
           </Route>
 
           <Route path='/selecttags'>
