@@ -160,6 +160,8 @@ cursor:pointer;
 
 `
 const LastDiv = styled.div`
+display:flex;
+justify_content:center;
 margin:4rem;
 align-content:center;
 `
@@ -188,7 +190,7 @@ const HobbyTags = styled.section`
 display:flex;
 flex-direction:row;
 margin-top:0.5rem;
-flex-wrap:wrap;
+overflow-x:scroll;
 `
 
 
@@ -197,7 +199,8 @@ const SportsTags = styled.section`
 display:flex;
 flex-direction:row;
 margin-top:0.5rem;
-flex-wrap:wrap;
+overflow-x:scroll;
+background:var;
 
 
 
@@ -206,7 +209,7 @@ const GamingTags = styled.section`
 display:flex;
 flex-direction:row;
 margin-top:0.5rem;
-flex-wrap:wrap;
+overflow-x:scroll;
 `
 
 
@@ -220,6 +223,8 @@ padding:1px;
 background:var(--mainwhite);
 text-align:center;
 color:var(--mainorange);
+box-shadow:0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
+
 `
 
 

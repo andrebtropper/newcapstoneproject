@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-
+import profilepic from '../images/styledprofile.png'
 
 export default function Brofile() {
 
@@ -9,47 +9,108 @@ export default function Brofile() {
 
     return (
         <body>
-            <h1>Welcome to YOBrofile</h1>
-            <ProfileName>
-                {user['bro_username']}
-                {user['bro_name']}
-                {user['bro_location']}
-            </ProfileName>
+
+            <ProfileCard>
+                <img src={profilepic} />
+                <UserBroTags>
+                    <UserName>
+                        {user['bro_username']}
+                    </UserName>
+
+                    <UserFullName>
+                        {user['bro_name']}
+                    </UserFullName>
+                    <UserFullName>
+                        {user['bro_location']}
+                    </UserFullName>
+
+                </UserBroTags>
+            </ProfileCard>
 
             <h2>Yo selected Brotags!</h2>
 
-            <UserBroTags>
 
-                {userTags.map(tag =>
 
-                    <div>
+            {userTags.filter(tag =>
+                <UserBroTags>
 
-                        {userTags}
-                    </div>
-                )}
-            </UserBroTags>
+
+                    {tag}
+
+
+                </UserBroTags>
+            )}
+
 
 
         </body>
 
 
-    );
-
+    )
 
 
 }
 
-
-
-
-const UserBroTags = styled.section`
-color:var(--mainorange);
-border:var(--mainorange) 3px solid;
-background:white;
+const ProfileCard = styled.section`
+display:flex;
+flex-direction:row;
+align-items:center;
+background:var(--otherorange);
+margin:10px;
+border:var(--mainwhite) 2px solid;
+border-radius:5px;
+box-shadow:0.5rem 0.5rem 0.5rem rgba(0,0,0, 35%);
+margin-top:20px;
 `
 
 
-const ProfileName = styled.section`
+
+const UserFullName = styled.div`
+display:flex;
+background:var(--mainorange);
+align-items:center;
+color:var(--mainwhite);
+border: 2px solid var(--mainblue);
+border-radius:5px;
+margin:2px;
+
+
+padding:3px;
+`
+
+
+
+const UserName = styled.div`
+display:flex;
+flex-direction:column;
+align-items:center;
+letter-spacing:0.2rem;
+font-size:2rem;
+color:var(--mainorange);
+
+
+`
+
+
+
+const UserBroTags = styled.div`
+color:var(--mainwhite);
+border:var(--mainwhite) 3px solid;
+
+display:flex;
+flex-direction:column;
+background:var(--mainblue);
+align-items:center;
+margin-bottom:10px;
+border-radius:5px;
+
+
+
+padding:10px;
+`
+
+
+/*const ProfileName = styled.section`
 display:flex;
 justify-content: space-between;
 flex-wrap: wrap;
@@ -64,4 +125,4 @@ background: var(--mainwhite);
 
 
 ;
-`
+`*/

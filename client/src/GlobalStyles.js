@@ -18,6 +18,8 @@ h1, h2, h3, h4 {
     --mainblue: #39495D;
     --mainorange: #CE844A;
     --mainwhite: #FFFFFF;
+    --darkblue:#242E3E;
+    --otherorange:#725543;
 }
 `
 export default GlobalStyle
