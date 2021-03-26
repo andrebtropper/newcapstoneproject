@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import profilepic from '../images/styledprofile.png'
+import profilepic from '../images/profilepic.svg'
 import EventButton from '../components/EventButton';
 
 export default function Brofile() {
@@ -12,15 +12,14 @@ export default function Brofile() {
 
     return (
         <body>
-
-            <img src={profilepic} />
             <ProfileCard>
-
+                <ProfilePic>
+                    <img src={profilepic} />
+                </ProfilePic>
+                <UserName>
+                    {user['bro_username']}
+                </UserName>
                 <UserBroTags>
-                    <UserName>
-                        {user['bro_username']}
-                    </UserName>
-
                     <UserFullName>
                         {user['bro_name']}
                     </UserFullName>
@@ -29,110 +28,153 @@ export default function Brofile() {
                     </UserFullName>
 
                 </UserBroTags>
+
+
+                {userTags.filter(tag =>
+                    <UserBroTags>
+
+
+                        {tag}
+
+
+                    </UserBroTags>
+
+                )}
             </ProfileCard>
 
-            <h2>Yo selected Brotags!</h2>
+            <Category>YoEvents</Category>
+            <YourEventsWrap>
 
-
-
-            {userTags.filter(tag =>
-                <UserBroTags>
-
-
-                    {tag}
-
-
-                </UserBroTags>
-            )}
-
-            <label>
-                {userEvent['event_title']}
-            </label>
-
-
+                <Title>
+                    {userEvent['event_title']}
+                </Title>
+                <LocateDate>
+                    <Date>
+                        {userEvent['event_location']}
+                    </Date>
+                    <Date>
+                        {userEvent['event_month']}
+                    </Date>
+                    <Date>
+                        {userEvent['event_day']}
+                    </Date>
+                </LocateDate>
+                <About>
+                    {userEvent['event_description']}
+                </About>
+            </YourEventsWrap>
 
 
         </body>
 
 
     )
-
-
 }
+
+
+const Category = styled.h3`
+margin-top:1.8rem;
+margin-bottom:10px;
+width:5rem;
+margin-left:1rem;
+border-radius:20px;
+background:var(--mainorange);
+text-align:center;
+color:var(--mainwhite);
+`
+
+
+const About = styled.div`
+padding:10px;
+`
+
+const LocateDate = styled.div`
+display:flex;
+flex-direction:row;
+margin:10px;
+justify-content:center;
+`
+
+
+const Date = styled.div`
+background:var(--mainorange);
+color:var(--mainwhite);
+border-radius:5px;
+padding:3px;
+margin:0 5px;
+
+`
+
+
+const Title = styled.label`
+flex-direction:row;
+background:var(--mainorange);
+color:var(--mainwhite);
+
+padding:3px;
+
+text-align:center;
+`
+
+
+const ProfilePic = styled.div`
+margin-top:10px;
+`
+
+
+const YourEventsWrap = styled.div`
+display:flex;
+flex-direction:column;
+background:white;
+margin-bottom:3rem;
+padding-bottom:20px;
+margin-left:20px;
+margin-right:20px;
+box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
+
+`
+
 
 const ProfileCard = styled.section`
 display:flex;
-flex-direction:row;
+flex-direction:column;
 align-items:center;
-background:white;
+
 margin:10px;
-border:var(--mainorange) 2px solid;
 
 
-margin-top:20px;
+
 `
 
 
 
 const UserFullName = styled.div`
-
+flex-direction:row;
 background:var(--mainorange);
-
 color:var(--mainwhite);
-
 border-radius:5px;
-margin:10px;
-
-
 padding:3px;
+margin:0 5px;
 `
 
 
 
 const UserName = styled.div`
-display:flex
 flex-direction:column;
 align-items:center;
 letter-spacing:0.2rem;
 font-size:2rem;
 color:var(--mainorange);
-border: 2px solid var(--mainmainorange);
-border-radius:5px;
-background:white;
 
 `
 
 
 
 const UserBroTags = styled.div`
+
 color:var(--mainwhite);
-border:var(--mainorange) 2px solid;
 display:flex;
-flex-direction:column;
-background:var(--mainblue);
+flex-direction:row;
+margin:10px;
 align-items:center;
-margin-bottom:10px;
-
-
-
-
-padding:10px;
 `
-
-
-/*const ProfileName = styled.section`
-display:flex;
-justify-content: space-between;
-flex-wrap: wrap;
-flex-direction:column;
-width:10rem;
-border: 3px var(--mainorange) solid;
-margin-top: 5rem;
-color:var(--mainorange);
-background: var(--mainwhite);
-
-
-
-
-;
-`*/

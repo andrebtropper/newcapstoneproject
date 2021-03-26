@@ -143,9 +143,10 @@ export default function SelectTags() {
 
 
             </GamingTags>
-            <Category>HOBBIES</Category>
 
+            <Category>HOBBIES</Category>
             <HobbyTags>
+
                 {hobbies.map(tag =>
                     <TagImage
                         onClick={e => selectTag(tag.name.toUpperCase())}
@@ -173,10 +174,14 @@ cursor:pointer;
 
 `
 const LastDiv = styled.div`
-display:flex;
-justify_content:center;
-margin:4rem;
-align-content:center;
+display:grid;
+justify-content:center;
+margin:3rem;
+
+
+
+
+
 `
 
 
@@ -204,6 +209,7 @@ display:flex;
 flex-direction:row;
 margin-top:0.5rem;
 overflow-x:scroll;
+
 `
 
 
@@ -227,16 +233,16 @@ overflow-x:scroll;
 
 
 const Category = styled.h3`
-margin-top:1rem;
-border:3px var(--mainorange) solid;
-width:7rem;
+margin-top:1.8rem;
+
+width:5rem;
 margin-left:1rem;
 border-radius:20px;
-padding:1px;
-background:var(--mainwhite);
+background:var(--mainorange);
 text-align:center;
-color:var(--mainorange);
-box-shadow:0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
+color:var(--mainwhite);
+
+
 
 `
 
