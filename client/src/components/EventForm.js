@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/macro';
-import isValidEvent from '../lib/validatFunction';
+import isValidEvent from '../lib/validateEventForm';
 import DefaultButton from '../components/DefaultButton';
 
 
 export default function EventForm({ open }) {
-    const [valid, setValid] = useState(false)
-
     const createEvent = {
         event_title: '',
         event_location: '',
@@ -15,7 +13,11 @@ export default function EventForm({ open }) {
         event_day: '',
         event_description: '',
     }
-    const [newEvent, setNewEvent] = useState(createEvent);
+    const [newEvent, setNewEvent] = useState(createEvent)
+    const [valid, setValid] = useState(false)
+
+
+
 
     const handleChange = event => {
         const field = event.target;
@@ -25,6 +27,7 @@ export default function EventForm({ open }) {
             ...newEvent,
             [field.name]: value,
         });
+        console.log(newEvent)
     };
 
     function submitForm(event) {
@@ -39,20 +42,22 @@ export default function EventForm({ open }) {
     return (
         <>
             <FormWrapper open={open} valid={valid} onSubmit={submitForm}>
+
+                <label>Event</label>
                 <input
                     type='text'
                     name='event_title'
                     placeholder='Name your Event'
                     onChange={handleChange}
                     value={newEvent.event_title} />
-
+                <label>Location</label>
                 <input
                     type='text'
                     name='event_location'
                     placeholder='Location of Event'
                     onChange={handleChange}
                     value={newEvent.event_location} />
-
+                <label>Event Date</label>
                 <select
                     type='text'
                     name='event_month'
@@ -114,25 +119,69 @@ export default function EventForm({ open }) {
                     <option value='30'>30</option>
                     <option value='31'>31</option>
                 </select>
-
+                <label>Brief Description</label>
                 <textarea
                     minLength="100"
                     maxLength="750"
                     type='text'
-                    name='about'
+                    name='event_description'
                     placeholder='Describe your EVENT. Activity, location, and any
                     other information to promote your Event (use 100 - 750 characters)'
                     onChange={handleChange}
-                    value={newEvent.event_description} />
+                    value={newEvent.event_description}
+                />
 
-                <DefaultButton valid={valid} type='submit'>POST NEW EVENT</DefaultButton>
+                <DefaultButton valid={valid} type='submit' buttonText='POST NEW EVENT' ></DefaultButton>
 
             </FormWrapper>
         </>
     )
 }
 
-const FormWrapper = styled.div``
+const FormWrapper = styled.form`
+display:flex;
+flex-direction: column;
+margin: 1.2rem 2.3rem;
+gap: 0.2rem;
+opacity: ${({ open, valid }) => open || valid ? '40%' : '100%'};
+border:solid 2px var(--mainorange);
+padding:10px;
+box-shadow: 0.2rem 0.3rem 0.3rem 0.5rem rgba(0,0,0, 35%);
+height:1rem
+width:1rem;
+
+    width: 310px;
+    height: 480px;
+    
+  
+   
+
+
+input, select, textarea{
+    margin-bottom: 1rem;
+    border-radius: 7px;
+    
+    border: none;
+    padding: 0.6rem;
+    background: white;
+    
+    font-style: italic;
+    color: var(--petrol);
+    }
+
+    textarea{
+        height: 10rem;
+        padding: 0.8rem;
+    }
+    
+    label{
+        margin-left: 0.5rem;
+        color: var(--mainorange);
+       
+    }
+
+    `
+
 
 
 EventForm.propTypes = {

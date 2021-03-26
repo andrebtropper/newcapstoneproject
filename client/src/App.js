@@ -37,7 +37,7 @@ function App() {
 
           <Route path='/newsfeed'>
             <Header headline='YO Newsfeed Bro!' open={open} setOpen={setOpen} />
-
+            <Newsfeed open={open} />
           </Route>
 
           <Route path='/selecttags'>

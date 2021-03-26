@@ -41,12 +41,25 @@ export default function SelectTags() {
             alt: 'playing basketball'
         },
         {
-            name: 'football',
+            name: 'soccer',
             alt: 'football and cleats'
         },
         {
             name: 'tennis',
             alt: 'playing tennis'
+        },
+        {
+            name: 'volleyball',
+            alt: 'playing volleyball'
+        },
+
+        {
+            name: 'football',
+            alt: 'playing football'
+        },
+        {
+            name: 'frisbee',
+            alt: 'playing ultimate frisbee'
         },
     ]
 

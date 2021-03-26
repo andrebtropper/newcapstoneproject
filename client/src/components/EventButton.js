@@ -12,8 +12,8 @@ export default function EventButton({ buttonText, clickHandler }) {
 
 const PostEventButton = styled.button`
 background: var(--mainorange);
-top:0;
-right:0;
+top:20%;
+left:85%;
 position:fixed;
 height:50px;
 width:50px;
@@ -24,6 +24,8 @@ box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
 font-family:sans Serif;
 border-radius: 50%;
 border: none;
+color:var(--mainwhite);
+opacity:70%;
 `
 
 

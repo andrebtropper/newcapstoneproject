@@ -6,14 +6,16 @@ export default function Brofile() {
 
     const user = JSON.parse(localStorage.getItem('broInfo'));
     const userTags = JSON.parse(localStorage.getItem('userTags'));
+    const userEvent = JSON.parse(localStorage.getItem('newEvent'));
     //const userEvents = JSON.parse(localStorage.getItem('newEvent'));//
 
 
     return (
         <body>
 
+            <img src={profilepic} />
             <ProfileCard>
-                <img src={profilepic} />
+
                 <UserBroTags>
                     <UserName>
                         {user['bro_username']}
@@ -43,9 +45,11 @@ export default function Brofile() {
                 </UserBroTags>
             )}
 
+            <label>
+                {userEvent['event_title']}
+            </label>
 
 
-            <EventButton buttonText="+" ></EventButton>
 
 
         </body>
@@ -60,24 +64,24 @@ const ProfileCard = styled.section`
 display:flex;
 flex-direction:row;
 align-items:center;
-background:var(--otherorange);
+background:white;
 margin:10px;
-border:var(--mainwhite) 2px solid;
-border-radius:5px;
-box-shadow:0.5rem 0.5rem 0.5rem rgba(0,0,0, 35%);
+border:var(--mainorange) 2px solid;
+
+
 margin-top:20px;
 `
 
 
 
 const UserFullName = styled.div`
-display:flex;
+
 background:var(--mainorange);
-align-items:center;
+
 color:var(--mainwhite);
-border: 2px solid var(--mainblue);
+
 border-radius:5px;
-margin:2px;
+margin:10px;
 
 
 padding:3px;
@@ -86,13 +90,15 @@ padding:3px;
 
 
 const UserName = styled.div`
-display:flex;
+display:flex
 flex-direction:column;
 align-items:center;
 letter-spacing:0.2rem;
 font-size:2rem;
 color:var(--mainorange);
-
+border: 2px solid var(--mainmainorange);
+border-radius:5px;
+background:white;
 
 `
 
@@ -100,15 +106,13 @@ color:var(--mainorange);
 
 const UserBroTags = styled.div`
 color:var(--mainwhite);
-border:var(--mainwhite) 3px solid;
-
+border:var(--mainorange) 2px solid;
 display:flex;
 flex-direction:column;
-
 background:var(--mainblue);
 align-items:center;
 margin-bottom:10px;
-border-radius:5px;
+
 
 
 

@@ -5,11 +5,14 @@ import styled from 'styled-components/macro';
 
 export default function Newsfeed({ open }) {
 
-    <NewsWrap>
-        <EventButton open={open} buttonText="+" ></EventButton>
-    </NewsWrap>
+    return (
+        <body>
+            <EventForm open={open} ></EventForm>
+            <EventButton open={open} buttonText="+ " > </EventButton>
+
+        </body>
+    )
 }
 
-const NewsWrap = styled.div`
-background:white;
-`
+
+

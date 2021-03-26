@@ -1,18 +1,23 @@
-import spikeball from '../images/spikeball.png';
-import badminton from '../images/badminton.png';
-import weightlifting from '../images/weightlifting.png';
-import basketball from '../images/bball.png';
-import football from '../images/soccer.png';
-import tennis from '../images/tennis.png';
-
-
+import spikeball from '../images/newspikeball.svg';
+import badminton from '../images/newbadminton.svg';
+import weightlifting from '../images/newweightlifting.svg';
+import basketball from '../images/basketball.svg';
+import soccer from '../images/newsoccer.svg';
+import tennis from '../images/newtennis.svg';
+import volleyball from '../images/volleyball.svg';
+import football from '../images/football.svg';
+import frisbee from '../images/frisbee.svg';
 export default {
     spikeball,
     badminton,
     weightlifting,
     basketball,
-    football,
+    soccer,
     tennis,
+    volleyball,
+    football,
+    frisbee,
+
 
 
 }

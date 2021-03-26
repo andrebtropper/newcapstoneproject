@@ -1,9 +1,9 @@
-import hiking from '../images/hiking.png';
-import fishing from '../images/fishing.png';
-import camping from '../images/camping.png';
-import jamming from '../images/jamming.png';
-import travel from '../images/travel.png';
-import photography from '../images/photography.png';
+import hiking from '../images/hiking.svg';
+import fishing from '../images/fishing.svg';
+import camping from '../images/camping.svg';
+import jamming from '../images/jamming.svg';
+import travel from '../images/travel.svg';
+import photography from '../images/photography.svg';
 
 
 export default {
