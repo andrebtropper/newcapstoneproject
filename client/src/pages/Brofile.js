@@ -31,14 +31,9 @@ export default function Brofile() {
 
 
                 {userTags.filter(tag =>
-                    <UserBroTags>
-
-
+                    <TagStyle>
                         {tag}
-
-
-                    </UserBroTags>
-
+                    </TagStyle>
                 )}
             </ProfileCard>
 
@@ -70,6 +65,15 @@ export default function Brofile() {
 
     )
 }
+
+const TagStyle = styled.div`
+color:var(--mainwhite);
+display:flex;
+flex-direction:row;
+margin:10px;
+align-items:center;
+
+`
 
 
 const Category = styled.h3`

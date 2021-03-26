@@ -12,7 +12,7 @@ export default function EventButton({ buttonText, clickHandler }) {
 
 const PostEventButton = styled.button`
 background: var(--mainorange);
-top:20%;
+bottom:05%;
 left:85%;
 position:fixed;
 height:50px;
