@@ -42,7 +42,7 @@ export default function Brofile() {
                 )}
             </ProfileCard>
 
-            <Category>YoEvents</Category>
+            <Category>YoEvents Bro!</Category>
             <YourEventsWrap>
 
                 <Title>
@@ -75,12 +75,13 @@ export default function Brofile() {
 const Category = styled.h3`
 margin-top:1.8rem;
 margin-bottom:10px;
-width:5rem;
+width:9rem;
 margin-left:1rem;
 border-radius:20px;
 background:var(--mainorange);
 text-align:center;
 color:var(--mainwhite);
+padding:5px;
 `
 
 
