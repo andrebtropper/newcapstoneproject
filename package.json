@@ -26,5 +26,9 @@
   "dependencies": {
     "concurrently": "^6.0.0",
     "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^5.5.0",
+    "webpack": "^5.28.0"
   }
 }
