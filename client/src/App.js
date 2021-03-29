@@ -21,7 +21,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path='/'>
-            <Header headline='Welcome to YOBro!' open={open} setOpen={setOpen} />
+            <Header open={open} setOpen={setOpen} />
             <WelcomePage open={open} />
           </Route>
 

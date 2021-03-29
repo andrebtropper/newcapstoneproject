@@ -12,7 +12,7 @@ export default function Newsfeed({ open }) {
 
     return (
         <>
-            {/*<EventForm open={open} ></EventForm>*/}
+            <EventForm open={open} ></EventForm>
             <PostWrapper>
                 <img src={HoggNormal} />
                 <img src={MaizeNormal} />
