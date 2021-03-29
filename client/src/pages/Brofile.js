@@ -1,3 +1,4 @@
+import { Switch, Link, Route } from 'react-router-dom';
 import styled from 'styled-components/macro';
 import profilepic from '../images/profilepic.svg'
 import EventButton from '../components/EventButton';
@@ -11,68 +12,76 @@ export default function Brofile() {
 
 
     return (
-        <body>
-            <ProfileCard>
-                <ProfilePic>
-                    <img src={profilepic} />
-                </ProfilePic>
-                <UserName>
-                    {user['bro_username']}
-                </UserName>
-                <UserBroTags>
-                    <UserFullName>
-                        {user['bro_name']}
-                    </UserFullName>
-                    <UserFullName>
-                        {user['bro_location']}
-                    </UserFullName>
+        <>
+            <Switch>
+                <Route exact path="/brofile">
+                    <ProfileCard>
+                        <ProfilePic>
+                            <img src={profilepic} />
+                        </ProfilePic>
+                        <UserName>
+                            {user['bro_username']}
+                        </UserName>
+                        <UserBroTags>
+                            <UserFullName>
+                                {user['bro_name']}
+                            </UserFullName>
+                            <UserFullName>
+                                {user['bro_location']}
+                            </UserFullName>
 
-                </UserBroTags>
+                        </UserBroTags>
 
+                        <TagStyle>
+                            {userTags.map(tag => (<span>{tag}</span>))}
+                        </TagStyle>
 
-                {userTags.filter(tag =>
-                    <TagStyle>
-                        {tag}
-                    </TagStyle>
-                )}
-            </ProfileCard>
+                        <Link to="brofile/events">Yo Events!</Link>
+                    </ProfileCard>
+                </Route>
+                <Route path="/brofile/events">
+                    <YourEventsWrap>
+                        <Category>YoEvents Bro!</Category>
 
-            <Category>YoEvents Bro!</Category>
-            <YourEventsWrap>
-
-                <Title>
-                    {userEvent['event_title']}
-                </Title>
-                <LocateDate>
-                    <Date>
-                        {userEvent['event_location']}
-                    </Date>
-                    <Date>
-                        {userEvent['event_month']}
-                    </Date>
-                    <Date>
-                        {userEvent['event_day']}
-                    </Date>
-                </LocateDate>
-                <About>
-                    {userEvent['event_description']}
-                </About>
-            </YourEventsWrap>
-
-
-        </body>
-
-
+                        <Title>
+                            {userEvent['event_title']}
+                        </Title>
+                        <LocateDate>
+                            <Date>
+                                {userEvent['event_location']}
+                            </Date>
+                            <Date>
+                                {userEvent['event_month']}
+                            </Date>
+                            <Date>
+                                {userEvent['event_day']}
+                            </Date>
+                        </LocateDate>
+                        <About>
+                            {userEvent['event_description']}
+                        </About>
+                    </YourEventsWrap>
+                </Route>
+            </Switch>
+        </>
     )
 }
 
 const TagStyle = styled.div`
+width: 100%;
 color:var(--mainwhite);
 display:flex;
 flex-direction:row;
 margin:10px;
 align-items:center;
-
+flex-wrap: wrap;
+span {
+    margin: 0.5rem;   
+    background:var(--mainorange); 
+    border-radius:20px;
+    padding:5px;
+    font-size:0.5rem;
+}
 `
 
 
