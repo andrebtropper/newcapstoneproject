@@ -72,11 +72,11 @@ width: 100%;
 color:var(--mainwhite);
 display:flex;
 flex-direction:row;
-margin:10px;
+margin:8px;
 align-items:center;
 flex-wrap: wrap;
 span {
-    margin: 0.5rem;   
+    margin: 0.2rem;
     background:var(--mainorange); 
     border-radius:20px;
     padding:5px;
