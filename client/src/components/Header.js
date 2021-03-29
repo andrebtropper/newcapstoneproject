@@ -1,7 +1,7 @@
-import { ReactComponent as BurgerIcon } from "../icons/burger.svg";
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
+import styled from 'styled-components/macro';
+import PropTypes from 'prop-types';
+import { ReactComponent as BurgerIcon } from "../icons/burger.svg";
 
 export default function Header({ open, setOpen, headline }) {
     return (

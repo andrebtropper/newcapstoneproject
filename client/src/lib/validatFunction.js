@@ -28,6 +28,7 @@ export const isValidBroLocation = (name) => {
         alert("Enter a real city Bro!");
         return false;
     }
+
 }
 
 const isValidBrofile = (brofile) =>

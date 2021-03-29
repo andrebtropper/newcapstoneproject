@@ -7,6 +7,9 @@ export default function DefaultButton({ buttonText, clickHandler }) {
     )
 }
 
+
+
+
 const Button = styled.button`
 background: var(--mainorange);
 padding: 1rem;
@@ -19,6 +22,7 @@ cursor: pointer;
 width: 230px;
 font-size: 1.1rem;
 outline:white;
+justify-item:center;
 `
 
 DefaultButton.propTypes = {
