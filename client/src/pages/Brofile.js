@@ -1,4 +1,4 @@
-import { Switch, Link, Route } from 'react-router-dom';
+//import { Switch, Link, Route } from 'react-router-dom';//
 import styled from 'styled-components/macro';
 import profilepic from '../images/profilepic.svg'
 import EventButton from '../components/EventButton';
@@ -13,61 +13,62 @@ export default function Brofile() {
 
     return (
         <>
-            <Switch>
-                <Route exact path="/brofile">
-                    <ProfileCard>
-                        <ProfilePic>
-                            <img src={profilepic} />
-                        </ProfilePic>
-                        <UserName>
-                            {user['bro_username']}
-                        </UserName>
-                        <UserBroTags>
-                            <UserFullName>
-                                {user['bro_name']}
-                            </UserFullName>
-                            <UserFullName>
-                                {user['bro_location']}
-                            </UserFullName>
 
-                        </UserBroTags>
+            <ProfileCard>
+                <ProfilePic>
+                    <img src={profilepic} />
+                </ProfilePic>
+                <UserName>
+                    {user['bro_username']}
+                </UserName>
+                <UserBroTags>
+                    <UserFullName>
+                        {user['bro_name']}
+                    </UserFullName>
+                    <UserFullName>
+                        {user['bro_location']}
+                    </UserFullName>
 
-                        <TagStyle>
-                            {userTags.map(tag => (<span>{tag}</span>))}
-                        </TagStyle>
+                </UserBroTags>
 
-                        <Link to="brofile/events">Yo Events!</Link>
-                    </ProfileCard>
-                </Route>
-                <Route path="/brofile/events">
-                    <YourEventsWrap>
-                        <Category>YoEvents Bro!</Category>
+                <TagStyle>
+                    {userTags.map(tag => (<span>{tag}</span>))}
+                </TagStyle>
 
-                        <Title>
-                            {userEvent['event_title']}
-                        </Title>
-                        <LocateDate>
-                            <Date>
-                                {userEvent['event_location']}
-                            </Date>
-                            <Date>
-                                {userEvent['event_month']}
-                            </Date>
-                            <Date>
-                                {userEvent['event_day']}
-                            </Date>
-                        </LocateDate>
-                        <About>
-                            {userEvent['event_description']}
-                        </About>
-                    </YourEventsWrap>
-                </Route>
-            </Switch>
+
+            </ProfileCard>
+
+
+
+            <Category>YoEvents Bro!</Category>
+            <YourEventsWrap>
+
+                <Title>
+                    {userEvent['event_title']}
+                </Title>
+                <LocateDate>
+                    <Date>
+                        {userEvent['event_location']}
+                    </Date>
+                    <Date>
+                        {userEvent['event_month']}
+                    </Date>
+                    <Date>
+                        {userEvent['event_day']}
+                    </Date>
+                </LocateDate>
+                <About>
+                    {userEvent['event_description']}
+                </About>
+            </YourEventsWrap>
+
         </>
     )
 }
 
 const TagStyle = styled.div`
+padding:5px;
+background: var(--darkblue);
 width: 100%;
 color:var(--mainwhite);
 display:flex;
@@ -92,9 +93,10 @@ width:9rem;
 margin-left:1rem;
 border-radius:20px;
 background:var(--mainorange);
-text-align:center;
+
 color:var(--mainwhite);
 padding:5px;
+size:1rem;
 `
 
 
@@ -154,7 +156,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 
-margin:10px;
+
 
 
 
