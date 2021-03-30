@@ -5,7 +5,7 @@ import isValidEvent from '../lib/validateEventForm';
 import DefaultButton from '../components/DefaultButton';
 import EventTags from '../components/EventTags';
 
-export default function EventForm({ open }) {
+export default function EventForm({ open, onChildEvent }) {
     const createEvent = {
         event_title: '',
         event_location: '',
@@ -38,6 +38,8 @@ export default function EventForm({ open }) {
             localStorage.setItem('newEvent', JSON.stringify(newEvent));
 
         }
+        console.log("I got here");
+        onChildEvent(true);
     }
 
     const addEventTag = eventtag => {
@@ -166,7 +168,7 @@ padding:10px;
 box-shadow: 0.2rem 0.3rem 0.3rem 0.5rem rgba(0,0,0, 35%);
 height:100%;
 width:100%;
-margin-top:3rem;
+margin-top:0rem;
 
 margin-bottom:2rem;
 
@@ -204,6 +206,7 @@ input, select, textarea{
 
 
 EventForm.propTypes = {
-    submitFunction: PropTypes.func
+    submitFunction: PropTypes.func,
+    onChildEvent: PropTypes.func
 }
 

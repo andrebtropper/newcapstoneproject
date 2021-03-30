@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-
+import EventForm from '../components/EventForm';
 
 
 export default function EventButton({ buttonText, clickHandler }) {

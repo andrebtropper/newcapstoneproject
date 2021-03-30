@@ -7,12 +7,24 @@ import StefanNormal from '../images/FakePostImages/StefanNormal.svg';
 import SimonNormal from '../images/FakePostImages/SimonNormal.svg';
 import MolnarNormal from '../images/FakePostImages/MolnarNormal.svg';
 import styled from 'styled-components/macro';
+import { useState } from 'react';
 
 export default function Newsfeed({ open }) {
 
+    const [isHidden, setHidden] = useState(true);
+    function toggleHidden() {
+        setHidden(!isHidden)
+    }
+    function isClosed() {
+        setHidden(true)
+    }
+    function handleChild(value) {
+        setHidden(value)
+    }
+
     return (
         <>
-            <EventForm open={open} ></EventForm>
+            {isHidden && <SuccessMessage> <EventForm open={open} onChildEvent={handleChild} ></EventForm></SuccessMessage>}
             <PostWrapper>
                 <img src={HoggNormal} />
                 <img src={MaizeNormal} />
@@ -21,7 +33,8 @@ export default function Newsfeed({ open }) {
                 <img src={SimonNormal} />
                 <img src={CordeNormal} />
             </PostWrapper>
-            <EventButton open={open} buttonText="+ " > </EventButton>
+
+            <EventButton open={open} buttonText="+ " clickHandler={() => toggleHidden()} > </EventButton>
 
         </>
     )
@@ -40,5 +53,17 @@ img{
 }
 
 `
-
+const SuccessMessage = styled.div`
+background: var(--mainblue);
+color: white;
+padding: 1rem;
+margin: 1rem;
+position: fixed;
+border-radius: 0.3rem;
+top:0%;
+bottom:0%;
+left:auto;
+right:auto;
+overflow-y:scroll;
+`
 
