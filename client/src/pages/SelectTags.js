@@ -7,6 +7,7 @@ import styled from 'styled-components/macro';
 import sportsImages from '../images/sportsImages';
 import gamingImages from '../images/gamingImages';
 import hobbyImages from '../images/hobbyImages';
+import socialImages from '../images/socialImages';
 
 
 export default function SelectTags() {
@@ -111,6 +112,36 @@ export default function SelectTags() {
 
 
     ]
+    const social = [
+        {
+            name: 'pool',
+            alt: 'playing pool'
+        },
+        {
+            name: 'grub',
+            alt: 'lots of burgers'
+        },
+        {
+            name: 'grabbeer',
+            alt: 'ice cold beer'
+        },
+        {
+            name: 'kicker',
+            alt: 'playing kicker'
+        },
+        {
+            name: 'watchthegame',
+            alt: 'people watching the game'
+        },
+        {
+            name: 'darts',
+            alt: 'dart board'
+        },
+
+
+
+
+    ]
     return (
 
 
@@ -156,6 +187,21 @@ export default function SelectTags() {
                 )}
 
             </HobbyTags>
+
+            <Category>SOCIAL</Category>
+
+            <SocialTags>
+
+                {social.map(tag =>
+                    <TagImage
+                        onClick={e => selectTag(tag.name.toUpperCase())}
+                        src={socialImages[tag.name]}
+                        alt={tag.alt}
+                        className={doesTagExistInUserTags(tag.name.toUpperCase()) ? 'active' : ''} />
+                )}
+
+            </SocialTags>
+
             <LastDiv>
                 <Link to='/brofile'> <DefaultButton buttonText='Subimt YOBroTags!'></DefaultButton></Link>
             </LastDiv>
@@ -165,6 +211,8 @@ export default function SelectTags() {
 
 const TagImage = styled.img`
 cursor:pointer;
+margin:0 1px;
+border:black solid 1px;
 &:before{
     opacity: 100%;
 }
@@ -180,29 +228,9 @@ margin:3rem;
 
 
 
-
-
 `
 
 
-/*const Button = styled.button`
-background:none;
-&:before{
-    background:none;
-}
-a{
-    background:var(--mainorange);
-    opacity:50%;
-}
-`*/
-
-
-
-/*const DefaultTag = styled.img`
-a{
-    opacity:30%;
-}
-`*/
 
 const HobbyTags = styled.section`
 display:flex;
@@ -223,6 +251,7 @@ background:var;
 
 
 
+
 `
 const GamingTags = styled.section`
 display:flex;
@@ -232,8 +261,17 @@ overflow-x:scroll;
 `
 
 
+const SocialTags = styled.section`
+display:flex;
+flex-direction:row;
+margin-top:0.5rem;
+overflow-x:scroll;
+`
+
+
+
 const Category = styled.h3`
-margin-top:1.8rem;
+margin-top:2rem;
 
 width:5rem;
 margin-left:1rem;

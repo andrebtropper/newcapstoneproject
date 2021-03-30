@@ -11,7 +11,9 @@
     "client": "cd ./client && npm start",
     "server": "nodemon ./server/src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./server/src/server.js"
+    "start": "node ./server/src/server.js",
+    "styleguide": "cd ./client && npx styleguidist server",
+    "styleguide:build": "cd ./client && npx styleguidist build"
   },
   "repository": {
     "type": "git",

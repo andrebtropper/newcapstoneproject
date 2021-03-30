@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components/macro';
 import isValidEvent from '../lib/validateEventForm';
 import DefaultButton from '../components/DefaultButton';
-
+import EventTags from '../components/EventTags';
 
 export default function EventForm({ open }) {
     const createEvent = {
@@ -12,6 +12,7 @@ export default function EventForm({ open }) {
         event_month: '',
         event_day: '',
         event_description: '',
+        eventtags: []
     }
     const [newEvent, setNewEvent] = useState(createEvent)
     const [valid, setValid] = useState(false)
@@ -37,6 +38,30 @@ export default function EventForm({ open }) {
             localStorage.setItem('newEvent', JSON.stringify(newEvent));
 
         }
+    }
+
+    const addEventTag = eventtag => {
+        if (eventtag.length >= 1) {
+            setNewEvent({
+                ...newEvent,
+                eventtags: [...newEvent.eventtags, eventtag]
+            })
+        }
+    }
+
+    function deleteEventTag(eventtagToDelete) {
+        const remainingEventTags = newEvent.eventtags.filter(
+            (eventtag) => eventtagToDelete !== eventtag);
+        setNewEvent({ ...newEvent, eventtags: remainingEventTags })
+    }
+
+    function deleteLastEventTag() {
+        const remainingEventTags = newEvent.eventtags.filter((_, index) =>
+            index !== newEvent.eventtags.length - 1)
+        setNewEvent({
+            ...newEvent,
+            eventtags: remainingEventTags
+        })
     }
 
     return (
@@ -87,37 +112,9 @@ export default function EventForm({ open }) {
                     value={newEvent.event_day}>
 
                     <option value=''>Day</option>
-                    <option value='1'>1</option>
-                    <option value='2'>2</option>
-                    <option value='3'>3</option>
-                    <option value='4'>4</option>
-                    <option value='5'>5</option>
-                    <option value='6'>6</option>
-                    <option value='7'>7</option>
-                    <option value='8'>8</option>
-                    <option value='9'>9</option>
-                    <option value='10'>10</option>
-                    <option value='11'>11</option>
-                    <option value='12'>12</option>
-                    <option value='13'>13</option>
-                    <option value='14'>14</option>
-                    <option value='15'>15</option>
-                    <option value='16'>16</option>
-                    <option value='17'>17</option>
-                    <option value='18'>18</option>
-                    <option value='19'>19</option>
-                    <option value='20'>20</option>
-                    <option value='21'>21</option>
-                    <option value='22'>22</option>
-                    <option value='23'>23</option>
-                    <option value='24'>24</option>
-                    <option value='25'>25</option>
-                    <option value='26'>26</option>
-                    <option value='27'>27</option>
-                    <option value='28'>28</option>
-                    <option value='29'>29</option>
-                    <option value='30'>30</option>
-                    <option value='31'>31</option>
+                    {
+                        createDaysOptions()
+                    }
                 </select>
                 <label>Brief Description</label>
                 <textarea
@@ -131,24 +128,44 @@ export default function EventForm({ open }) {
                     value={newEvent.event_description}
                 />
 
-                <DefaultButton valid={valid} type='submit' buttonText='POST NEW EVENT' ></DefaultButton>
+                <EventTags
+                    eventtags={newEvent.eventtags}
+                    onCreateEventTag={addEventTag}
+                    onDeleteEventTag={deleteEventTag}
+                    onDeleteLastEventTag={deleteLastEventTag}>
+                </EventTags>
 
+                <DefaultButton valid={valid} type='submit' buttonText='POST NEW EVENT' ></DefaultButton>
             </FormWrapper>
+
+
+
         </>
     )
 }
 
+function createDaysOptions(numberOfDays = 31) {
+    let options = [];
+    for (let i = 1; i <= numberOfDays; i++) {
+        options.push(<option value={i}>{i}</option>);
+    }
+    return options;
+}
+
+
 const FormWrapper = styled.form`
 display:flex;
 flex-direction: column;
-margin: 1.2rem 2.3rem;
+align-content:left
+
 gap: 0.2rem;
 opacity: ${({ open, valid }) => open || valid ? '40%' : '100%'};
 border:solid 2px var(--mainorange);
 padding:10px;
 box-shadow: 0.2rem 0.3rem 0.3rem 0.5rem rgba(0,0,0, 35%);
-height:1rem
-width:1rem;
+height:100%;
+width:100%;
+margin: 3rem 0 2rem 1rem;
 
     width: 310px;
     height: 480px;
@@ -166,7 +183,7 @@ input, select, textarea{
     background: white;
     
     font-style: italic;
-    color: var(--petrol);
+    color: var(--mainblue);
     }
 
     textarea{
@@ -187,4 +204,3 @@ input, select, textarea{
 EventForm.propTypes = {
     submitFunction: PropTypes.func
 }
-
