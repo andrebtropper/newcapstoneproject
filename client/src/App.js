@@ -21,7 +21,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path='/'>
-            <Header headline='Welcome to YOBro!' open={open} setOpen={setOpen} />
+            <Header open={open} setOpen={setOpen} />
             <WelcomePage open={open} />
           </Route>
 
@@ -44,6 +44,9 @@ function App() {
             <Header headline='Select YOBro Tags!' open={open} setOpen={setOpen} />
             <SelectTags open={open} />
           </Route>
+
+
+
         </Switch>
       </main>
     </div>

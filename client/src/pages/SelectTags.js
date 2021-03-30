@@ -8,7 +8,7 @@ import sportsImages from '../images/sportsImages';
 import gamingImages from '../images/gamingImages';
 import hobbyImages from '../images/hobbyImages';
 import socialImages from '../images/socialImages';
-
+import tagLogo from '../icons/taglogo.svg';
 
 export default function SelectTags() {
 
@@ -146,7 +146,9 @@ export default function SelectTags() {
 
 
         <body>
-
+            <LogoWrap>
+                <img src={tagLogo} />
+            </LogoWrap>
             <Category>SPORTS</Category>
             <SportsTags>
 
@@ -203,11 +205,18 @@ export default function SelectTags() {
             </SocialTags>
 
             <LastDiv>
-                <Link to='/brofile'> <DefaultButton buttonText='Subimt YOBroTags!'></DefaultButton></Link>
+                <Link to='/brofile'> <DefaultButton buttonText='Subimt YOBroTags'></DefaultButton></Link>
             </LastDiv>
         </body>
     )
 }
+
+const LogoWrap = styled.div`
+display:flex;
+justify-content:center;
+
+`
+
 
 const TagImage = styled.img`
 cursor:pointer;
@@ -217,7 +226,9 @@ border:black solid 1px;
     opacity: 100%;
 }
 &.active{
-    opacity: 50%;
+    opacity: 30%;
+    
+    
 }
 
 `
@@ -271,7 +282,7 @@ overflow-x:scroll;
 
 
 const Category = styled.h3`
-margin-top:2rem;
+margin-top:0.5rem;
 
 width:5rem;
 margin-left:1rem;

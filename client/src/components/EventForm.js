@@ -158,17 +158,21 @@ display:flex;
 flex-direction: column;
 align-content:left
 
-gap: 0.2rem;
+
+
 opacity: ${({ open, valid }) => open || valid ? '40%' : '100%'};
 border:solid 2px var(--mainorange);
 padding:10px;
 box-shadow: 0.2rem 0.3rem 0.3rem 0.5rem rgba(0,0,0, 35%);
 height:100%;
 width:100%;
+
+
+                                            
 margin: 3rem 0 2rem 1rem;
 
-    width: 310px;
-    height: 480px;
+
+    
     
   
    

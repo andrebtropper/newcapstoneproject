@@ -1,73 +1,90 @@
-import { Switch, Link, Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom'
 import styled from 'styled-components/macro';
 import profilepic from '../images/profilepic.svg'
-import EventButton from '../components/EventButton';
+/*import EventButton from '../components/EventButton';*/
+import tagLogo from '../icons/edittags.svg';
+import editbrofileicon from '../icons/editbrofileicon.svg';
+import EventTags from '../components/EventTags';
 
 export default function Brofile() {
 
     const user = JSON.parse(localStorage.getItem('broInfo'));
     const userTags = JSON.parse(localStorage.getItem('userTags'));
-    const userEvent = JSON.parse(localStorage.getItem('newEvent'));
+    const userEvent = JSON.parse(localStorage.getItem('newEvent') || '{}');
     //const userEvents = JSON.parse(localStorage.getItem('newEvent'));//
 
 
     return (
         <>
-            <Switch>
-                <Route exact path="/brofile">
-                    <ProfileCard>
-                        <ProfilePic>
-                            <img src={profilepic} />
-                        </ProfilePic>
-                        <UserName>
-                            {user['bro_username']}
-                        </UserName>
-                        <UserBroTags>
-                            <UserFullName>
-                                {user['bro_name']}
-                            </UserFullName>
-                            <UserFullName>
-                                {user['bro_location']}
-                            </UserFullName>
 
-                        </UserBroTags>
+            <ProfileCard>
+                <ProfilePic>
+                    <img src={profilepic} />
+                </ProfilePic>
+                <UserName>
+                    {user['bro_username']}
+                </UserName>
+                <UserBroTags>
+                    <UserFullName>
+                        {user['bro_name']}
+                    </UserFullName>
+                    <UserFullName>
+                        {user['bro_location']}
+                    </UserFullName>
 
-                        <TagStyle>
-                            {userTags.map(tag => (<span>{tag}</span>))}
-                        </TagStyle>
+                </UserBroTags>
 
-                        <Link to="brofile/events">Yo Events!</Link>
-                    </ProfileCard>
-                </Route>
-                <Route path="/brofile/events">
-                    <YourEventsWrap>
-                        <Category>YoEvents Bro!</Category>
+                <TagStyle>
+                    {userTags.map(tag => (<span>{tag}</span>))}
+                </TagStyle>
 
-                        <Title>
-                            {userEvent['event_title']}
-                        </Title>
-                        <LocateDate>
-                            <Date>
-                                {userEvent['event_location']}
-                            </Date>
-                            <Date>
-                                {userEvent['event_month']}
-                            </Date>
-                            <Date>
-                                {userEvent['event_day']}
-                            </Date>
-                        </LocateDate>
-                        <About>
-                            {userEvent['event_description']}
-                        </About>
-                    </YourEventsWrap>
-                </Route>
-            </Switch>
+
+            </ProfileCard>
+            <ButtonWrap>
+                <Link to='/selecttags'>  <ToTagsButton> <img src={tagLogo} /> </ToTagsButton></Link>
+                <Link to='/createbrofile'>  <ToTagsButton> <img src={editbrofileicon} /> </ToTagsButton></Link>
+            </ButtonWrap>
+
+
+            <Category>YoEvents</Category>
+            <YourEventsWrap>
+
+                <Title>
+                    {userEvent['event_title']}
+                </Title>
+                <LocateDate>
+                    <Date>
+                        {userEvent['event_location']}
+                    </Date>
+                    <Date>
+                        {userEvent['event_month']}
+                    </Date>
+                    <Date>
+                        {userEvent['event_day']}
+                    </Date>
+                </LocateDate>
+                <About>
+                    {userEvent['event_description']}
+                </About>
+
+            </YourEventsWrap>
+
+
         </>
     )
 }
 
+const ButtonWrap = styled.div`
+display:flex;
+flex-direction:row;
+justify-content:center;
+background:var(--otherorange);
+`
+
+
 const TagStyle = styled.div`
+padding:5px;
+
 width: 100%;
 color:var(--mainwhite);
 display:flex;
@@ -92,14 +109,16 @@ width:9rem;
 margin-left:1rem;
 border-radius:20px;
 background:var(--mainorange);
-text-align:center;
+
 color:var(--mainwhite);
 padding:5px;
+size:1rem;
 `
 
 
 const About = styled.div`
 padding:10px;
+color:var(--mainblue);
 `
 
 const LocateDate = styled.div`
@@ -154,7 +173,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 
-margin:10px;
+
 
 
 
@@ -163,7 +182,7 @@ margin:10px;
 
 
 const UserFullName = styled.div`
-flex-direction:row;
+
 background:var(--mainorange);
 color:var(--mainwhite);
 border-radius:5px;
@@ -174,9 +193,8 @@ margin:0 5px;
 
 
 const UserName = styled.div`
-flex-direction:column;
-align-items:center;
-letter-spacing:0.2rem;
+
+
 font-size:2rem;
 color:var(--mainorange);
 
@@ -191,4 +209,11 @@ display:flex;
 flex-direction:row;
 margin:10px;
 align-items:center;
+`
+
+const ToTagsButton = styled.button`
+margin:1rem;
+cursor: pointer;
+border-radius:20px;
+
 `

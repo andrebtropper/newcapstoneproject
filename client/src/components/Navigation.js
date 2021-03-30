@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro';
 import PropTypes from 'prop-types';
+import { ReactComponent as EventIcon } from "../icons/eventnav.svg";
 import { ReactComponent as HomeIcon } from "../icons/home.svg";
 import { ReactComponent as NewsIcon } from "../icons/news.svg";
 import { ReactComponent as BrofileIcon } from "../icons/profile.svg";
@@ -26,6 +27,7 @@ export default function Navigation({ open, setOpen }) {
                 <BrofileIcon /> Brofile </Link>
             <Link to='/selecttags'>
                 <TagIcon /> BroTags </Link>
+
 
 
 
