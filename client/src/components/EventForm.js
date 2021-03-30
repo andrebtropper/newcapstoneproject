@@ -165,9 +165,7 @@ padding:10px;
 box-shadow: 0.2rem 0.3rem 0.3rem 0.5rem rgba(0,0,0, 35%);
 height:100%;
 width:100%;
-margin-top:3rem;
-margin-left:1rem;
-margin-bottom:2rem;
+margin: 3rem 0 2rem 1rem;
 
     width: 310px;
     height: 480px;
@@ -206,4 +204,3 @@ input, select, textarea{
 EventForm.propTypes = {
     submitFunction: PropTypes.func
 }
-
