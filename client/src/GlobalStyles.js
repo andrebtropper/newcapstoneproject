@@ -3,12 +3,12 @@ const GlobalStyle = createGlobalStyle`
 *{
     box-sizing: border-box;
    
-    font-family: "Architects Daughter", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-family: "Avengero", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
 }
 body{
     margin: 0;
-    background: var(--mainblue);
+   background:var(--mainblue);
  
 }
 h1, h2, h3, h4 {

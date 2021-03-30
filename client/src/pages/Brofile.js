@@ -1,13 +1,16 @@
-//import { Switch, Link, Route } from 'react-router-dom';//
+import { Route, Link } from 'react-router-dom'
 import styled from 'styled-components/macro';
 import profilepic from '../images/profilepic.svg'
-import EventButton from '../components/EventButton';
+/*import EventButton from '../components/EventButton';*/
+import tagLogo from '../icons/edittags.svg';
+import editbrofileicon from '../icons/editbrofileicon.svg';
+import EventTags from '../components/EventTags';
 
 export default function Brofile() {
 
     const user = JSON.parse(localStorage.getItem('broInfo'));
     const userTags = JSON.parse(localStorage.getItem('userTags'));
-    const userEvent = JSON.parse(localStorage.getItem('newEvent'));
+    const userEvent = JSON.parse(localStorage.getItem('newEvent') || '{}');
     //const userEvents = JSON.parse(localStorage.getItem('newEvent'));//
 
 
@@ -37,10 +40,13 @@ export default function Brofile() {
 
 
             </ProfileCard>
+            <ButtonWrap>
+                <Link to='/selecttags'>  <ToTagsButton> <img src={tagLogo} /> </ToTagsButton></Link>
+                <Link to='/createbrofile'>  <ToTagsButton> <img src={editbrofileicon} /> </ToTagsButton></Link>
+            </ButtonWrap>
 
 
-
-            <Category>YoEvents Bro!</Category>
+            <Category>YoEvents</Category>
             <YourEventsWrap>
 
                 <Title>
@@ -60,15 +66,25 @@ export default function Brofile() {
                 <About>
                     {userEvent['event_description']}
                 </About>
+
             </YourEventsWrap>
+
 
         </>
     )
 }
 
+const ButtonWrap = styled.div`
+display:flex;
+flex-direction:row;
+justify-content:center;
+background:var(--otherorange);
+`
+
+
 const TagStyle = styled.div`
 padding:5px;
-background: var(--darkblue);
+
 width: 100%;
 color:var(--mainwhite);
 display:flex;
@@ -102,6 +118,7 @@ size:1rem;
 
 const About = styled.div`
 padding:10px;
+color:var(--mainblue);
 `
 
 const LocateDate = styled.div`
@@ -165,7 +182,7 @@ align-items:center;
 
 
 const UserFullName = styled.div`
-flex-direction:row;
+
 background:var(--mainorange);
 color:var(--mainwhite);
 border-radius:5px;
@@ -176,9 +193,8 @@ margin:0 5px;
 
 
 const UserName = styled.div`
-flex-direction:column;
-align-items:center;
-letter-spacing:0.2rem;
+
+
 font-size:2rem;
 color:var(--mainorange);
 
@@ -193,4 +209,11 @@ display:flex;
 flex-direction:row;
 margin:10px;
 align-items:center;
+`
+
+const ToTagsButton = styled.button`
+margin:1rem;
+cursor: pointer;
+border-radius:20px;
+
 `

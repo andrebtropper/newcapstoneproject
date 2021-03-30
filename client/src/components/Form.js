@@ -16,7 +16,7 @@ export default function Form({ submitFunction, open }) {
         bro_username: '',
         bro_name: '',
         bro_location: '',
-        image: ''
+
     }
     const [newBrofile, setNewBrofile] = useState(initialUserBrofile);
     const [valid, setValid] = useState(false)
@@ -35,12 +35,6 @@ export default function Form({ submitFunction, open }) {
         event.preventDefault();
         if (isValidBrofile(newBrofile)) {
             setValid(true);
-            //submitFunction(newBrofile);
-            //localStorage.setItem('username', newBrofile.bro_username);
-            //setNewBrofile(initialUserBrofile);
-            /* Object.keys(newBrofile).forEach(key => {
-                 localStorage.setItem(key, newBrofile[key]);
-             })*/
             localStorage.setItem('broInfo', JSON.stringify(newBrofile));
         }
 
@@ -52,7 +46,7 @@ export default function Form({ submitFunction, open }) {
                 <input
                     type='text'
                     name='bro_username'
-                    placeholder='Enter your desired Username'
+                    placeholder='Enter Username'
                     onChange={handleChange}
                     value={newBrofile.bro_username} />
 
@@ -69,28 +63,17 @@ export default function Form({ submitFunction, open }) {
                     onChange={handleChange}
                     value={newBrofile.bro_location} />
 
-                <Label>Add image
-        </Label>
-                <input
-                    type='file'
-                    name='image'
-                    placeholder='Add image'
-                    onChange={handleChange}
-                    value={newBrofile.image}
-                />
+
                 <CreateBrofileButton valid={valid} type='submit'> Create Profile</CreateBrofileButton>
             </FormWrapper>
-            {valid && <SuccessMessage> <p>Awesome Bro! YOBrofile is almost complete! Click the link below to select YOBrotags!</p>
-                <Link to='/selecttags'>  <ToTagsButton>Click here to select YOBrotags!</ToTagsButton></Link></SuccessMessage>}
+            {valid && <SuccessMessage> <p>YOBrofile is almost complete. Now select YOBrotags</p>
+                <Link to='/selecttags'>  <ToTagsButton> select YOBrotags</ToTagsButton></Link></SuccessMessage>}
         </>
     )
 };
 
 
 
-const Label = styled.label`
-color:var(--mainorange);
-`
 
 const FormWrapper = styled.form`
 display:flex;
