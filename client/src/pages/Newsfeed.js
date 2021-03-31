@@ -11,7 +11,7 @@ import { useState } from 'react';
 
 export default function Newsfeed({ open }) {
 
-    const [isHidden, setHidden] = useState(true);
+    const [isHidden, setHidden] = useState(false);
     function toggleHidden() {
         setHidden(!isHidden)
     }
@@ -49,21 +49,22 @@ background: var(--darkblue);
 
 img{
     margin:1.5rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.4rem var(--otherorange);
+   
 }
 
 `
 const SuccessMessage = styled.div`
+
 background: var(--mainblue);
 color: white;
-padding: 1rem;
-margin: 1rem;
-position: fixed;
+position: relative;
 border-radius: 0.3rem;
-top:0%;
-bottom:0%;
-left:auto;
-right:auto;
-overflow-y:scroll;
+Width: 100%;
+height:100%; 
+top:0;
+left:0;
+position:fixed;
+padding:1rem;
+
 `
 

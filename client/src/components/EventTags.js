@@ -29,7 +29,7 @@ export default function EventTags({ onCreateEventTag, eventtags, onDeleteEventTa
             <input
                 type='text'
                 name='eventtags'
-                placeholder='Enter BroTags for your event'
+                placeholder='Enter BroTags '
                 onChange={handleChange}
                 value={value}
                 onKeyDown={handleKeyDown} />
@@ -56,8 +56,8 @@ const Wrapper = styled.section`
     grid-template-columns: 4fr 1fr;
     
     border-radius: 1rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
+  margin-bottom:0.4rem;
+    
 
     button {
     border: none;
@@ -65,10 +65,10 @@ const Wrapper = styled.section`
     color: white;
     box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
     border-radius: 1rem;
-    height: 70%;
+    height: 40%;
     outline: none;
     cursor: pointer;
-    margin-left: 0.5rem;
+    margin-left: 0rem;
     }
 
     input[type=text]{
