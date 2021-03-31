@@ -2,10 +2,11 @@ import { Route, Link } from 'react-router-dom'
 import styled from 'styled-components/macro';
 import profilepic from '../images/profilepic.svg'
 /*import EventButton from '../components/EventButton';*/
-import tagLogo from '../icons/edittags.svg';
-import editbrofileicon from '../icons/editbrofileicon.svg';
-import EventTags from '../components/EventTags';
-
+/*import tagLogo from '../icons/edittags.svg';*/
+/*import editbrofileicon from '../icons/editbrofileicon.svg';*/
+/*import EventTags from '../components/EventTags';*/
+import { ReactComponent as TagLogo } from "../icons/edittags.svg";
+import { ReactComponent as Editbrofileicon } from "../icons/editbrofileicon.svg";
 export default function Brofile() {
 
     const user = JSON.parse(localStorage.getItem('broInfo'));
@@ -41,8 +42,8 @@ export default function Brofile() {
 
             </ProfileCard>
             <ButtonWrap>
-                <Link to='/selecttags'>  <ToTagsButton> <img src={tagLogo} /> </ToTagsButton></Link>
-                <Link to='/createbrofile'>  <ToTagsButton> <img src={editbrofileicon} /> </ToTagsButton></Link>
+                <Link to='/selecttags'>  <TagLogo /> </Link>
+                <Link to='/createbrofile'>  <Editbrofileicon /> </Link>
             </ButtonWrap>
 
 
