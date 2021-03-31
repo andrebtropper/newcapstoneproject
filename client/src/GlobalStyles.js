@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
 }
 body{
-    margin: 0;
+    margin:0;
    background:var(--mainblue);
  
 }

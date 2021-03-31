@@ -43,6 +43,7 @@ export default function Brofile() {
             </ProfileCard>
             <ButtonWrap>
                 <Link to='/selecttags'>  <TagLogo /> </Link>
+
                 <Link to='/createbrofile'>  <Editbrofileicon /> </Link>
             </ButtonWrap>
 
@@ -59,8 +60,7 @@ export default function Brofile() {
                     </Date>
                     <Date>
                         {userEvent['event_month']}
-                    </Date>
-                    <Date>
+
                         {userEvent['event_day']}
                     </Date>
                 </LocateDate>
@@ -78,14 +78,13 @@ export default function Brofile() {
 const ButtonWrap = styled.div`
 display:flex;
 flex-direction:row;
-justify-content:center;
-background:var(--otherorange);
+justify-content:space-around;
+margin:1rem;
+
 `
 
-
 const TagStyle = styled.div`
-padding:5px;
-
+padding:10px;
 width: 100%;
 color:var(--mainwhite);
 display:flex;
@@ -93,6 +92,7 @@ flex-direction:row;
 margin:8px;
 align-items:center;
 flex-wrap: wrap;
+border:2px solid var(--mainorange);
 span {
     margin: 0.2rem;
     background:var(--mainorange); 
@@ -104,16 +104,17 @@ span {
 
 
 const Category = styled.h3`
+
 margin-top:1.8rem;
 margin-bottom:10px;
 width:9rem;
 margin-left:1rem;
 border-radius:20px;
 background:var(--mainorange);
-
+align-items:center;
 color:var(--mainwhite);
 padding:5px;
-size:1rem;
+
 `
 
 
@@ -152,7 +153,7 @@ text-align:center;
 
 
 const ProfilePic = styled.div`
-margin-top:10px;
+margin-top:7rem;
 `
 
 
@@ -165,19 +166,11 @@ padding-bottom:20px;
 margin-left:20px;
 margin-right:20px;
 box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
-
 `
-
-
 const ProfileCard = styled.section`
 display:flex;
 flex-direction:column;
 align-items:center;
-
-
-
-
-
 `
 
 
@@ -194,8 +187,6 @@ margin:0 5px;
 
 
 const UserName = styled.div`
-
-
 font-size:2rem;
 color:var(--mainorange);
 
@@ -204,7 +195,6 @@ color:var(--mainorange);
 
 
 const UserBroTags = styled.div`
-
 color:var(--mainwhite);
 display:flex;
 flex-direction:row;

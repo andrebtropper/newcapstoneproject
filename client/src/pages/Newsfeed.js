@@ -44,12 +44,11 @@ export default function Newsfeed({ open }) {
 const PostWrapper = styled.section`
 display:flex;
 flex-direction: column;
-background: var(--darkblue);
-
+background: var(--mainblue);
 
 img{
     margin:1.5rem;
-   
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0);
 }
 
 `
