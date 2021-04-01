@@ -25,7 +25,7 @@ export default function Newsfeed({ open }) {
     }
 
     const [isVisible, setVisible] = useState(false);
-    function callbackFunction(childData) {
+    function callbackFunction() {
         setVisible(!isVisible);
     }
 

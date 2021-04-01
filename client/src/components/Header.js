@@ -24,18 +24,6 @@ opacity: ${({ open }) => open ? '40%' : '100%'};
 background:var(--mainorange);
 display:flex;
 gap:3rem;
-
-
-
-
-
-
-
-
-
-
-
-
 `
 
 const PseudoButton = styled.button`
@@ -43,9 +31,6 @@ background: var(--mainblue);
 border: solid 2px var(--mainblue);
 padding: 10px;
 margin-bottom:10px;
-
-
-
 
 `
 

@@ -9,6 +9,7 @@ export default function YoEvents() {
     return (
         <>
 
+
             <Category>    <EventLogo /></Category>
 
             <YourEventsWrap>
@@ -30,7 +31,7 @@ export default function YoEvents() {
                     {userEvent['event_description']}
                 </About>
 
-
+                {likedEvents}
 
             </YourEventsWrap>
         </>
