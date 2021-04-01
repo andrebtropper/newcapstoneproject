@@ -153,7 +153,7 @@ text-align:center;
 
 
 const ProfilePic = styled.div`
-margin-top:7rem;
+margin-top:1rem;
 `
 
 

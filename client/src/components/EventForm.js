@@ -5,7 +5,7 @@ import isValidEvent from '../lib/validateEventForm';
 import DefaultButton from '../components/DefaultButton';
 import EventTags from '../components/EventTags';
 
-export default function EventForm({ open, onChildEvent }) {
+export default function EventForm({ open, parentCallback }) {
     const createEvent = {
         event_title: '',
         event_location: '',
@@ -36,10 +36,10 @@ export default function EventForm({ open, onChildEvent }) {
         if (isValidEvent(newEvent)) {
             setValid(true);
             localStorage.setItem('newEvent', JSON.stringify(newEvent));
-
+            parentCallback(false);
         }
         console.log("I got here");
-        onChildEvent(true);
+
     }
 
     const addEventTag = eventtag => {

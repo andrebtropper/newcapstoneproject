@@ -11,20 +11,19 @@ import { useState } from 'react';
 
 export default function Newsfeed({ open }) {
 
-    const [isHidden, setHidden] = useState(false);
-    function toggleHidden() {
-        setHidden(!isHidden)
+    const [isVisible, setVisible] = useState(false);
+    function callbackFunction(childData) {
+        setVisible(!isVisible);
     }
-    function isClosed() {
-        setHidden(true)
+
+    function toggleVisible() {
+        setVisible(!isVisible);
     }
-    function handleChild(value) {
-        setHidden(value)
-    }
+
 
     return (
         <>
-            {isHidden && <SuccessMessage> <EventForm open={open} onChildEvent={handleChild} ></EventForm></SuccessMessage>}
+            {isVisible && <SuccessMessage> <EventForm open={open} parentCallback={callbackFunction} ></EventForm></SuccessMessage>}
             <PostWrapper>
                 <img src={HoggNormal} />
                 <img src={MaizeNormal} />
@@ -34,7 +33,13 @@ export default function Newsfeed({ open }) {
                 <img src={CordeNormal} />
             </PostWrapper>
 
-            <EventButton open={open} buttonText="+ " clickHandler={() => toggleHidden()} > </EventButton>
+            <EventButton
+                open={open}
+                buttonText="+ "
+                clickHandler={() => toggleVisible()}
+            >
+                {" "}
+            </EventButton>
 
         </>
     )
