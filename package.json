@@ -27,6 +27,7 @@
   "homepage": "https://github.com/andrebtropper/newcapstoneproject#readme",
   "dependencies": {
     "concurrently": "^6.0.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "react-tabs": "^3.2.1"
   }
 }
