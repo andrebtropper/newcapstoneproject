@@ -211,9 +211,12 @@ export default function SelectTags() {
     )
 }
 
+
+
 const LogoWrap = styled.div`
 display:flex;
 justify-content:center;
+
 
 `
 

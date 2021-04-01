@@ -14,6 +14,7 @@ export default function CreateBrofile({ open }) {
     )
 }
 
+
 const Wrapper = styled.section`
 margin: 7rem;
 display: flex;

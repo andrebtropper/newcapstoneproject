@@ -11,7 +11,6 @@ export default function Header({ open, setOpen }) {
                 <BurgerIcon />
             </PseudoButton>
             <img src={blueLogo} />
-
         </Wrapper>
     )
 }
@@ -25,6 +24,15 @@ opacity: ${({ open }) => open ? '40%' : '100%'};
 background:var(--mainorange);
 display:flex;
 gap:3rem;
+
+
+
+
+
+
+
+
+
 
 
 

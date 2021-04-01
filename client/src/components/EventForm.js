@@ -5,7 +5,7 @@ import isValidEvent from '../lib/validateEventForm';
 import DefaultButton from '../components/DefaultButton';
 import EventTags from '../components/EventTags';
 
-export default function EventForm({ open }) {
+export default function EventForm({ open, parentCallback }) {
     const createEvent = {
         event_title: '',
         event_location: '',
@@ -36,8 +36,10 @@ export default function EventForm({ open }) {
         if (isValidEvent(newEvent)) {
             setValid(true);
             localStorage.setItem('newEvent', JSON.stringify(newEvent));
-
+            parentCallback(false);
         }
+        console.log("I got here");
+
     }
 
     const addEventTag = eventtag => {
@@ -156,7 +158,7 @@ function createDaysOptions(numberOfDays = 31) {
 const FormWrapper = styled.form`
 display:flex;
 flex-direction: column;
-align-content:left
+align-content: center;
 
 
 
@@ -166,17 +168,6 @@ padding:10px;
 box-shadow: 0.2rem 0.3rem 0.3rem 0.5rem rgba(0,0,0, 35%);
 height:100%;
 width:100%;
-
-
-                                            
-margin: 3rem 0 2rem 1rem;
-
-
-    
-    
-  
-   
-
 
 input, select, textarea{
     margin-bottom: 1rem;
@@ -206,5 +197,6 @@ input, select, textarea{
 
 
 EventForm.propTypes = {
-    submitFunction: PropTypes.func
+    submitFunction: PropTypes.func,
+    onChildEvent: PropTypes.func
 }
