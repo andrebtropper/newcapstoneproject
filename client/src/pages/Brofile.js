@@ -12,9 +12,9 @@ export default function Brofile() {
 
     const user = JSON.parse(localStorage.getItem('broInfo'));
     const userTags = JSON.parse(localStorage.getItem('userTags'));
-    const userEvent = JSON.parse(localStorage.getItem('newEvent') || '{}');
+    // const userEvent = JSON.parse(localStorage.getItem('newEvent') || '{}');//
     //const userEvents = JSON.parse(localStorage.getItem('newEvent'));//
-
+    //const likedEvents = JSON.parse(localStorage.getItem('likedEvents') || '{}');//
 
     return (
         <>
@@ -47,7 +47,7 @@ export default function Brofile() {
             </ButtonWrap>
 
 
-            <Category>    <EventLogo /></Category>
+            {/* <Category>    <EventLogo /></Category>
             <YourEventsWrap>
 
                 <Title>
@@ -67,7 +67,9 @@ export default function Brofile() {
                     {userEvent['event_description']}
                 </About>
 
-            </YourEventsWrap>
+            
+
+           </YourEventsWrap>*/}
 
 
         </>
@@ -102,7 +104,7 @@ span {
 `
 
 
-const Category = styled.div`
+/*const Category = styled.div`
 display:flex;
 flex-direction:row;
 justify-content:center;
@@ -144,7 +146,7 @@ color:var(--mainwhite);
 padding:3px;
 
 text-align:center;
-`
+`*/
 
 
 const ProfilePic = styled.div`
@@ -152,14 +154,14 @@ margin-top:1rem;
 `
 
 
-const YourEventsWrap = styled.div`
+/*const YourEventsWrap = styled.div`
 display:flex;
 flex-direction:column;
 background:white;
 margin:2rem;
 padding-bottom:20px;
 box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
-`
+`*/
 const ProfileCard = styled.section`
 display:flex;
 flex-direction:column;

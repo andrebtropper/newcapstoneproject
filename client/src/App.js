@@ -7,7 +7,7 @@ import Navigation from './components/Navigation';
 import SelectTags from './pages/SelectTags';
 import Brofile from './pages/Brofile';
 import Newsfeed from './pages/Newsfeed';
-
+import YoEvents from './pages/YoEvents';
 
 
 function App() {
@@ -44,7 +44,10 @@ function App() {
             <Header headline='Select YOBro Tags!' open={open} setOpen={setOpen} />
             <SelectTags open={open} />
           </Route>
-
+          <Route path='/yoevents'>
+            <Header headline='Yo Events' open={open} setOpen={setOpen} />
+            <YoEvents open={open} />
+          </Route>
 
 
         </Switch>
