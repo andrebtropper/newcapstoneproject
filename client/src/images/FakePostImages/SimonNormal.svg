@@ -11,13 +11,13 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="Group_215" data-name="Group 215" transform="translate(327 8310)">
-    <g id="Group_203" data-name="Group 203">
+  <g id="Group_226" data-name="Group 226" transform="translate(-34 8310)">
+    <g id="Group_204" data-name="Group 204" transform="translate(361)">
       <g id="Group_202" data-name="Group 202" transform="translate(0 316)">
         <g id="Group_199" data-name="Group 199">
           <g id="Group_198" data-name="Group 198" transform="translate(-12 -125)">
             <path id="Path_56" data-name="Path 56" d="M0,0H337V47H0Z" transform="translate(-313 -8501)" fill="#344052"/>
-            <g id="Component_1_5" data-name="Component 1 – 5" transform="translate(-313 -8454)">
+            <g id="Component_1_6" data-name="Component 1 – 6" transform="translate(-313 -8454)">
               <path id="Path_55" data-name="Path 55" d="M0,0H337V234H0Z" fill="#fff"/>
             </g>
             <text id="Pick_Up_Soccer_Game" data-name="Pick Up Soccer Game" transform="translate(-232 -8384)" fill="#bf7b46" font-size="12" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0">Pick Up Soccer Game</tspan></text>
@@ -40,7 +40,6 @@
               <text id="YOBro" transform="translate(2.421 20)" fill="#da813c" font-size="17" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">YOBro</tspan></text>
             </g>
           </g>
-          <path id="Icon_awesome-exclamation-3" data-name="Icon awesome-exclamation" d="M8.725,26.084c0,2.663-1.7,4.83-3.8,4.83s-3.8-2.167-3.8-4.83,1.7-4.83,3.8-4.83S8.725,23.42,8.725,26.084ZM1.565,1.521l.646,16.423a1.3,1.3,0,0,0,1.139,1.377H6.5a1.3,1.3,0,0,0,1.139-1.377L8.285,1.521A1.341,1.341,0,0,0,7.147,0H2.7A1.341,1.341,0,0,0,1.565,1.521Z" transform="translate(-10.74 -8618.195) rotate(10)" fill="none"/>
         </g>
       </g>
       <g transform="matrix(1, 0, 0, 1, -327, -8310)" filter="url(#TTHG21AH3-U01JL0H9JDA-14b428572809-72)">
@@ -51,7 +50,7 @@
 are always looking for more players. 
 We plan to meet around 10 am. If interested add this
  post to your upcoming events.
-And see you all then!" transform="translate(-155 -8144.5)" fill="#344052" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="-149.174" y="0">I am organising a pick up soccer game Saturday the</tspan><tspan x="-162.69" y="11">10th of April. A few people have already joined but we </tspan><tspan x="-113.687" y="22">are always looking for more players. </tspan><tspan x="-152.228" y="33">We plan to meet around 10 am. If interested add this</tspan><tspan x="-88.394" y="44" xml:space="preserve"> post to your upcoming events.</tspan><tspan x="-61.494" y="55">And see you all then</tspan><tspan y="55" font-family="Helvetica">!</tspan></text>
+And see you all then!" transform="translate(-155 -8144.5)" fill="#344052" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="-149.174" y="0">I am organising a pick up soccer game Saturday the</tspan><tspan x="-162.69" y="12">10th of April. A few people have already joined but we </tspan><tspan x="-113.687" y="24">are always looking for more players. </tspan><tspan x="-152.228" y="36">We plan to meet around 10 am. If interested add this</tspan><tspan x="-88.394" y="48" xml:space="preserve"> post to your upcoming events.</tspan><tspan x="-61.494" y="60">And see you all then</tspan><tspan y="60" font-family="Helvetica">!</tspan></text>
     </g>
   </g>
 </svg>

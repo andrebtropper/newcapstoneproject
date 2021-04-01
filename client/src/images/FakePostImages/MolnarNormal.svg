@@ -11,52 +11,49 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="Group_206" data-name="Group 206" transform="translate(303 7912)">
-    <g id="Group_205" data-name="Group 205" transform="translate(24 398)">
-      <g id="Group_202" data-name="Group 202" transform="translate(0 316)">
-        <g id="Group_199" data-name="Group 199">
-          <g id="Group_198" data-name="Group 198" transform="translate(-12 -125)">
-            <g id="Path_56" data-name="Path 56" transform="translate(-313 -8501)" fill="#344052">
-              <path d="M 336 46 L 1 46 L 1 1 L 336 1 L 336 46 Z" stroke="none"/>
-              <path d="M 2 2 L 2 45 L 335 45 L 335 2 L 2 2 M 0 0 L 337 0 L 337 47 L 0 47 L 0 0 Z" stroke="none" fill="#bf7b46"/>
+  <g id="Group_227" data-name="Group 227" transform="translate(-34 7994)">
+    <g id="Group_207" data-name="Group 207" transform="translate(337 -82)">
+      <g id="Group_205" data-name="Group 205" transform="translate(24 398)">
+        <g id="Group_202" data-name="Group 202" transform="translate(0 316)">
+          <g id="Group_199" data-name="Group 199">
+            <g id="Group_198" data-name="Group 198" transform="translate(-12 -125)">
+              <path id="Path_56" data-name="Path 56" d="M0,0H337V47H0Z" transform="translate(-313 -8501)" fill="#344052"/>
+              <g id="Component_1_8" data-name="Component 1 – 8" transform="translate(-313 -8454)">
+                <path id="Path_55" data-name="Path 55" d="M0,0H337V234H0Z" fill="#fff"/>
+              </g>
+              <text id="Calling_All_PC_Gamers" data-name="Calling All PC Gamers" transform="translate(-236 -8386)" fill="#bf7b46" font-size="12" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0">Calling All PC Gamers</tspan></text>
+              <text id="Date:_30_04" data-name="Date: 30/04" transform="translate(-278 -8363)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Date</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> 30</tspan><tspan y="0" font-family="Helvetica">/</tspan><tspan y="0">04</tspan></text>
+              <text id="Location:_Frankfurt_am_Main_" data-name="Location: Frankfurt am Main " transform="translate(-194 -8363)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Location</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> Frankfurt am Main </tspan></text>
+              <path id="Path_48" data-name="Path 48" d="M7.44,0H41.662A7.289,7.289,0,0,1,49.1,7.128V9.266a7.289,7.289,0,0,1-7.44,7.128H7.44A7.289,7.289,0,0,1,0,9.266V7.128A7.289,7.289,0,0,1,7.44,0Z" transform="translate(-269.346 -8245.064)" fill="#cd844a"/>
+              <text id="Fortnite" transform="translate(-262.295 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Fortnite</tspan></text>
+              <path id="Path_50" data-name="Path 50" d="M6.864,0H38.436A7,7,0,0,1,45.3,7.128V9.266a7,7,0,0,1-6.864,7.128H6.864A7,7,0,0,1,0,9.266V7.128A7,7,0,0,1,6.864,0Z" transform="translate(-154.643 -8245.064)" fill="#cd844a"/>
+              <text id="Gaming" transform="translate(-146.494 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Gaming</tspan></text>
+              <text id="Mr.molnar" transform="translate(-222 -8417)" fill="#bf7b46" font-size="22" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Mr.molnar</tspan></text>
+              <path id="Path_57" data-name="Path 57" d="M9.043,0h41.6c4.994,0,9.043,3.191,9.043,7.128V9.266c0,3.937-4.049,7.128-9.043,7.128H9.043C4.049,16.394,0,13.2,0,9.266V7.128C0,3.191,4.049,0,9.043,0Z" transform="translate(-99.442 -8245.064)" fill="#cd844a"/>
+              <text id="Warzone" transform="translate(-88.099 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Warzone</tspan></text>
+              <path id="Path_58" data-name="Path 58" d="M6.864,0H38.436A7,7,0,0,1,45.3,7.128V9.266a7,7,0,0,1-6.864,7.128H6.864A7,7,0,0,1,0,9.266V7.128A7,7,0,0,1,6.864,0Z" transform="translate(-209.243 -8245.064)" fill="#cd844a"/>
+              <text id="PC" transform="translate(-191.594 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">PC</tspan></text>
             </g>
-            <g id="Component_1_7" data-name="Component 1 – 7" transform="translate(-313 -8454)">
-              <path id="Path_55" data-name="Path 55" d="M0,0H337V234H0Z" fill="#fff"/>
-            </g>
-            <text id="Calling_All_PC_Gamers" data-name="Calling All PC Gamers" transform="translate(-236 -8386)" fill="#bf7b46" font-size="12" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0">Calling All PC Gamers</tspan></text>
-            <text id="Date:_30_04" data-name="Date: 30/04" transform="translate(-278 -8363)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Date</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> 30</tspan><tspan y="0" font-family="Helvetica">/</tspan><tspan y="0">04</tspan></text>
-            <text id="Location:_Frankfurt_am_Main_" data-name="Location: Frankfurt am Main " transform="translate(-194 -8363)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Location</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> Frankfurt am Main </tspan></text>
-            <path id="Path_48" data-name="Path 48" d="M7.44,0H41.662A7.289,7.289,0,0,1,49.1,7.128V9.266a7.289,7.289,0,0,1-7.44,7.128H7.44A7.289,7.289,0,0,1,0,9.266V7.128A7.289,7.289,0,0,1,7.44,0Z" transform="translate(-269.346 -8245.064)" fill="#cd844a"/>
-            <text id="Fortnite" transform="translate(-262.295 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Fortnite</tspan></text>
-            <path id="Path_50" data-name="Path 50" d="M6.864,0H38.436A7,7,0,0,1,45.3,7.128V9.266a7,7,0,0,1-6.864,7.128H6.864A7,7,0,0,1,0,9.266V7.128A7,7,0,0,1,6.864,0Z" transform="translate(-154.643 -8245.064)" fill="#cd844a"/>
-            <text id="Gaming" transform="translate(-146.494 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Gaming</tspan></text>
-            <text id="Mr.molnar" transform="translate(-222 -8417)" fill="#bf7b46" font-size="22" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Mr.molnar</tspan></text>
-            <path id="Path_57" data-name="Path 57" d="M9.043,0h41.6c4.994,0,9.043,3.191,9.043,7.128V9.266c0,3.937-4.049,7.128-9.043,7.128H9.043C4.049,16.394,0,13.2,0,9.266V7.128C0,3.191,4.049,0,9.043,0Z" transform="translate(-99.442 -8245.064)" fill="#cd844a"/>
-            <text id="Warzone" transform="translate(-88.099 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Warzone</tspan></text>
-            <path id="Path_58" data-name="Path 58" d="M6.864,0H38.436A7,7,0,0,1,45.3,7.128V9.266a7,7,0,0,1-6.864,7.128H6.864A7,7,0,0,1,0,9.266V7.128A7,7,0,0,1,6.864,0Z" transform="translate(-209.243 -8245.064)" fill="#cd844a"/>
-            <text id="PC" transform="translate(-191.594 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">PC</tspan></text>
-          </g>
-          <path id="Icon_awesome-exclamation" data-name="Icon awesome-exclamation" d="M8.725,26.084c0,2.663-1.7,4.83-3.8,4.83s-3.8-2.167-3.8-4.83,1.7-4.83,3.8-4.83S8.725,23.42,8.725,26.084ZM1.565,1.521l.646,16.423a1.3,1.3,0,0,0,1.139,1.377H6.5a1.3,1.3,0,0,0,1.139-1.377L8.285,1.521A1.341,1.341,0,0,0,7.147,0H2.7A1.341,1.341,0,0,0,1.565,1.521Z" transform="translate(-10.74 -8618.195) rotate(10)" fill="none" stroke="#da813c" stroke-width="1"/>
-          <g id="Group_198-2" data-name="Group 198" transform="translate(-2567.782 -1677)">
-            <g id="Group_195" data-name="Group 195" transform="translate(2369 -6941)">
-              <path id="Icon_awesome-exclamation-2" data-name="Icon awesome-exclamation" d="M5.383,17.324a3.409,3.409,0,0,1-3.136,3.336,2.894,2.894,0,0,1-2.9-3.15,3.409,3.409,0,0,1,3.136-3.336A2.894,2.894,0,0,1,5.383,17.324ZM.311,1.011l.1,11.009a.862.862,0,0,0,.869.9l2.5-.077a1.018,1.018,0,0,0,.938-.952L5.645.846a.872.872,0,0,0-.866-.994L1.253-.039A1.025,1.025,0,0,0,.311,1.011Z" transform="translate(78.975 12.259) rotate(10)" fill="#da813c"/>
-              <text id="_" data-name="              " transform="translate(0 23.033)" fill="#da813c" stroke="#da813d" stroke-width="1" font-size="9" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0" xml:space="preserve">             </tspan></text>
-              <text id="EVENTS" transform="translate(34.5 31)" fill="#fff" font-size="9" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">EVENTS</tspan></text>
-              <text id="YOBro" transform="translate(2.421 20)" fill="#da813c" font-size="17" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">YOBro</tspan></text>
+            <g id="Group_198-2" data-name="Group 198" transform="translate(-2567.782 -1677)">
+              <g id="Group_195" data-name="Group 195" transform="translate(2369 -6941)">
+                <path id="Icon_awesome-exclamation" data-name="Icon awesome-exclamation" d="M5.383,17.324a3.409,3.409,0,0,1-3.136,3.336,2.894,2.894,0,0,1-2.9-3.15,3.409,3.409,0,0,1,3.136-3.336A2.894,2.894,0,0,1,5.383,17.324ZM.311,1.011l.1,11.009a.862.862,0,0,0,.869.9l2.5-.077a1.018,1.018,0,0,0,.938-.952L5.645.846a.872.872,0,0,0-.866-.994L1.253-.039A1.025,1.025,0,0,0,.311,1.011Z" transform="translate(78.975 12.259) rotate(10)" fill="#da813c"/>
+                <text id="_" data-name="              " transform="translate(0 23.033)" fill="#da813c" stroke="#da813d" stroke-width="1" font-size="9" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0" xml:space="preserve">             </tspan></text>
+                <text id="EVENTS" transform="translate(34.5 31)" fill="#fff" font-size="9" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">EVENTS</tspan></text>
+                <text id="YOBro" transform="translate(2.421 20)" fill="#da813c" font-size="17" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">YOBro</tspan></text>
+              </g>
             </g>
           </g>
-          <path id="Icon_awesome-exclamation-3" data-name="Icon awesome-exclamation" d="M8.725,26.084c0,2.663-1.7,4.83-3.8,4.83s-3.8-2.167-3.8-4.83,1.7-4.83,3.8-4.83S8.725,23.42,8.725,26.084ZM1.565,1.521l.646,16.423a1.3,1.3,0,0,0,1.139,1.377H6.5a1.3,1.3,0,0,0,1.139-1.377L8.285,1.521A1.341,1.341,0,0,0,7.147,0H2.7A1.341,1.341,0,0,0,1.565,1.521Z" transform="translate(-10.74 -8618.195) rotate(10)" fill="none" stroke="#da813c" stroke-width="1"/>
         </g>
       </g>
-    </g>
-    <g transform="matrix(1, 0, 0, 1, -303, -7912)" filter="url(#TTHG21AH3-U01GWG9GW3A-26377392c592-512)">
-      <ellipse id="TTHG21AH3-U01GWG9GW3A-26377392c592-512-2" data-name="TTHG21AH3-U01GWG9GW3A-26377392c592-512" cx="38" cy="38.5" rx="38" ry="38.5" transform="translate(9 15)" fill="url(#pattern)"/>
-    </g>
-    <text id="I_am_looking_for_new_squad_mates_to_game_with_I_love_Fortnite_and_Call_of_Duty:_Warzone._I_need_new_Squad_mates_to_destroy_some_NOOBS_with_If_you_are_Interest_add_this_to_your_upcoming_events_and_I_will_Send_you_my_GAMERTAG._So_where_we_dropping_in_" data-name="I am looking for new squad mates to game with! 
+      <g transform="matrix(1, 0, 0, 1, -303, -7912)" filter="url(#TTHG21AH3-U01GWG9GW3A-26377392c592-512)">
+        <ellipse id="TTHG21AH3-U01GWG9GW3A-26377392c592-512-2" data-name="TTHG21AH3-U01GWG9GW3A-26377392c592-512" cx="38" cy="38.5" rx="38" ry="38.5" transform="translate(9 15)" fill="url(#pattern)"/>
+      </g>
+      <text id="I_am_looking_for_new_squad_mates_to_game_with_I_love_Fortnite_and_Call_of_Duty:_Warzone._I_need_new_Squad_mates_to_destroy_some_NOOBS_with_If_you_are_Interest_add_this_to_your_upcoming_events_and_I_will_Send_you_my_GAMERTAG._So_where_we_dropping_in_" data-name="I am looking for new squad mates to game with! 
 I love Fortnite and Call of Duty: Warzone. I need new 
 Squad mates to destroy some NOOBS with! If you are 
 Interest add this to your upcoming events and I will 
 Send you my GAMERTAG. So where we dropping in 
 " transform="translate(-132.5 -7748)" fill="#344052" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="-141.22" y="0">I am looking for new squad mates to game with</tspan><tspan y="0" font-family="Helvetica">!</tspan><tspan y="0"> </tspan><tspan x="-156.998" y="13">I love Fortnite and Call of Duty</tspan><tspan y="13" font-family="Helvetica">:</tspan><tspan y="13" xml:space="preserve"> Warzone. I need new </tspan><tspan x="-151.481" y="26">Squad mates to destroy some NOOBS with</tspan><tspan y="26" font-family="Helvetica">!</tspan><tspan y="26" xml:space="preserve"> If you are </tspan><tspan x="-155.069" y="39">Interest add this to your upcoming events and I will </tspan><tspan x="-140.448" y="52">Send you my GAMERTAG. So where we dropping in </tspan><tspan x="-12.907" y="65">BOYS</tspan></text>
+    </g>
   </g>
 </svg>

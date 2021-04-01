@@ -11,45 +11,40 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="Group_216" data-name="Group 216" transform="translate(327 8626)">
-    <g id="Group_201" data-name="Group 201">
-      <g id="Group_199" data-name="Group 199">
-        <g id="Group_198" data-name="Group 198" transform="translate(-12 -125)">
-          <path id="Path_56" data-name="Path 56" d="M0,0H337V47H0Z" transform="translate(-313 -8501)" fill="#344052"/>
-          <g id="Component_1_3" data-name="Component 1 – 3" transform="translate(-313 -8454)">
-            <path id="Path_55" data-name="Path 55" d="M0,0H337V234H0Z" fill="#fff"/>
-          </g>
-          <text id="JAM_SESSION" data-name="JAM SESSION" transform="translate(-196 -8389)" fill="#bf7b46" font-size="12" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0">JAM SESSION</tspan></text>
-          <text id="Date:_08_05" data-name="Date: 08/05" transform="translate(-278 -8363)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Date</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> 08</tspan><tspan y="0" font-family="Helvetica">/</tspan><tspan y="0">05</tspan></text>
-          <text id="Location:_Nied_Frankfurt_am_Main_" data-name="Location: Nied, Frankfurt am Main " transform="translate(-193 -8363)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Location</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> Nied, Frankfurt am Main </tspan></text>
-          <path id="Path_48" data-name="Path 48" d="M9.695,0H54.289c5.354,0,9.695,3.191,9.695,7.128V9.266c0,3.937-4.34,7.128-9.695,7.128H9.695C4.34,16.394,0,13.2,0,9.266V7.128C0,3.191,4.34,0,9.695,0Z" transform="translate(-244.298 -8245.063)" fill="#cd844a"/>
-          <text id="Just_For_Fun" data-name="Just For Fun" transform="translate(-239.306 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Just For Fun</tspan></text>
-          <path id="Path_49" data-name="Path 49" d="M6.689,0h30.77a6.919,6.919,0,0,1,6.689,7.128V9.266a6.919,6.919,0,0,1-6.689,7.128H6.689A6.919,6.919,0,0,1,0,9.266V7.128A6.919,6.919,0,0,1,6.689,0Z" transform="translate(-173.649 -8245.064)" fill="#cd844a"/>
-          <text id="Social" transform="translate(-165.074 -8234.063)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Social</tspan></text>
-          <path id="Path_50" data-name="Path 50" d="M6.626,0h30.48a6.891,6.891,0,0,1,6.626,7.128V9.266a6.891,6.891,0,0,1-6.626,7.128H6.626A6.891,6.891,0,0,1,0,9.266V7.128A6.891,6.891,0,0,1,6.626,0Z" transform="translate(-124.417 -8245.26)" fill="#cd844a"/>
-          <text id="Jamming" transform="translate(-120.551 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Jamming</tspan></text>
-          <text id="MAIZEWINDU" transform="translate(-226 -8414)" fill="#bf7b46" font-size="22" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">MAIZEWINDU</tspan></text>
-        </g>
-        <path id="Icon_awesome-exclamation" data-name="Icon awesome-exclamation" d="M8.725,26.084c0,2.663-1.7,4.83-3.8,4.83s-3.8-2.167-3.8-4.83,1.7-4.83,3.8-4.83S8.725,23.42,8.725,26.084ZM1.565,1.521l.646,16.423a1.3,1.3,0,0,0,1.139,1.377H6.5a1.3,1.3,0,0,0,1.139-1.377L8.285,1.521A1.341,1.341,0,0,0,7.147,0H2.7A1.341,1.341,0,0,0,1.565,1.521Z" transform="translate(-10.74 -8618.195) rotate(10)" fill="none"/>
-        <g id="Group_198-2" data-name="Group 198" transform="translate(-2567.782 -1677)">
-          <g id="Group_195" data-name="Group 195" transform="translate(2369 -6941)">
-            <path id="Icon_awesome-exclamation-2" data-name="Icon awesome-exclamation" d="M5.383,17.324a3.409,3.409,0,0,1-3.136,3.336,2.894,2.894,0,0,1-2.9-3.15,3.409,3.409,0,0,1,3.136-3.336A2.894,2.894,0,0,1,5.383,17.324ZM.311,1.011l.1,11.009a.862.862,0,0,0,.869.9l2.5-.077a1.018,1.018,0,0,0,.938-.952L5.645.846a.872.872,0,0,0-.866-.994L1.253-.039A1.025,1.025,0,0,0,.311,1.011Z" transform="translate(78.975 12.259) rotate(10)" fill="#da813c"/>
-            <text id="_" data-name="              " transform="translate(0 23.033)" fill="#da813c" font-size="9" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0" xml:space="preserve">             </tspan></text>
-            <text id="EVENTS" transform="translate(34.5 31)" fill="#fff" font-size="9" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">EVENTS</tspan></text>
-            <text id="YOBro" transform="translate(2.421 20)" fill="#da813c" font-size="17" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">YOBro</tspan></text>
-          </g>
-        </g>
-        <path id="Icon_awesome-exclamation-3" data-name="Icon awesome-exclamation" d="M8.725,26.084c0,2.663-1.7,4.83-3.8,4.83s-3.8-2.167-3.8-4.83,1.7-4.83,3.8-4.83S8.725,23.42,8.725,26.084ZM1.565,1.521l.646,16.423a1.3,1.3,0,0,0,1.139,1.377H6.5a1.3,1.3,0,0,0,1.139-1.377L8.285,1.521A1.341,1.341,0,0,0,7.147,0H2.7A1.341,1.341,0,0,0,1.565,1.521Z" transform="translate(-10.74 -8618.195) rotate(10)" fill="none"/>
-        <g transform="matrix(1, 0, 0, 1, -327, -8626)" filter="url(#TTHG21AH3-U01GP68J41X-e6a84fe06ba2-72)">
-          <ellipse id="TTHG21AH3-U01GP68J41X-e6a84fe06ba2-72-2" data-name="TTHG21AH3-U01GP68J41X-e6a84fe06ba2-72" cx="38" cy="38.5" rx="38" ry="38.5" transform="translate(9 7)" fill="url(#pattern)"/>
-        </g>
-        <text id="I_just_moved_to_Frankfurt_and_I_am_looking_for_some_friends_to_Jam_and_play_music_with._I_play_all_sorts_of_instruments_and_enjoy_all_genres_of_music._I_am_always_Up_for_a_good_jam_session._If_interested_please_add_this_to_your_upcoming_events._Rock_On_" data-name="I just moved to Frankfurt and I am looking for some 
+  <g id="Group_225" data-name="Group 225" transform="translate(-53 8626)">
+    <g id="Group_198" data-name="Group 198" transform="translate(368 -125)">
+      <path id="Path_56" data-name="Path 56" d="M0,0H337V47H0Z" transform="translate(-313 -8501)" fill="#344052"/>
+      <g id="Component_1_4" data-name="Component 1 – 4" transform="translate(-313 -8454)">
+        <path id="Path_55" data-name="Path 55" d="M0,0H337V234H0Z" fill="#fff"/>
+      </g>
+      <text id="JAM_SESSION" data-name="JAM SESSION" transform="translate(-196 -8389)" fill="#bf7b46" font-size="12" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0">JAM SESSION</tspan></text>
+      <text id="Date:_08_05" data-name="Date: 08/05" transform="translate(-278 -8363)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Date</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> 08</tspan><tspan y="0" font-family="Helvetica">/</tspan><tspan y="0">05</tspan></text>
+      <text id="Location:_Nied_Frankfurt_am_Main_" data-name="Location: Nied, Frankfurt am Main " transform="translate(-193 -8363)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Location</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> Nied, Frankfurt am Main </tspan></text>
+      <path id="Path_48" data-name="Path 48" d="M9.695,0H54.289c5.354,0,9.695,3.191,9.695,7.128V9.266c0,3.937-4.34,7.128-9.695,7.128H9.695C4.34,16.394,0,13.2,0,9.266V7.128C0,3.191,4.34,0,9.695,0Z" transform="translate(-244.298 -8245.063)" fill="#cd844a"/>
+      <text id="Just_For_Fun" data-name="Just For Fun" transform="translate(-239.306 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Just For Fun</tspan></text>
+      <path id="Path_49" data-name="Path 49" d="M6.689,0h30.77a6.919,6.919,0,0,1,6.689,7.128V9.266a6.919,6.919,0,0,1-6.689,7.128H6.689A6.919,6.919,0,0,1,0,9.266V7.128A6.919,6.919,0,0,1,6.689,0Z" transform="translate(-173.649 -8245.064)" fill="#cd844a"/>
+      <text id="Social" transform="translate(-165.074 -8234.063)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Social</tspan></text>
+      <path id="Path_50" data-name="Path 50" d="M6.626,0h30.48a6.891,6.891,0,0,1,6.626,7.128V9.266a6.891,6.891,0,0,1-6.626,7.128H6.626A6.891,6.891,0,0,1,0,9.266V7.128A6.891,6.891,0,0,1,6.626,0Z" transform="translate(-124.417 -8245.26)" fill="#cd844a"/>
+      <text id="Jamming" transform="translate(-120.551 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Jamming</tspan></text>
+      <text id="MAIZEWINDU" transform="translate(-226 -8414)" fill="#bf7b46" font-size="22" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">MAIZEWINDU</tspan></text>
+    </g>
+    <path id="Icon_awesome-exclamation" data-name="Icon awesome-exclamation" d="M8.725,26.084c0,2.663-1.7,4.83-3.8,4.83s-3.8-2.167-3.8-4.83,1.7-4.83,3.8-4.83S8.725,23.42,8.725,26.084ZM1.565,1.521l.646,16.423a1.3,1.3,0,0,0,1.139,1.377H6.5a1.3,1.3,0,0,0,1.139-1.377L8.285,1.521A1.341,1.341,0,0,0,7.147,0H2.7A1.341,1.341,0,0,0,1.565,1.521Z" transform="translate(369.26 -8618.195) rotate(10)" fill="none"/>
+    <g id="Group_198-2" data-name="Group 198" transform="translate(-2187.782 -1677)">
+      <g id="Group_195" data-name="Group 195" transform="translate(2369 -6941)">
+        <path id="Icon_awesome-exclamation-2" data-name="Icon awesome-exclamation" d="M5.383,17.324a3.409,3.409,0,0,1-3.136,3.336,2.894,2.894,0,0,1-2.9-3.15,3.409,3.409,0,0,1,3.136-3.336A2.894,2.894,0,0,1,5.383,17.324ZM.311,1.011l.1,11.009a.862.862,0,0,0,.869.9l2.5-.077a1.018,1.018,0,0,0,.938-.952L5.645.846a.872.872,0,0,0-.866-.994L1.253-.039A1.025,1.025,0,0,0,.311,1.011Z" transform="translate(78.975 12.259) rotate(10)" fill="#da813c"/>
+        <text id="_" data-name="              " transform="translate(0 23.033)" fill="#da813c" font-size="9" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0" xml:space="preserve">             </tspan></text>
+        <text id="EVENTS" transform="translate(34.5 31)" fill="#fff" font-size="9" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">EVENTS</tspan></text>
+        <text id="YOBro" transform="translate(2.421 20)" fill="#da813c" font-size="17" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">YOBro</tspan></text>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 53, -8626)" filter="url(#TTHG21AH3-U01GP68J41X-e6a84fe06ba2-72)">
+      <ellipse id="TTHG21AH3-U01GP68J41X-e6a84fe06ba2-72-2" data-name="TTHG21AH3-U01GP68J41X-e6a84fe06ba2-72" cx="38" cy="38.5" rx="38" ry="38.5" transform="translate(9 7)" fill="url(#pattern)"/>
+    </g>
+    <text id="I_just_moved_to_Frankfurt_and_I_am_looking_for_some_friends_to_Jam_and_play_music_with._I_play_all_sorts_of_instruments_and_enjoy_all_genres_of_music._I_am_always_Up_for_a_good_jam_session._If_interested_please_add_this_to_your_upcoming_events._Rock_On_" data-name="I just moved to Frankfurt and I am looking for some 
 friends to Jam and play music with. I play all 
 sorts of instruments and enjoy all genres of music.
  I am always Up for a good jam session.
 If interested please add this to your upcoming events.
-Rock On " transform="translate(-156.5 -8465.867)" fill="#344052" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="-154.807" y="0">I just moved to Frankfurt and I am looking for some </tspan><tspan x="-139.517" y="12">friends to Jam and play music with. I play all </tspan><tspan x="-152.276" y="24">sorts of instruments and enjoy all genres of music.</tspan><tspan x="-117.16" y="36" xml:space="preserve"> I am always Up for a good jam session.</tspan><tspan x="-156.345" y="48">If interested please add this to your upcoming events.</tspan><tspan x="-40.395" y="60">Rock On dudes</tspan></text>
-      </g>
-    </g>
+Rock On " transform="translate(223.5 -8465.867)" fill="#344052" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="-154.807" y="0">I just moved to Frankfurt and I am looking for some </tspan><tspan x="-139.517" y="12">friends to Jam and play music with. I play all </tspan><tspan x="-152.276" y="24">sorts of instruments and enjoy all genres of music.</tspan><tspan x="-117.16" y="36" xml:space="preserve"> I am always Up for a good jam session.</tspan><tspan x="-156.345" y="48">If interested please add this to your upcoming events.</tspan><tspan x="-40.395" y="60">Rock On dudes</tspan></text>
   </g>
 </svg>

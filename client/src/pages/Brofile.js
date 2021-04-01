@@ -1,6 +1,7 @@
 import { Route, Link } from 'react-router-dom'
 import styled from 'styled-components/macro';
-import profilepic from '../images/profilepic.svg'
+import profilepic from '../images/profilepic.svg';
+import { ReactComponent as EventLogo } from "../icons/yoevents.svg";
 /*import EventButton from '../components/EventButton';*/
 /*import tagLogo from '../icons/edittags.svg';*/
 /*import editbrofileicon from '../icons/editbrofileicon.svg';*/
@@ -32,15 +33,13 @@ export default function Brofile() {
                     <UserFullName>
                         {user['bro_location']}
                     </UserFullName>
-
                 </UserBroTags>
-
                 <TagStyle>
                     {userTags.map(tag => (<span>{tag}</span>))}
                 </TagStyle>
-
-
             </ProfileCard>
+
+
             <ButtonWrap>
                 <Link to='/selecttags'>  <TagLogo /> </Link>
 
@@ -48,7 +47,7 @@ export default function Brofile() {
             </ButtonWrap>
 
 
-            <Category>YoEvents</Category>
+            <Category>    <EventLogo /></Category>
             <YourEventsWrap>
 
                 <Title>
@@ -85,35 +84,31 @@ margin:1rem;
 
 const TagStyle = styled.div`
 padding:10px;
-width: 100%;
 color:var(--mainwhite);
 display:flex;
 flex-direction:row;
-margin:8px;
+margin:10px;
 align-items:center;
 flex-wrap: wrap;
 border:2px solid var(--mainorange);
+box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
 span {
     margin: 0.2rem;
     background:var(--mainorange); 
     border-radius:20px;
     padding:5px;
-    font-size:0.5rem;
+    font-size:0.2rem;
 }
 `
 
 
-const Category = styled.h3`
-
-margin-top:1.8rem;
-margin-bottom:10px;
-width:9rem;
-margin-left:1rem;
-border-radius:20px;
-background:var(--mainorange);
-align-items:center;
-color:var(--mainwhite);
-padding:5px;
+const Category = styled.div`
+display:flex;
+flex-direction:row;
+justify-content:center;
+background:var(--mainwhite);
+margin:0.5rem;
+box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
 
 `
 
@@ -161,10 +156,8 @@ const YourEventsWrap = styled.div`
 display:flex;
 flex-direction:column;
 background:white;
-margin-bottom:3rem;
+margin:2rem;
 padding-bottom:20px;
-margin-left:20px;
-margin-right:20px;
 box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
 `
 const ProfileCard = styled.section`

@@ -11,29 +11,38 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="Group_217" data-name="Group 217" transform="translate(324 8934)">
-    <g id="Group_197" data-name="Group 197" transform="translate(-11 -432)">
-      <path id="Path_56" data-name="Path 56" d="M0,0H337V47H0Z" transform="translate(-313 -8501)" fill="#344052"/>
-      <g id="Component_1_1" data-name="Component 1 – 1" transform="translate(-313 -8454)">
+  <g id="Group_224" data-name="Group 224" transform="translate(-29 8934)">
+    <g id="Group_196" data-name="Group 196" transform="translate(342 -441)">
+      <path id="Path_56" data-name="Path 56" d="M0,0H337V47H0Z" transform="translate(-313 -8492)" fill="#344052"/>
+      <g id="Component_1_2" data-name="Component 1 – 2" transform="translate(-313 -8445)">
         <path id="Path_55" data-name="Path 55" d="M0,0H337V234H0Z" fill="#fff"/>
       </g>
-      <text id="Street_Photography_Group" data-name="Street Photography Group" transform="translate(-260 -8383)" fill="#bf7b46" font-size="12" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0">Street Photography Group</tspan></text>
-      <text id="Date:_17_04" data-name="Date: 17/04" transform="translate(-278 -8363)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Date</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> 17</tspan><tspan y="0" font-family="Helvetica">/</tspan><tspan y="0">04</tspan></text>
-      <text id="Location:_Frankfurt_am_Main_" data-name="Location: Frankfurt am Main " transform="translate(-193 -8363)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Location</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> Frankfurt am Main </tspan></text>
-      <text id="I_love_photography_especially_Street_Photography._Looking_to_start_a_small_group_and_meet_on_weekends_In_the_city_and_do_some_fun_street_photography._It_doesn_t_matter_your_skill_level_we_can_all_learn_from_each_other._If_interested_please_add_this_to_yo" data-name="I love photography especially Street Photography. 
+      <text id="Street_Photography_Group" data-name="Street Photography Group" transform="translate(-260 -8374)" fill="#bf7b46" font-size="12" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0">Street Photography Group</tspan></text>
+      <text id="Date:_17_04" data-name="Date: 17/04" transform="translate(-278 -8354)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Date</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> 17</tspan><tspan y="0" font-family="Helvetica">/</tspan><tspan y="0">04</tspan></text>
+      <text id="Location:_Frankfurt_am_Main_" data-name="Location: Frankfurt am Main " transform="translate(-193 -8354)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Location</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> Frankfurt am Main </tspan></text>
+      <text id="I_love_photography_especially_Street_Photography._Looking_to_start_a_small_group_and_meet_on_weekends_In_the_city_and_do_some_fun_street_photography._It_doesn_t_matter_your_skill_level_we_can_all_learn_from_each_other._If_interested_please_add_this_to_y" data-name="I love photography especially Street Photography. 
 Looking to start a small group and meet on weekends
 In the city and do some fun street photography. 
-It doesn’t matter your skill level we can all learn from
-each other. If interested please add this to yo" transform="translate(-145 -8341)" fill="#344052" font-size="7" font-family="Avengero" letter-spacing="0.008em"><tspan x="-130.575" y="0">I love photography especially Street Photography. </tspan><tspan x="-137.408" y="16">Looking to start a small group and meet on weekends</tspan><tspan x="-123.037" y="32">In the city and do some fun street photography. </tspan><tspan x="-148.935" y="48">It doesn’t matter your skill level we can all learn from</tspan><tspan x="-125.004" y="64">each other. If interested please add this to your </tspan><tspan x="-95.21" y="80">Upcoming events and lets go shooting</tspan><tspan y="80" font-family="Helvetica">!</tspan></text>
-      <path id="Path_48" data-name="Path 48" d="M9.695,0H54.289c5.354,0,9.695,3.191,9.695,7.128V9.266c0,3.937-4.34,7.128-9.695,7.128H9.695C4.34,16.394,0,13.2,0,9.266V7.128C0,3.191,4.34,0,9.695,0Z" transform="translate(-244.298 -8245.063)" fill="#cd844a"/>
-      <text id="Photography" transform="translate(-239.306 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Photography</tspan></text>
-      <path id="Path_49" data-name="Path 49" d="M6.689,0h30.77a6.919,6.919,0,0,1,6.689,7.128V9.266a6.919,6.919,0,0,1-6.689,7.128H6.689A6.919,6.919,0,0,1,0,9.266V7.128A6.919,6.919,0,0,1,6.689,0Z" transform="translate(-173.649 -8245.064)" fill="#cd844a"/>
-      <text id="Social" transform="translate(-165.074 -8234.063)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Social</tspan></text>
-      <path id="Path_50" data-name="Path 50" d="M6.626,0h30.48a6.891,6.891,0,0,1,6.626,7.128V9.266a6.891,6.891,0,0,1-6.626,7.128H6.626A6.891,6.891,0,0,1,0,9.266V7.128A6.891,6.891,0,0,1,6.626,0Z" transform="translate(-124.417 -8245.26)" fill="#cd844a"/>
-      <text id="Hobby" transform="translate(-115.051 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Hobby</tspan></text>
-      <text id="KORDERBRO" transform="translate(-226 -8414)" fill="#bf7b46" font-size="22" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">KORDERBRO</tspan></text>
-      <g transform="matrix(1, 0, 0, 1, -313, -8502)" filter="url(#TTHG21AH3-U01J72806KY-530dfd1956f8-512)">
+It doesn’t matter your skill level we can all learn
+ from each other. If interested please add this to y" transform="translate(-145 -8332)" fill="#344052" font-size="8" font-family="Avengero" letter-spacing="0.008em"><tspan x="-149.229" y="0">I love photography especially Street Photography. </tspan><tspan x="-157.038" y="13">Looking to start a small group and meet on weekends</tspan><tspan x="-140.613" y="26">In the city and do some fun street photography. </tspan><tspan x="-154.132" y="39">It doesn’t matter your skill level we can all learn</tspan><tspan x="-161.288" y="52" xml:space="preserve"> from each other. If interested please add this to your </tspan><tspan x="-108.811" y="65">Upcoming events and lets go shooting</tspan><tspan y="65" font-family="Helvetica">!</tspan></text>
+      <path id="Path_48" data-name="Path 48" d="M9.695,0H54.289c5.354,0,9.695,3.191,9.695,7.128V9.266c0,3.937-4.34,7.128-9.695,7.128H9.695C4.34,16.394,0,13.2,0,9.266V7.128C0,3.191,4.34,0,9.695,0Z" transform="translate(-244.298 -8236.063)" fill="#cd844a"/>
+      <text id="Photography" transform="translate(-239.806 -8224.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Photography</tspan></text>
+      <path id="Path_49" data-name="Path 49" d="M6.689,0h30.77a6.919,6.919,0,0,1,6.689,7.128V9.266a6.919,6.919,0,0,1-6.689,7.128H6.689A6.919,6.919,0,0,1,0,9.266V7.128A6.919,6.919,0,0,1,6.689,0Z" transform="translate(-173.649 -8236.064)" fill="#cd844a"/>
+      <text id="Social" transform="translate(-165.074 -8224.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Social</tspan></text>
+      <path id="Path_50" data-name="Path 50" d="M6.626,0h30.48a6.891,6.891,0,0,1,6.626,7.128V9.266a6.891,6.891,0,0,1-6.626,7.128H6.626A6.891,6.891,0,0,1,0,9.266V7.128A6.891,6.891,0,0,1,6.626,0Z" transform="translate(-124.417 -8236.26)" fill="#cd844a"/>
+      <text id="Hobby" transform="translate(-115.051 -8225.063)" fill="#f8f7f7" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Hobby</tspan></text>
+      <text id="KORDERBRO" transform="translate(-226 -8405)" fill="#bf7b46" font-size="22" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">KORDERBRO</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, -313, -8493)" filter="url(#TTHG21AH3-U01J72806KY-530dfd1956f8-512)">
         <ellipse id="TTHG21AH3-U01J72806KY-530dfd1956f8-512-2" data-name="TTHG21AH3-U01J72806KY-530dfd1956f8-512" cx="38" cy="38.5" rx="38" ry="38.5" transform="translate(18 6)" fill="url(#pattern)"/>
+      </g>
+      <path id="Icon_awesome-exclamation" data-name="Icon awesome-exclamation" d="M8.725,26.084c0,2.663-1.7,4.83-3.8,4.83s-3.8-2.167-3.8-4.83,1.7-4.83,3.8-4.83S8.725,23.42,8.725,26.084ZM1.565,1.521l.646,16.423a1.3,1.3,0,0,0,1.139,1.377H6.5a1.3,1.3,0,0,0,1.139-1.377L8.285,1.521A1.341,1.341,0,0,0,7.147,0H2.7A1.341,1.341,0,0,0,1.565,1.521Z" transform="translate(1.26 -8484.195) rotate(10)" fill="none"/>
+      <g id="Group_198" data-name="Group 198" transform="translate(-2555.782 -1543)">
+        <g id="Group_195" data-name="Group 195" transform="translate(2369 -6941)">
+          <path id="Icon_awesome-exclamation-2" data-name="Icon awesome-exclamation" d="M5.383,17.324a3.409,3.409,0,0,1-3.136,3.336,2.894,2.894,0,0,1-2.9-3.15,3.409,3.409,0,0,1,3.136-3.336A2.894,2.894,0,0,1,5.383,17.324ZM.311,1.011l.1,11.009a.862.862,0,0,0,.869.9l2.5-.077a1.018,1.018,0,0,0,.938-.952L5.645.846a.872.872,0,0,0-.866-.994L1.253-.039A1.025,1.025,0,0,0,.311,1.011Z" transform="translate(78.975 12.259) rotate(10)" fill="#da813c"/>
+          <text id="_" data-name="              " transform="translate(0 23.033)" fill="#da813c" font-size="9" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0" xml:space="preserve">             </tspan></text>
+          <text id="EVENTS" transform="translate(34.5 31)" fill="#fff" font-size="9" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">EVENTS</tspan></text>
+          <text id="YOBro" transform="translate(2.421 20)" fill="#da813c" font-size="17" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">YOBro</tspan></text>
+        </g>
       </g>
     </g>
   </g>
