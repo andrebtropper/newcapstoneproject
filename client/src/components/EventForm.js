@@ -28,7 +28,7 @@ export default function EventForm({ open, parentCallback }) {
             ...newEvent,
             [field.name]: value,
         });
-        console.log(newEvent)
+
     };
 
     function submitForm(event) {
@@ -38,7 +38,7 @@ export default function EventForm({ open, parentCallback }) {
             localStorage.setItem('newEvent', JSON.stringify(newEvent));
             parentCallback(false);
         }
-        console.log("I got here");
+
 
     }
 

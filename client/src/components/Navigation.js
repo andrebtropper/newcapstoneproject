@@ -28,7 +28,8 @@ export default function Navigation({ open, setOpen }) {
             <Link to='/selecttags'>
                 <TagIcon /> BroTags </Link>
 
-
+            <Link to='/yoevents'>
+                <EventIcon /> YoEvents </Link>
 
 
         </StyledNavigation>

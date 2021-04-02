@@ -11,53 +11,50 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="Group_211" data-name="Group 211" transform="translate(-34 7666)">
-    <g id="Group_209" data-name="Group 209">
-      <g id="Group_208" data-name="Group 208" transform="translate(337 246)">
-        <g id="Group_205" data-name="Group 205" transform="translate(24 398)">
-          <g id="Group_202" data-name="Group 202" transform="translate(0 316)">
-            <g id="Group_199" data-name="Group 199">
-              <g id="Group_198" data-name="Group 198" transform="translate(-12 -125)">
-                <g id="Path_56" data-name="Path 56" transform="translate(-313 -8501)" fill="#344052">
-                  <path d="M 336 46 L 1 46 L 1 1 L 336 1 L 336 46 Z" stroke="none"/>
-                  <path d="M 2 2 L 2 45 L 335 45 L 335 2 L 2 2 M 0 0 L 337 0 L 337 47 L 0 47 L 0 0 Z" stroke="none" fill="#bf7b46"/>
+  <g id="Group_228" data-name="Group 228" transform="translate(-34 7666)">
+    <g id="Group_210" data-name="Group 210">
+      <g id="Group_209" data-name="Group 209">
+        <g id="Group_208" data-name="Group 208" transform="translate(337 246)">
+          <g id="Group_205" data-name="Group 205" transform="translate(24 398)">
+            <g id="Group_202" data-name="Group 202" transform="translate(0 316)">
+              <g id="Group_199" data-name="Group 199">
+                <g id="Group_198" data-name="Group 198" transform="translate(-12 -125)">
+                  <path id="Path_56" data-name="Path 56" d="M0,0H337V47H0Z" transform="translate(-313 -8501)" fill="#344052"/>
+                  <g id="Component_1_9" data-name="Component 1 – 9" transform="translate(-313 -8454)">
+                    <path id="Path_55" data-name="Path 55" d="M0,0H337V234H0Z" fill="#fff"/>
+                  </g>
+                  <text id="Pick_Up_Basketball" data-name="Pick Up Basketball" transform="translate(-215 -8386)" fill="#bf7b46" font-size="12" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0">Pick Up Basketball</tspan></text>
+                  <text id="Date:_20_05" data-name="Date: 20/05" transform="translate(-269 -8362)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Date</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> 20</tspan><tspan y="0" font-family="Helvetica">/</tspan><tspan y="0">05</tspan></text>
+                  <text id="Location:_Ostend_Frankfurt_am_Main_" data-name="Location: Ostend,Frankfurt am Main " transform="translate(-187 -8362)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Location</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> Ostend,Frankfurt am Main </tspan></text>
+                  <path id="Path_48" data-name="Path 48" d="M9.106,0H51C56.025,0,60.1,3.191,60.1,7.128V9.266c0,3.937-4.077,7.128-9.106,7.128H9.106C4.077,16.394,0,13.2,0,9.266V7.128C0,3.191,4.077,0,9.106,0Z" transform="translate(-269.393 -8245.064)" fill="#cd844a"/>
+                  <text id="Basketball" transform="translate(-264 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Basketball</tspan></text>
+                  <text id="CUTTHECORDE" transform="translate(-222 -8417)" fill="#bf7b46" font-size="22" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">CUTTHECORDE</tspan></text>
+                  <path id="Path_57" data-name="Path 57" d="M9.043,0h41.6c4.994,0,9.043,3.191,9.043,7.128V9.266c0,3.937-4.049,7.128-9.043,7.128H9.043C4.049,16.394,0,13.2,0,9.266V7.128C0,3.191,4.049,0,9.043,0Z" transform="translate(-120.442 -8245.064)" fill="#cd844a"/>
+                  <text id="Play_Sports" data-name="Play Sports" transform="translate(-117.099 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Play Sports</tspan></text>
+                  <path id="Path_58" data-name="Path 58" d="M9.017,0H50.493c4.98,0,9.017,3.191,9.017,7.128V9.266c0,3.937-4.037,7.128-9.017,7.128H9.017C4.037,16.394,0,13.2,0,9.266V7.128C0,3.191,4.037,0,9.017,0Z" transform="translate(-193.243 -8245.064)" fill="#cd844a"/>
+                  <text id="Just_For_Fun" data-name="Just For Fun" transform="translate(-190.489 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Just For Fun</tspan></text>
                 </g>
-                <g id="Component_1_10" data-name="Component 1 – 10" transform="translate(-313 -8454)">
-                  <path id="Path_55" data-name="Path 55" d="M0,0H337V234H0Z" fill="#fff"/>
-                </g>
-                <text id="Pick_Up_Basketball" data-name="Pick Up Basketball" transform="translate(-215 -8386)" fill="#bf7b46" font-size="12" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0">Pick Up Basketball</tspan></text>
-                <text id="Date:_20_05" data-name="Date: 20/05" transform="translate(-269 -8362)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Date</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> 20</tspan><tspan y="0" font-family="Helvetica">/</tspan><tspan y="0">05</tspan></text>
-                <text id="Location:_Ostend_Frankfurt_am_Main_" data-name="Location: Ostend,Frankfurt am Main " transform="translate(-187 -8362)" fill="#cd844a" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Location</tspan><tspan y="0" font-family="Helvetica">:</tspan><tspan y="0" xml:space="preserve"> Ostend,Frankfurt am Main </tspan></text>
-                <path id="Path_48" data-name="Path 48" d="M9.106,0H51C56.025,0,60.1,3.191,60.1,7.128V9.266c0,3.937-4.077,7.128-9.106,7.128H9.106C4.077,16.394,0,13.2,0,9.266V7.128C0,3.191,4.077,0,9.106,0Z" transform="translate(-269.393 -8245.064)" fill="#cd844a"/>
-                <text id="Basketball" transform="translate(-264 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Basketball</tspan></text>
-                <text id="CUTTHECORDE" transform="translate(-222 -8417)" fill="#bf7b46" font-size="22" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">CUTTHECORDE</tspan></text>
-                <path id="Path_57" data-name="Path 57" d="M9.043,0h41.6c4.994,0,9.043,3.191,9.043,7.128V9.266c0,3.937-4.049,7.128-9.043,7.128H9.043C4.049,16.394,0,13.2,0,9.266V7.128C0,3.191,4.049,0,9.043,0Z" transform="translate(-120.442 -8245.064)" fill="#cd844a"/>
-                <text id="Play_Sports" data-name="Play Sports" transform="translate(-117.099 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Play Sports</tspan></text>
-                <path id="Path_58" data-name="Path 58" d="M9.017,0H50.493c4.98,0,9.017,3.191,9.017,7.128V9.266c0,3.937-4.037,7.128-9.017,7.128H9.017C4.037,16.394,0,13.2,0,9.266V7.128C0,3.191,4.037,0,9.017,0Z" transform="translate(-193.243 -8245.064)" fill="#cd844a"/>
-                <text id="Just_For_Fun" data-name="Just For Fun" transform="translate(-190.489 -8233.867)" fill="#fcf6f2" font-size="6" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">Just For Fun</tspan></text>
-              </g>
-              <path id="Icon_awesome-exclamation" data-name="Icon awesome-exclamation" d="M8.725,26.084c0,2.663-1.7,4.83-3.8,4.83s-3.8-2.167-3.8-4.83,1.7-4.83,3.8-4.83S8.725,23.42,8.725,26.084ZM1.565,1.521l.646,16.423a1.3,1.3,0,0,0,1.139,1.377H6.5a1.3,1.3,0,0,0,1.139-1.377L8.285,1.521A1.341,1.341,0,0,0,7.147,0H2.7A1.341,1.341,0,0,0,1.565,1.521Z" transform="translate(-10.74 -8618.195) rotate(10)" fill="none" stroke="#da813c" stroke-width="1"/>
-              <g id="Group_198-2" data-name="Group 198" transform="translate(-2567.782 -1677)">
-                <g id="Group_195" data-name="Group 195" transform="translate(2369 -6941)">
-                  <path id="Icon_awesome-exclamation-2" data-name="Icon awesome-exclamation" d="M5.383,17.324a3.409,3.409,0,0,1-3.136,3.336,2.894,2.894,0,0,1-2.9-3.15,3.409,3.409,0,0,1,3.136-3.336A2.894,2.894,0,0,1,5.383,17.324ZM.311,1.011l.1,11.009a.862.862,0,0,0,.869.9l2.5-.077a1.018,1.018,0,0,0,.938-.952L5.645.846a.872.872,0,0,0-.866-.994L1.253-.039A1.025,1.025,0,0,0,.311,1.011Z" transform="translate(78.975 12.259) rotate(10)" fill="#da813c"/>
-                  <text id="_" data-name="              " transform="translate(0 23.033)" fill="#da813c" stroke="#da813d" stroke-width="1" font-size="9" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0" xml:space="preserve">             </tspan></text>
-                  <text id="EVENTS" transform="translate(34.5 31)" fill="#fff" font-size="9" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">EVENTS</tspan></text>
-                  <text id="YOBro" transform="translate(2.421 20)" fill="#da813c" font-size="17" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">YOBro</tspan></text>
+                <g id="Group_198-2" data-name="Group 198" transform="translate(-2567.782 -1677)">
+                  <g id="Group_195" data-name="Group 195" transform="translate(2369 -6941)">
+                    <path id="Icon_awesome-exclamation" data-name="Icon awesome-exclamation" d="M5.383,17.324a3.409,3.409,0,0,1-3.136,3.336,2.894,2.894,0,0,1-2.9-3.15,3.409,3.409,0,0,1,3.136-3.336A2.894,2.894,0,0,1,5.383,17.324ZM.311,1.011l.1,11.009a.862.862,0,0,0,.869.9l2.5-.077a1.018,1.018,0,0,0,.938-.952L5.645.846a.872.872,0,0,0-.866-.994L1.253-.039A1.025,1.025,0,0,0,.311,1.011Z" transform="translate(78.975 12.259) rotate(10)" fill="#da813c"/>
+                    <text id="_" data-name="              " transform="translate(0 23.033)" fill="#da813c" stroke="#da813d" stroke-width="1" font-size="9" font-family="Avengero" letter-spacing="0.01em" text-decoration="underline"><tspan x="0" y="0" xml:space="preserve">             </tspan></text>
+                    <text id="EVENTS" transform="translate(34.5 31)" fill="#fff" font-size="9" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">EVENTS</tspan></text>
+                    <text id="YOBro" transform="translate(2.421 20)" fill="#da813c" font-size="17" font-family="Avengero" letter-spacing="0.01em"><tspan x="0" y="0">YOBro</tspan></text>
+                  </g>
                 </g>
               </g>
-              <path id="Icon_awesome-exclamation-3" data-name="Icon awesome-exclamation" d="M8.725,26.084c0,2.663-1.7,4.83-3.8,4.83s-3.8-2.167-3.8-4.83,1.7-4.83,3.8-4.83S8.725,23.42,8.725,26.084ZM1.565,1.521l.646,16.423a1.3,1.3,0,0,0,1.139,1.377H6.5a1.3,1.3,0,0,0,1.139-1.377L8.285,1.521A1.341,1.341,0,0,0,7.147,0H2.7A1.341,1.341,0,0,0,1.565,1.521Z" transform="translate(-10.74 -8618.195) rotate(10)" fill="none" stroke="#da813c" stroke-width="1"/>
             </g>
           </g>
         </g>
-      </g>
-      <g transform="matrix(1, 0, 0, 1, 34, -7666)" filter="url(#TTHG21AH3-U01K4FK9E64-74416022d40d-72)">
-        <ellipse id="TTHG21AH3-U01K4FK9E64-74416022d40d-72-2" data-name="TTHG21AH3-U01K4FK9E64-74416022d40d-72" cx="38" cy="38.5" rx="38" ry="38.5" transform="translate(9 9)" fill="url(#pattern)"/>
-      </g>
-      <text id="I_go_to_the_Ostend_Park_every_Saturday_to_play_Basketball_and_am_looking_for_a_few_Bros_to_meet_And_play_some_pick_up_games_with._I_am_always_up_to_Shoot_some_hoops_so_if_interested_add_this_to_your_Upcoming_events._See_you_on_the_court_" data-name="I go to the Ostend Park every Saturday to play 
+        <g transform="matrix(1, 0, 0, 1, 34, -7666)" filter="url(#TTHG21AH3-U01K4FK9E64-74416022d40d-72)">
+          <ellipse id="TTHG21AH3-U01K4FK9E64-74416022d40d-72-2" data-name="TTHG21AH3-U01K4FK9E64-74416022d40d-72" cx="38" cy="38.5" rx="38" ry="38.5" transform="translate(9 9)" fill="url(#pattern)"/>
+        </g>
+        <text id="I_go_to_the_Ostend_Park_every_Saturday_to_play_Basketball_and_am_looking_for_a_few_Bros_to_meet_And_play_some_pick_up_games_with._I_am_always_up_to_Shoot_some_hoops_so_if_interested_add_this_to_your_Upcoming_events._See_you_on_the_court_" data-name="I go to the Ostend Park every Saturday to play 
 Basketball and am looking for a few Bros to meet 
 And play some pick up games with. I am always up to
 Shoot some hoops, so if interested add this to your 
 Upcoming events. See you on the court!" transform="translate(204 -7494.5)" fill="#344052" font-size="8" font-family="Avengero" letter-spacing="0.01em"><tspan x="-138.595" y="0">I go to the Ostend Park every Saturday to play </tspan><tspan x="-150.189" y="13">Basketball and am looking for a few Bros to meet </tspan><tspan x="-156.057" y="26">And play some pick up games with. I am always up to</tspan><tspan x="-150.699" y="39">Shoot some hoops, so if interested add this to your </tspan><tspan x="-110.006" y="52">Upcoming events. See you on the court</tspan><tspan y="52" font-family="Helvetica">!</tspan></text>
+      </g>
     </g>
   </g>
 </svg>
