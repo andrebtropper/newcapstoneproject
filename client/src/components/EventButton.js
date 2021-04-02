@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import EventForm from '../components/EventForm';
 
 
 export default function EventButton({ buttonText, clickHandler }) {
@@ -27,14 +26,6 @@ border: none;
 color:var(--mainwhite);
 opacity:70%;
 `
-
-
-
-
-
-
-
-
 EventButton.propTypes = {
     buttonText: PropTypes.string
 }

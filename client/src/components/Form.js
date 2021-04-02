@@ -4,13 +4,7 @@ import styled from 'styled-components/macro';
 import isValidBrofile from '../lib/validatFunction';
 import { Link } from 'react-router-dom';
 
-
-//import { useLocalStorage } from '../hooks/useLocalStorage';//
-
 export default function Form({ submitFunction, open }) {
-
-
-
 
     const initialUserBrofile = {
         bro_username: '',
@@ -37,8 +31,6 @@ export default function Form({ submitFunction, open }) {
             setValid(true);
             localStorage.setItem('broInfo', JSON.stringify(newBrofile));
         }
-
-
     }
     return (
         <>
@@ -71,9 +63,6 @@ export default function Form({ submitFunction, open }) {
         </>
     )
 };
-
-
-
 
 const FormWrapper = styled.form`
 display:flex;

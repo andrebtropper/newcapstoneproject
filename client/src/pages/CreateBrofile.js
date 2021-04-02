@@ -4,16 +4,12 @@ import styled from 'styled-components/macro';
 
 export default function CreateBrofile({ open }) {
 
-
-
-
     return (
         <Wrapper>
             <Form open={open} ></Form>
         </Wrapper>
     )
 }
-
 
 const Wrapper = styled.section`
 margin: 7rem;

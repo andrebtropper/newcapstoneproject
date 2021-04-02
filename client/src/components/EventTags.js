@@ -58,7 +58,6 @@ const Wrapper = styled.section`
     border-radius: 1rem;
   margin-bottom:0.4rem;
     
-
     button {
     border: none;
     background: var(--mainorange);
@@ -75,8 +74,6 @@ const Wrapper = styled.section`
     box-shadow: none;
     }
     `
-
-
 const EventTagWrapper = styled.section`
     display: flex;
     flex-wrap: wrap;

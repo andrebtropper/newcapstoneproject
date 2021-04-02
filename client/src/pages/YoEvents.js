@@ -3,12 +3,10 @@ import { ReactComponent as EventLogo } from "../icons/yoevents.svg";
 import styled from 'styled-components/macro';
 
 
-
 export default function YoEvents() {
 
     const likedEvents = JSON.parse(localStorage.getItem('likedEvents') || '{}');
     const userEvent = JSON.parse(localStorage.getItem('newEvent') || '{}');
-
 
     const [currentTab, setCurrentTab] = useState('tab1');
     const tabList = [
@@ -40,11 +38,12 @@ export default function YoEvents() {
             name: 'tab2',
             label: 'Favorites',
             content: (
-                <div className="tab-content">
-                    <h2>{likedEvents}</h2>
-                    <p>anything else.</p>
-                    <p>Lorem ipsum dolor sit amet ...</p>
-                </div>
+                <YourEventsWrap>
+                    <Title>
+                        {likedEvents}
+                    </Title>
+                </YourEventsWrap>
+
             )
         }
 
@@ -69,14 +68,13 @@ export default function YoEvents() {
                 }
             </TabNav>
 
-            {
-                tabList.map((tab, i) => {
-                    if (tab.name === currentTab) {
-                        return <div key={i}>{tab.content}</div>;
-                    } else {
-                        return null;
-                    }
-                })
+            {tabList.map((tab, i) => {
+                if (tab.name === currentTab) {
+                    return <div key={i}>{tab.content}</div>;
+                } else {
+                    return null;
+                }
+            })
             }
         </div>
     )
@@ -88,12 +86,9 @@ const Category = styled.div`
 display:flex;
 flex-direction:row;
 justify-content:center;
-
 margin:2rem 0;
 
-
 `
-
 const About = styled.div`
 padding:10px;
 color:var(--mainblue);
@@ -105,23 +100,18 @@ flex-direction:row;
 margin:10px;
 justify-content:center;
 `
-
-
 const Date = styled.div`
 background:var(--mainorange);
 color:var(--mainwhite);
 border-radius:5px;
 padding:3px;
 margin:0 5px;
-
 `
 const Title = styled.label`
 flex-direction:row;
 background:var(--mainorange);
 color:var(--mainwhite);
-
 padding:3px;
-
 text-align:center;
 `
 const YourEventsWrap = styled.div`
@@ -136,7 +126,6 @@ const TabNav = styled.div`
 display:flex;
 flex-direction:row;
 justify-content:center;
-
 background:white;
 `
 const TabButton = styled.button`

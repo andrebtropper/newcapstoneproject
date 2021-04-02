@@ -8,11 +8,6 @@ import { ReactComponent as TagIcon } from "../icons/tag.svg";
 import { Link } from 'react-router-dom';
 
 
-
-
-
-
-
 export default function Navigation({ open, setOpen }) {
 
     return (
@@ -30,7 +25,6 @@ export default function Navigation({ open, setOpen }) {
 
             <Link to='/yoevents'>
                 <EventIcon /> YoEvents </Link>
-
 
         </StyledNavigation>
     )

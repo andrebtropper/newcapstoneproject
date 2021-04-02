@@ -139,9 +139,6 @@ export default function EventForm({ open, parentCallback }) {
 
                 <DefaultButton valid={valid} type='submit' buttonText='POST NEW EVENT' ></DefaultButton>
             </FormWrapper>
-
-
-
         </>
     )
 }
@@ -182,7 +179,7 @@ input, select, textarea{
     }
 
     textarea{
-        height: 10rem;
+        height: auto;
         padding: 0.8rem;
     }
     

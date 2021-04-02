@@ -9,28 +9,18 @@ export default function WelcomePage({ open }) {
 
     return (
         <Wrapper open={open}>
-
-
             <h2>  <img src={Avengers} /></h2>
-
             <Link to='/createbrofile'><DefaultButton buttonText='Create YOBrofile'></DefaultButton></Link>
         </Wrapper>
     )
 }
-
-
 const Wrapper = styled.section`
 margin: 2rem;
 display: flex;
 flex-direction: column;
 align-items: center;
-
 opacity: ${({ open }) => open ? '40%' : '100%'};
-
-
-
 `
-
 WelcomePage.propTypes = {
     open: PropTypes.bool
 }
