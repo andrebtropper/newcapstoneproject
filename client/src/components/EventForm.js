@@ -139,9 +139,6 @@ export default function EventForm({ open, parentCallback }) {
 
                 <DefaultButton valid={valid} type='submit' buttonText='POST NEW EVENT' ></DefaultButton>
             </FormWrapper>
-
-
-
         </>
     )
 }
@@ -158,13 +155,9 @@ function createDaysOptions(numberOfDays = 31) {
 const FormWrapper = styled.form`
 display:flex;
 flex-direction: column;
-align-content: center;
-
-
-
 opacity: ${({ open, valid }) => open || valid ? '40%' : '100%'};
 border:solid 2px var(--mainorange);
-padding:10px;
+padding:2rem;
 box-shadow: 0.2rem 0.3rem 0.3rem 0.5rem rgba(0,0,0, 35%);
 height:100%;
 width:100%;
@@ -172,21 +165,21 @@ width:100%;
 input, select, textarea{
     margin-bottom: 1rem;
     border-radius: 7px;
-    
+    font-family:"Lucida Grande";
     border: none;
     padding: 0.6rem;
     background: white;
-    
     font-style: italic;
     color: var(--mainblue);
     }
 
     textarea{
-        height: 10rem;
+        height: auto;
         padding: 0.8rem;
     }
     
     label{
+        font-family:"Lucida Grande";
         margin-left: 0.5rem;
         color: var(--mainorange);
        

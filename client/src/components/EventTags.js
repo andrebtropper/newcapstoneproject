@@ -33,32 +33,40 @@ export default function EventTags({ onCreateEventTag, eventtags, onDeleteEventTa
                 onChange={handleChange}
                 value={value}
                 onKeyDown={handleKeyDown} />
-            <button
+            <AddButton
                 type='button'
                 onClick={handleClick}
-            >Add</button>
+            >Add</AddButton>
 
 
             <EventTagWrapper>
                 {eventtags &&
                     eventtags.map((eventtag, index) => (
-                        <span key={index}>{eventtag}
+                        <TagSpan key={index}>{eventtag}
                             <i onClick={() => onDeleteEventTag(eventtag)}> &times;</i>
-                        </span>
+                        </TagSpan>
                     ))}
             </EventTagWrapper>
         </Wrapper >
     )
 }
+const TagSpan = styled.span`
+font-family:"Lucida Grande";
+
+`
+
+
+const AddButton = styled.button`
+font-family:"Lucida Grande";
+
+`
 
 const Wrapper = styled.section`
     display:grid;
     grid-template-columns: 4fr 1fr;
-    
     border-radius: 1rem;
-  margin-bottom:0.4rem;
+   margin-bottom:0.4rem;
     
-
     button {
     border: none;
     background: var(--mainorange);
@@ -75,8 +83,6 @@ const Wrapper = styled.section`
     box-shadow: none;
     }
     `
-
-
 const EventTagWrapper = styled.section`
     display: flex;
     flex-wrap: wrap;

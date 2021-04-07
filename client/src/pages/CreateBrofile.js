@@ -4,9 +4,6 @@ import styled from 'styled-components/macro';
 
 export default function CreateBrofile({ open }) {
 
-
-
-
     return (
         <Wrapper>
             <Form open={open} ></Form>
@@ -14,9 +11,8 @@ export default function CreateBrofile({ open }) {
     )
 }
 
-
 const Wrapper = styled.section`
-margin: 7rem;
+margin:3rem;
 display: flex;
 flex-direction: column;
 align-items: center;

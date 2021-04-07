@@ -5,12 +5,8 @@ import isValidBrofile from '../lib/validatFunction';
 import { Link } from 'react-router-dom';
 
 
-//import { useLocalStorage } from '../hooks/useLocalStorage';//
 
 export default function Form({ submitFunction, open }) {
-
-
-
 
     const initialUserBrofile = {
         bro_username: '',
@@ -37,25 +33,26 @@ export default function Form({ submitFunction, open }) {
             setValid(true);
             localStorage.setItem('broInfo', JSON.stringify(newBrofile));
         }
-
-
     }
     return (
         <>
+
             <FormWrapper open={open} valid={valid} onSubmit={submitForm}>
+                <Label>Whats your Username BRO:</Label>
                 <input
                     type='text'
                     name='bro_username'
                     placeholder='Enter Username'
                     onChange={handleChange}
                     value={newBrofile.bro_username} />
-
+                <Label>Whats your name BRO:</Label>
                 <input
                     type='text'
                     name='bro_name'
                     placeholder='Enter your full name'
                     onChange={handleChange}
                     value={newBrofile.bro_name} />
+                <Label>Where you from BRO:</Label>
                 <input
                     type='text'
                     name='bro_location'
@@ -72,27 +69,37 @@ export default function Form({ submitFunction, open }) {
     )
 };
 
-
+const Label = styled.label`
+color:var(--mainorange);
+font-family: "Lucida Grande";
+font-weight:800;
+`
 
 
 const FormWrapper = styled.form`
 display:flex;
 flex-direction: column;
-margin: 1.2rem 2.3rem;
-gap: 0.2rem;
+align-content:center;
+padding:3rem;
 opacity: ${({ open, valid }) => open || valid ? '40%' : '100%'};
-position: absolute;
+background:var(--mainwhite);
+border:solid 2px var(--mainorange);
+border-radius:20px;
+box-shadow: 0.1rem 0.2rem 0.2rem 0.1rem rgba(0,0,0, 35%);
+
+
 
 input, select, textarea{
     margin-bottom: 1rem;
     border-radius: 1rem;
     box-shadow: 0.1rem 0.2rem 0.2rem 0.1rem rgba(0,0,0, 35%);
-    border: none;
-    padding: 0.6rem;
+    padding: 1rem;
     background: white;
     outline: none;
     font-style: italic;
     color: var(--mainorange);
+    border:var(--mainorange) 2px solid;
+    font-family:  "Lucida Grande";
     }
 
   /*  input:valid,
@@ -121,6 +128,7 @@ box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 35%);
 cursor: pointer;
 width: 230px;
 font-size: 1.1rem;
+font-family:  "Lucida Grande";
 `
 const SuccessMessage = styled.div`
 background: var(--mainblue);

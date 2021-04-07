@@ -1,11 +1,5 @@
 import EventButton from '../components/EventButton';
 import EventForm from '../components/EventForm';
-/*import HoggNormal from '../images/FakePostImages/HoggNormal.svg';
-import CordeNormal from '../images/FakePostImages/CordeNormal.svg';
-import MaizeNormal from '../images/FakePostImages/MaizeNormal.svg';
-import StefanNormal from '../images/FakePostImages/StefanNormal.svg';
-import SimonNormal from '../images/FakePostImages/SimonNormal.svg';
-import MolnarNormal from '../images/FakePostImages/MolnarNormal.svg';*/
 import fakePosts from '../images/FakePosts';
 import styled from 'styled-components/macro';
 import { useState } from 'react';
@@ -19,8 +13,10 @@ export default function Newsfeed({ open }) {
     const selectEvent = (liked) => {
         if (isEventLiked(liked)) {
             saveEvent(likedEvents.filter(likedEvent => likedEvent !== liked));
+
         } else {
             saveEvent([...likedEvents, liked])
+
         }
     }
 
@@ -60,8 +56,6 @@ export default function Newsfeed({ open }) {
 
     ]
 
-
-
     return (
         <>
             {isVisible && <SuccessMessage> <EventForm open={open} parentCallback={callbackFunction} ></EventForm></SuccessMessage>}
@@ -77,7 +71,7 @@ export default function Newsfeed({ open }) {
 
             <EventButton
                 open={open}
-                buttonText="+ "
+                buttonText="post event"
                 clickHandler={() => toggleVisible()}
             >
                 {" "}
@@ -87,6 +81,7 @@ export default function Newsfeed({ open }) {
     )
 }
 
+
 const EventImage = styled.img`
 cursor:pointer;
 
@@ -95,19 +90,13 @@ box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0);
     opacity: 100%;
 }
 &.active{
-    opacity: 30%;
-    
-    
+    opacity: 30%;  
 }
-
 `
-
-
 const PostWrapper = styled.section`
 display: flex;
 flex-direction: column;
 background: var(--mainblue);
-
 img{
     margin: 1rem;
     
@@ -115,17 +104,16 @@ img{
 
 `
 const SuccessMessage = styled.div`
-
+margin-top:1rem;
 background: var(--mainblue);
 color: white;
-position: relative;
+margin-left:2.5rem;
 border - radius: 0.3rem;
 Width: 100 %;
 height: 100 %;
-top: 0;
-left: 0;
 position: fixed;
-padding: 1rem;
+
+
 
 `
 

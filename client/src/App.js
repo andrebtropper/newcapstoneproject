@@ -48,15 +48,9 @@ function App() {
             <Header headline='Yo Events' open={open} setOpen={setOpen} />
             <YoEvents open={open} />
           </Route>
-
-
         </Switch>
       </main>
     </div>
-
-
-
-
   );
 }
 

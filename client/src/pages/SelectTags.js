@@ -1,9 +1,7 @@
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import DefaultButton from '../components/DefaultButton';
 import { Link } from 'react-router-dom';
-
 import styled from 'styled-components/macro';
-
 import sportsImages from '../images/sportsImages';
 import gamingImages from '../images/gamingImages';
 import hobbyImages from '../images/hobbyImages';
@@ -107,10 +105,6 @@ export default function SelectTags() {
             name: 'photography',
             alt: 'camera'
         },
-
-
-
-
     ]
     const social = [
         {
@@ -137,14 +131,8 @@ export default function SelectTags() {
             name: 'darts',
             alt: 'dart board'
         },
-
-
-
-
     ]
     return (
-
-
         <body>
             <LogoWrap>
                 <img src={tagLogo} />
@@ -160,8 +148,6 @@ export default function SelectTags() {
                         className={doesTagExistInUserTags(tag.name.toUpperCase()) ? 'active' : ''} />
                 )}
 
-
-
             </SportsTags>
 
             <Category>GAMING</Category>
@@ -173,8 +159,6 @@ export default function SelectTags() {
                         alt={tag.alt}
                         className={doesTagExistInUserTags(tag.name.toUpperCase()) ? 'active' : ''} />
                 )}
-
-
             </GamingTags>
 
             <Category>HOBBIES</Category>
@@ -210,27 +194,22 @@ export default function SelectTags() {
         </body>
     )
 }
-
-
-
 const LogoWrap = styled.div`
 display:flex;
 justify-content:center;
 
-
 `
-
-
 const TagImage = styled.img`
 cursor:pointer;
-margin:0 1px;
+margin:0 10px;
 border:black solid 1px;
+border-radius:5px;
+box-shadow: 0.1rem 0.2rem 0.2rem 0.3rem rgba(0,0,0, 35%);
 &:before{
     opacity: 100%;
 }
 &.active{
     opacity: 30%;
-    
     
 }
 
@@ -240,12 +219,7 @@ display:grid;
 justify-content:center;
 margin:3rem;
 
-
-
 `
-
-
-
 const HobbyTags = styled.section`
 display:flex;
 flex-direction:row;
@@ -253,19 +227,12 @@ margin-top:0.5rem;
 overflow-x:scroll;
 
 `
-
-
-
 const SportsTags = styled.section`
 display:flex;
 flex-direction:row;
 margin-top:0.5rem;
 overflow-x:scroll;
 background:var;
-
-
-
-
 `
 const GamingTags = styled.section`
 display:flex;
@@ -273,29 +240,22 @@ flex-direction:row;
 margin-top:0.5rem;
 overflow-x:scroll;
 `
-
-
 const SocialTags = styled.section`
 display:flex;
 flex-direction:row;
 margin-top:0.5rem;
 overflow-x:scroll;
 `
-
-
-
 const Category = styled.h3`
-margin-top:0.5rem;
-
+margin-top:0.3rem;
 width:5rem;
 margin-left:1rem;
 border-radius:20px;
 background:var(--mainorange);
 text-align:center;
 color:var(--mainwhite);
-
-
-
+font-family:"Lucida Grande";
+font-size:1rem
 `
 
 
