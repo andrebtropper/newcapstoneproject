@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components/macro';
 import profilepic from '../images/profilepic.svg';
+import { ReactComponent as EditTags } from "../icons/edittags.svg";
+import { ReactComponent as EditBrofile } from "../icons/editbrofileicon.svg";
+import { ReactComponent as Yobrofile } from "../icons/brofilelogo.svg";
 
-import { ReactComponent as TagLogo } from "../icons/edittags.svg";
-import { ReactComponent as Editbrofileicon } from "../icons/editbrofileicon.svg";
 export default function Brofile() {
 
     const user = JSON.parse(localStorage.getItem('broInfo'));
@@ -14,6 +15,7 @@ export default function Brofile() {
         <>
 
             <ProfileCard>
+                <Yobrofile />
                 <ProfilePic>
                     <img src={profilepic} />
                 </ProfilePic>
@@ -33,14 +35,14 @@ export default function Brofile() {
                 </TagStyle>
             </ProfileCard>
 
-
             <ButtonWrap>
-                <Link to='/selecttags'>  <TagLogo /> </Link>
-
-                <Link to='/createbrofile'>  <Editbrofileicon /> </Link>
+                <Link to="/selecttags">
+                    <EditTags />
+                </Link>
+                <Link to="/createbrofile">
+                    <EditBrofile />
+                </Link>
             </ButtonWrap>
-
-
         </>
     )
 }
@@ -50,6 +52,8 @@ display:flex;
 flex-direction:row;
 justify-content:space-around;
 margin:1rem;
+cursor:pointer;
+
 
 `
 
@@ -61,8 +65,9 @@ flex-direction:row;
 margin:10px;
 align-items:center;
 flex-wrap: wrap;
-border:2px solid var(--mainorange);
-box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
+border-radius:20px;
+box-shadow: 0.2rem 0.4rem 0.2rem rgba(0,0,0, 35%);
+background:white;
 span {
     margin: 0.2rem;
     background:var(--mainorange); 
@@ -81,6 +86,7 @@ const ProfileCard = styled.section`
 display:flex;
 flex-direction:column;
 align-items:center;
+margin-top:2rem;
 `
 const UserFullName = styled.div`
 font-family:"Lucida Grande";

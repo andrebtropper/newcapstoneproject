@@ -71,7 +71,7 @@ export default function Newsfeed({ open }) {
 
             <EventButton
                 open={open}
-                buttonText="+ "
+                buttonText="post event"
                 clickHandler={() => toggleVisible()}
             >
                 {" "}
@@ -80,6 +80,7 @@ export default function Newsfeed({ open }) {
         </>
     )
 }
+
 
 const EventImage = styled.img`
 cursor:pointer;
@@ -96,7 +97,6 @@ const PostWrapper = styled.section`
 display: flex;
 flex-direction: column;
 background: var(--mainblue);
-
 img{
     margin: 1rem;
     
@@ -104,17 +104,16 @@ img{
 
 `
 const SuccessMessage = styled.div`
-
+margin-top:1rem;
 background: var(--mainblue);
 color: white;
-position: relative;
+margin-left:2.5rem;
 border - radius: 0.3rem;
 Width: 100 %;
 height: 100 %;
-top: 0;
-left: 0;
 position: fixed;
-padding: 1rem;
+
+
 
 `
 

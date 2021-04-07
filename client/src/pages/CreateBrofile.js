@@ -12,7 +12,7 @@ export default function CreateBrofile({ open }) {
 }
 
 const Wrapper = styled.section`
-margin: 7rem;
+margin:3rem;
 display: flex;
 flex-direction: column;
 align-items: center;

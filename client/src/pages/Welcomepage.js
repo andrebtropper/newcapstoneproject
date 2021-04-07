@@ -20,7 +20,10 @@ display: flex;
 flex-direction: column;
 align-items: center;
 opacity: ${({ open }) => open ? '40%' : '100%'};
+
 `
+
+
 WelcomePage.propTypes = {
     open: PropTypes.bool
 }

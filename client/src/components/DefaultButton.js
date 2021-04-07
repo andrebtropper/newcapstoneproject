@@ -18,7 +18,8 @@ cursor: pointer;
 width: 230px;
 font-size: 1.1rem;
 outline:white;
-justify-item:center;
+font-family:"Lucida Grande";
+
 `
 
 DefaultButton.propTypes = {
