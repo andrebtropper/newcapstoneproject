@@ -15,6 +15,7 @@ export default function Brofile() {
         <>
 
             <ProfileCard>
+
                 <Yobrofile />
                 <ProfilePic>
                     <img src={profilepic} />
@@ -22,6 +23,7 @@ export default function Brofile() {
                 <UserName>
                     {user['bro_username']}
                 </UserName>
+
                 <UserBroTags>
                     <UserFullName>
                         {user['bro_name']}
@@ -47,6 +49,7 @@ export default function Brofile() {
     )
 }
 
+
 const ButtonWrap = styled.div`
 display:flex;
 flex-direction:row;
@@ -58,7 +61,7 @@ cursor:pointer;
 `
 
 const TagStyle = styled.div`
-padding:10px;
+padding:15px;
 color:var(--mainwhite);
 display:flex;
 flex-direction:row;
@@ -67,7 +70,7 @@ align-items:center;
 flex-wrap: wrap;
 border-radius:20px;
 box-shadow: 0.2rem 0.4rem 0.2rem rgba(0,0,0, 35%);
-background:white;
+border:var(--mainorange) solid 2px;
 span {
     margin: 0.2rem;
     background:var(--mainorange); 
@@ -86,7 +89,9 @@ const ProfileCard = styled.section`
 display:flex;
 flex-direction:column;
 align-items:center;
-margin-top:2rem;
+margin:2rem 1rem 1rem 1rem;
+border:var(--mainorange) 5px solid;
+padding:10px
 `
 const UserFullName = styled.div`
 font-family:"Lucida Grande";

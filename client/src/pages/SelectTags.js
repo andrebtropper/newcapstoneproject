@@ -202,14 +202,14 @@ justify-content:center;
 const TagImage = styled.img`
 cursor:pointer;
 margin:0 10px;
-border:black solid 1px;
-border-radius:5px;
-box-shadow: 0.1rem 0.2rem 0.2rem 0.3rem rgba(0,0,0, 35%);
+
+
 &:before{
     opacity: 100%;
 }
 &.active{
     opacity: 30%;
+    border:var(--mainorange) solid 2px;
     
 }
 
