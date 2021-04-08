@@ -83,11 +83,10 @@ export default function YoEvents() {
 }
 
 const EventWrapper = styled.div`
-padding:5px;
-border:var(--mainorange) solid 1px;
-box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
-background:var(--darkblue);
-
+border-radius:10px;
+background:var(--mainwhite);
+margin:1rem;
+padding-bottom:10px;
 
 `
 
@@ -98,9 +97,10 @@ flex-direction:row;
 justify-content:center;
 margin:2rem 0;
 
+
 `
 const About = styled.div`
-padding:10px;
+padding:20px;
 color:var(--mainblue);
 font-family:"Lucida Grande";
 `
@@ -116,19 +116,22 @@ const Date = styled.div`
 background:var(--mainorange);
 color:var(--mainwhite);
 border-radius:5px;
-padding:3px;
+padding:5px;
 margin:0 5px;
 font-family:"Lucida Grande";
 `
 const Title = styled.label`
 flex-direction:row;
+border-radius:10px;
 background:var(--mainorange);
 color:var(--mainwhite);
-padding:3px;
+padding:5px;
 text-align:center;
 font-family:"Lucida Grande";
 `
 const YourEventsWrap = styled.div`
+border:var(--mainblue) 2px solid;
+border-radius:10px;
 display:flex;
 flex-direction:column;
 background:white;
@@ -139,24 +142,28 @@ const TabNav = styled.div`
 display:flex;
 flex-direction:row;
 justify-content:center;
-
+background:var(--darkblue);
+border-radius:10px;
+padding:10px;
+border:var(--mainorange) 3px solid;
 
 `
 const TabButton = styled.button`
-
+opacity:80%;
 background:var(--mainorange);
 color:var(--mainwhite);
 font-size:1rem;
-padding:05px;
+padding:5px;
 border:solid white 1px;
-border-radius:2px;
+border-radius:10px;
 margin:1rem;
 &.active{
-    transform: scale(1.3);
+    transform: scale(1.2);
     background:var(--mainblue);
-    color:var(--mainorange);
+    color:var(--mainwhite);
     box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
-    border:solid var(--mainorange) 1px;
+    border:solid var(--mainorange) 2px;
+    opacity:100%
 }
 
 `
