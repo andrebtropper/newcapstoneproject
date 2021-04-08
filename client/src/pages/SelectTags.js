@@ -209,22 +209,18 @@ export default function SelectTags() {
 const LogoWrap = styled.div`
 display:flex;
 justify-content:center;
-
 `
 const TagImage = styled.img`
 cursor:pointer;
 margin:0 10px;
-
-
+border:var(--mainorange) 2px solid;
+box-shadow: 0.1rem 0.2rem 0.2rem 0.3rem rgba(0,0,0, 35%);
 &:before{
     opacity: 100%;
 }
 &.active{
-    opacity: 30%;
-    border:var(--mainorange) solid 2px;
-    
+    opacity: 30%;  
 }
-
 `
 const LastDiv = styled.div`
 display:grid;
@@ -244,7 +240,7 @@ display:flex;
 flex-direction:row;
 margin-top:0.5rem;
 overflow-x:scroll;
-background:var;
+margin:0.5rem;
 `
 const GamingTags = styled.section`
 display:flex;
@@ -259,15 +255,17 @@ margin-top:0.5rem;
 overflow-x:scroll;
 `
 const Category = styled.h3`
-margin-top:0.3rem;
-width:5rem;
-margin-left:1rem;
+margin:2rem 1rem;
+padding:0.7rem;
+
 border-radius:20px;
 background:var(--mainorange);
 text-align:center;
 color:var(--mainwhite);
 font-family:"Lucida Grande";
-font-size:1rem
+font-weight:900;
+font-size:1.5rem;
+box-shadow: 0.1rem 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
 `
 
 

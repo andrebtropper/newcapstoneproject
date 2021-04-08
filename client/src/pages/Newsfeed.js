@@ -4,6 +4,7 @@ import fakePosts from '../images/FakePosts';
 import styled from 'styled-components/macro';
 import { useState } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
+import Yonewsfeed from "../icons/newsfeedlogo.svg";
 
 export default function Newsfeed({ open }) {
 
@@ -58,8 +59,12 @@ export default function Newsfeed({ open }) {
 
     return (
         <>
+            <LogoWrap>
+                <img src={Yonewsfeed} alt="logo" />
+            </LogoWrap>
             {isVisible && <SuccessMessage> <EventForm open={open} parentCallback={callbackFunction} ></EventForm></SuccessMessage>}
             <PostWrapper>
+
                 {likedPosts.map(liked =>
                     <EventImage
                         onClick={e => selectEvent(liked.name)}
@@ -80,6 +85,12 @@ export default function Newsfeed({ open }) {
         </>
     )
 }
+
+const LogoWrap = styled.label`
+display:flex;
+justify-content:center;
+margin-top:1rem;
+`
 
 
 const EventImage = styled.img`

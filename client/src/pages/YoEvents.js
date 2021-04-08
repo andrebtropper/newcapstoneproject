@@ -89,22 +89,17 @@ margin:1rem;
 padding-bottom:10px;
 
 `
-
-
 const Category = styled.div`
 display:flex;
 flex-direction:row;
 justify-content:center;
 margin:2rem 0;
-
-
 `
 const About = styled.div`
 padding:20px;
 color:var(--mainblue);
 font-family:"Lucida Grande";
 `
-
 const LocateDate = styled.div`
 display:flex;
 flex-direction:row;
@@ -142,20 +137,17 @@ const TabNav = styled.div`
 display:flex;
 flex-direction:row;
 justify-content:center;
-background:var(--darkblue);
-border-radius:10px;
-padding:10px;
+background:var(--mainwhite);
 border:var(--mainorange) 3px solid;
-
 `
 const TabButton = styled.button`
 opacity:80%;
 background:var(--mainorange);
 color:var(--mainwhite);
 font-size:1rem;
-padding:5px;
-border:solid white 1px;
-border-radius:10px;
+padding:3px;
+border:solid var(--mainblue) 2px;
+
 margin:1rem;
 &.active{
     transform: scale(1.2);

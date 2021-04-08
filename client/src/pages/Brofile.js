@@ -49,17 +49,13 @@ export default function Brofile() {
     )
 }
 
-
 const ButtonWrap = styled.div`
 display:flex;
 flex-direction:row;
 justify-content:space-around;
 margin:1rem;
 cursor:pointer;
-
-
 `
-
 const TagStyle = styled.div`
 padding:15px;
 color:var(--mainwhite);
@@ -80,8 +76,6 @@ span {
     font-family:"Lucida Grande";
 }
 `
-
-
 const ProfilePic = styled.div`
 margin-top:1rem;
 `
