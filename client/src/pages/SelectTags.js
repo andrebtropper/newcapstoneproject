@@ -133,9 +133,9 @@ export default function SelectTags() {
         },
     ]
     return (
-        <body>
+        <>
             <LogoWrap>
-                <img src={tagLogo} />
+                <img src={tagLogo} alt="logo" />
             </LogoWrap>
             <Category>SPORTS</Category>
             <SportsTags>
@@ -191,7 +191,7 @@ export default function SelectTags() {
             <LastDiv>
                 <Link to='/brofile'> <DefaultButton buttonText='Subimt YOBroTags'></DefaultButton></Link>
             </LastDiv>
-        </body>
+        </>
     )
 }
 const LogoWrap = styled.div`

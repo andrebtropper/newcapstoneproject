@@ -6,15 +6,12 @@ import darts from '../images/darts.svg';
 import watchthegame from '../images/watchgame.svg';
 
 
-
-
-export default {
+const socialImages = {
     pool,
     grub,
     grabbeer,
     kicker,
     watchthegame,
     darts,
-
-
-}
+};
+export default socialImages;

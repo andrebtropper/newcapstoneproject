@@ -5,13 +5,12 @@ import jamming from '../images/jamming.svg';
 import travel from '../images/travel.svg';
 import photography from '../images/photography.svg';
 
-
-export default {
+const hobbyImages = {
     hiking,
     fishing,
     camping,
     jamming,
     travel,
     photography
-
-}
+};
+export default hobbyImages;

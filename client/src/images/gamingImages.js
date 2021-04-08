@@ -3,11 +3,10 @@ import xbox from '../images/xbox.svg';
 import nintendo from '../images/nintendo.svg';
 import computer from '../images/computer.svg';
 
-
-export default {
+const gamingImages = {
     playstation,
     xbox,
     nintendo,
     computer,
-
-}
+};
+export default gamingImages;

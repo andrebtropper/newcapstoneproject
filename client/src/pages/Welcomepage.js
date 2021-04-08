@@ -9,7 +9,7 @@ export default function WelcomePage({ open }) {
 
     return (
         <Wrapper open={open}>
-            <h2>  <img src={Avengers} /></h2>
+            <h2>  <img src={Avengers} alt="logo" /></h2>
             <Link to='/createbrofile'><DefaultButton buttonText='Create YOBrofile'></DefaultButton></Link>
         </Wrapper>
     )

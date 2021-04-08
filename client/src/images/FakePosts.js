@@ -4,13 +4,13 @@ import MaizeNormal from '../images/FakePostImages/MaizeNormal.svg';
 import StefanNormal from '../images/FakePostImages/StefanNormal.svg';
 import SimonNormal from '../images/FakePostImages/SimonNormal.svg';
 import MolnarNormal from '../images/FakePostImages/MolnarNormal.svg';
-
-export default {
+const fakePosts = {
     HoggNormal,
     CordeNormal,
     MaizeNormal,
     StefanNormal,
     SimonNormal,
     MolnarNormal,
-}
+};
+export default fakePosts;
 

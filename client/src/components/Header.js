@@ -11,7 +11,7 @@ export default function Header({ open, setOpen }) {
             <PseudoButton onClick={() => setOpen(!open)}>
                 <BurgerIcon />
             </PseudoButton>
-            <img src={blueLogo} />
+            <img src={blueLogo} alt="logo blue" />
         </Wrapper>
     )
 }

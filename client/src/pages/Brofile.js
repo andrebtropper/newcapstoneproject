@@ -18,7 +18,7 @@ export default function Brofile() {
 
                 <Yobrofile />
                 <ProfilePic>
-                    <img src={profilepic} />
+                    <img src={profilepic} alt="profile" />
                 </ProfilePic>
                 <UserName>
                     {user['bro_username']}

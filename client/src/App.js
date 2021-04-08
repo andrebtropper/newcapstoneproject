@@ -18,38 +18,38 @@ function App() {
     <div>
 
       <Navigation open={open} setOpen={setOpen} />
-      <main>
-        <Switch>
-          <Route exact path='/'>
-            <Header open={open} setOpen={setOpen} />
-            <WelcomePage open={open} />
-          </Route>
 
-          <Route path='/brofile'>
-            <Header headline='YOBrofile!' open={open} setOpen={setOpen} />
-            <Brofile />
-          </Route>
+      <Switch>
+        <Route exact path='/'>
+          <Header open={open} setOpen={setOpen} />
+          <WelcomePage open={open} />
+        </Route>
 
-          <Route path='/createbrofile'>
-            <Header headline='Create YOBrofile!' open={open} setOpen={setOpen} />
-            <CreateBrofile open={open} />
-          </Route>
+        <Route path='/brofile'>
+          <Header headline='YOBrofile!' open={open} setOpen={setOpen} />
+          <Brofile />
+        </Route>
 
-          <Route path='/newsfeed'>
-            <Header headline='YO Newsfeed Bro!' open={open} setOpen={setOpen} />
-            <Newsfeed open={open} />
-          </Route>
+        <Route path='/createbrofile'>
+          <Header headline='Create YOBrofile!' open={open} setOpen={setOpen} />
+          <CreateBrofile open={open} />
+        </Route>
 
-          <Route path='/selecttags'>
-            <Header headline='Select YOBro Tags!' open={open} setOpen={setOpen} />
-            <SelectTags open={open} />
-          </Route>
-          <Route path='/yoevents'>
-            <Header headline='Yo Events' open={open} setOpen={setOpen} />
-            <YoEvents open={open} />
-          </Route>
-        </Switch>
-      </main>
+        <Route path='/newsfeed'>
+          <Header headline='YO Newsfeed Bro!' open={open} setOpen={setOpen} />
+          <Newsfeed open={open} />
+        </Route>
+
+        <Route path='/selecttags'>
+          <Header headline='Select YOBro Tags!' open={open} setOpen={setOpen} />
+          <SelectTags open={open} />
+        </Route>
+        <Route path='/yoevents'>
+          <Header headline='Yo Events' open={open} setOpen={setOpen} />
+          <YoEvents open={open} />
+        </Route>
+      </Switch>
+
     </div>
   );
 }

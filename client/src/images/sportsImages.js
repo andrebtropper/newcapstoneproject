@@ -7,7 +7,8 @@ import tennis from '../images/newtennis.svg';
 import volleyball from '../images/volleyball.svg';
 import football from '../images/football.svg';
 import frisbee from '../images/frisbee.svg';
-export default {
+
+const sportsImages = {
     spikeball,
     badminton,
     weightlifting,
@@ -17,7 +18,6 @@ export default {
     volleyball,
     football,
     frisbee,
+};
 
-
-
-}
+export default sportsImages;
