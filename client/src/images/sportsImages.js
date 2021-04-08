@@ -1,12 +1,12 @@
-import spikeball from '../images/newspikeball.svg';
-import badminton from '../images/newbadminton.svg';
-import weightlifting from '../images/newweightlifting.svg';
-import basketball from '../images/basketball.svg';
-import soccer from '../images/newsoccer.svg';
-import tennis from '../images/newtennis.svg';
-import volleyball from '../images/volleyball.svg';
-import football from '../images/football.svg';
-import frisbee from '../images/frisbee.svg';
+import spikeball from '../images/newspikeball.jpg';
+import badminton from '../images/newbadminton.jpg';
+import weightlifting from '../images/newweightlifting.jpg';
+import basketball from '../images/basketball.jpg';
+import soccer from '../images/newsoccer.jpg';
+import tennis from '../images/newtennis.jpg';
+import volleyball from '../images/volleyball.jpg';
+import football from '../images/football.jpg';
+import frisbee from '../images/frisbee.jpg';
 
 const sportsImages = {
     spikeball,

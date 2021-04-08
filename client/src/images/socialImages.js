@@ -1,10 +1,9 @@
-import pool from '../images/pool.svg';
-import grub from '../images/grub.svg';
-import grabbeer from '../images/grabbeer.svg';
-import kicker from '../images/kicker.svg';
-import darts from '../images/darts.svg';
-import watchthegame from '../images/watchgame.svg';
-
+import pool from '../images/pool.jpg';
+import grub from '../images/grub.jpg';
+import grabbeer from '../images/grabbeer.jpg';
+import kicker from '../images/kicker.jpg';
+import darts from '../images/darts.jpg';
+import watchthegame from '../images/watchgame.jpg';
 
 const socialImages = {
     pool,
