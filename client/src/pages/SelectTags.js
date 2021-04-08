@@ -79,6 +79,18 @@ export default function SelectTags() {
             name: 'computer',
             alt: 'computer'
         },
+        {
+            name: 'fifa',
+            alt: 'fifa'
+        },
+        {
+            name: 'fortnite',
+            alt: 'fortnite'
+        },
+        {
+            name: 'warzone',
+            alt: 'warzone'
+        },
     ]
     const hobbies = [
         {
