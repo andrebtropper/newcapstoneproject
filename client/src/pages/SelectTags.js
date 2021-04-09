@@ -61,7 +61,6 @@ export default function SelectTags() {
             alt: 'playing ultimate frisbee'
         },
     ]
-
     const gameTags = [
         {
             name: 'playstation',
@@ -209,6 +208,8 @@ export default function SelectTags() {
 const LogoWrap = styled.div`
 display:flex;
 justify-content:center;
+padding-top:1rem;
+background:var(--darkblue);
 `
 const TagImage = styled.img`
 cursor:pointer;
@@ -226,14 +227,13 @@ const LastDiv = styled.div`
 display:grid;
 justify-content:center;
 margin:3rem;
-
 `
 const HobbyTags = styled.section`
 display:flex;
 flex-direction:row;
 margin-top:0.5rem;
 overflow-x:scroll;
-
+height:175px;
 `
 const SportsTags = styled.section`
 display:flex;
@@ -241,31 +241,33 @@ flex-direction:row;
 margin-top:0.5rem;
 overflow-x:scroll;
 margin:0.5rem;
+height:175px;
 `
 const GamingTags = styled.section`
 display:flex;
 flex-direction:row;
 margin-top:0.5rem;
 overflow-x:scroll;
+height:175px;
 `
 const SocialTags = styled.section`
 display:flex;
 flex-direction:row;
 margin-top:0.5rem;
 overflow-x:scroll;
+height:175px;
 `
 const Category = styled.h3`
-margin:2rem 1rem;
-padding:0.7rem;
-
-border-radius:20px;
-background:var(--mainorange);
+margin:2rem 1rem 0rem 0rem;
+width:200px;
+background:var(--mainwhite);
 text-align:center;
-color:var(--mainwhite);
-font-family:"Lucida Grande";
-font-weight:900;
-font-size:1.5rem;
+color:var(--mainorange);
+padding:5px;
+font-size:1rem;
 box-shadow: 0.1rem 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
+border-radius:0px 10px 10px 0px;
+border:var(--mainorange) 3px solid;
 `
 
 

@@ -46,16 +46,15 @@ export default function YoEvents() {
 
             )
         }
-
     ];
 
     return (
         <div>
+            <Category> <EventLogo /> </Category>
 
-            <Category>
-                <EventLogo /> </Category>
             <EventWrapper>
                 <TabNav>
+
                     {
                         tabList.map((tab, i) => (
                             <TabButton
@@ -78,22 +77,19 @@ export default function YoEvents() {
                 }
             </EventWrapper>
         </div>
-
     )
 }
 
 const EventWrapper = styled.div`
 border-radius:10px;
-background:var(--mainwhite);
-margin:1rem;
 padding-bottom:10px;
-
 `
 const Category = styled.div`
 display:flex;
 flex-direction:row;
 justify-content:center;
-margin:2rem 0;
+background:var(--darkblue);
+padding:20px 0px 10px 0px;
 `
 const About = styled.div`
 padding:20px;
@@ -137,25 +133,16 @@ const TabNav = styled.div`
 display:flex;
 flex-direction:row;
 justify-content:center;
-background:var(--mainwhite);
-border:var(--mainorange) 3px solid;
+background:var(--darkblue);
 `
 const TabButton = styled.button`
-opacity:80%;
+opacity:60%;
 background:var(--mainorange);
 color:var(--mainwhite);
 font-size:1rem;
-padding:3px;
-border:solid var(--mainblue) 2px;
-
-margin:1rem;
+margin:0 5px 0 0px;
 &.active{
-    transform: scale(1.2);
-    background:var(--mainblue);
-    color:var(--mainwhite);
     box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0, 35%);
-    border:solid var(--mainorange) 2px;
-    opacity:100%
+    opacity:100%;
 }
-
 `

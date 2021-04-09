@@ -19,9 +19,7 @@ width: 230px;
 font-size: 1.1rem;
 outline:white;
 font-family:"Lucida Grande";
-
 `
-
 DefaultButton.propTypes = {
     buttonText: PropTypes.string
 }

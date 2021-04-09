@@ -6,7 +6,6 @@ export default function EventTags({ onCreateEventTag, eventtags, onDeleteEventTa
 
     const [value, setValue] = useState('')
 
-
     const handleChange = event =>
         setValue(event.target.value);
 
@@ -52,21 +51,15 @@ export default function EventTags({ onCreateEventTag, eventtags, onDeleteEventTa
 }
 const TagSpan = styled.span`
 font-family:"Lucida Grande";
-
 `
-
-
 const AddButton = styled.button`
 font-family:"Lucida Grande";
-
 `
-
 const Wrapper = styled.section`
     display:grid;
     grid-template-columns: 4fr 1fr;
     border-radius: 1rem;
    margin-bottom:0.4rem;
-    
     button {
     border: none;
     background: var(--mainorange);
@@ -78,7 +71,6 @@ const Wrapper = styled.section`
     cursor: pointer;
     margin-left: 0rem;
     }
-
     input[type=text]{
     box-shadow: none;
     }
@@ -87,11 +79,10 @@ const EventTagWrapper = styled.section`
     display: flex;
     flex-wrap: wrap;
     gap: 0.7rem;
-    
     span{
         background: var(--mainorange);
         color: white;
-        padding: 0.5rem;
+        padding:0.1rem;
         border-radius: 0.6rem;
     }
 

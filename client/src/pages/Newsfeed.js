@@ -17,10 +17,8 @@ export default function Newsfeed({ open }) {
 
         } else {
             saveEvent([...likedEvents, liked])
-
         }
     }
-
     const [isVisible, setVisible] = useState(false);
     function callbackFunction() {
         setVisible(!isVisible);
@@ -54,9 +52,7 @@ export default function Newsfeed({ open }) {
             name: 'MolnarNormal',
             alt: 'Post from MrMolnar'
         },
-
     ]
-
     return (
         <>
             <LogoWrap>
@@ -81,21 +77,16 @@ export default function Newsfeed({ open }) {
             >
                 {" "}
             </EventButton>
-
         </>
     )
 }
-
 const LogoWrap = styled.label`
 display:flex;
 justify-content:center;
 margin-top:1rem;
 `
-
-
 const EventImage = styled.img`
 cursor:pointer;
-
 box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0);
 &:before{
     opacity: 100%;
@@ -109,10 +100,8 @@ display: flex;
 flex-direction: column;
 background: var(--mainblue);
 img{
-    margin: 1rem;
-    
+    margin: 1rem;  
 }
-
 `
 const SuccessMessage = styled.div`
 margin-top:1rem;
@@ -123,8 +112,6 @@ border - radius: 0.3rem;
 Width: 100 %;
 height: 100 %;
 position: fixed;
-
-
-
+top:5%;
 `
 

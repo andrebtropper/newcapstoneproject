@@ -16,10 +16,6 @@ export default function EventForm({ open, parentCallback }) {
     }
     const [newEvent, setNewEvent] = useState(createEvent)
     const [valid, setValid] = useState(false)
-
-
-
-
     const handleChange = event => {
         const field = event.target;
         const value = field.value;
@@ -38,10 +34,7 @@ export default function EventForm({ open, parentCallback }) {
             localStorage.setItem('newEvent', JSON.stringify(newEvent));
             parentCallback(false);
         }
-
-
     }
-
     const addEventTag = eventtag => {
         if (eventtag.length >= 1) {
             setNewEvent({
@@ -129,20 +122,17 @@ export default function EventForm({ open, parentCallback }) {
                     onChange={handleChange}
                     value={newEvent.event_description}
                 />
-
                 <EventTags
                     eventtags={newEvent.eventtags}
                     onCreateEventTag={addEventTag}
                     onDeleteEventTag={deleteEventTag}
                     onDeleteLastEventTag={deleteLastEventTag}>
                 </EventTags>
-
                 <DefaultButton valid={valid} type='submit' buttonText='POST NEW EVENT' ></DefaultButton>
             </FormWrapper>
         </>
     )
 }
-
 function createDaysOptions(numberOfDays = 31) {
     let options = [];
     for (let i = 1; i <= numberOfDays; i++) {
@@ -150,8 +140,6 @@ function createDaysOptions(numberOfDays = 31) {
     }
     return options;
 }
-
-
 const FormWrapper = styled.form`
 display:flex;
 flex-direction: column;
@@ -161,7 +149,6 @@ padding:2rem;
 box-shadow: 0.2rem 0.3rem 0.3rem 0.5rem rgba(0,0,0, 35%);
 height:100%;
 width:100%;
-
 input, select, textarea{
     margin-bottom: 1rem;
     border-radius: 7px;
@@ -172,23 +159,16 @@ input, select, textarea{
     font-style: italic;
     color: var(--mainblue);
     }
-
     textarea{
         height: auto;
-        padding: 0.8rem;
     }
-    
     label{
         font-family:"Lucida Grande";
         margin-left: 0.5rem;
-        color: var(--mainorange);
-       
+        color: var(--mainorange);  
     }
 
     `
-
-
-
 EventForm.propTypes = {
     submitFunction: PropTypes.func,
     onChildEvent: PropTypes.func

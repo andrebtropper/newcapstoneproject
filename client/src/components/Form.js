@@ -4,8 +4,6 @@ import styled from 'styled-components/macro';
 import isValidBrofile from '../lib/validatFunction';
 import { Link } from 'react-router-dom';
 
-
-
 export default function Form({ submitFunction, open }) {
 
     const initialUserBrofile = {
@@ -36,7 +34,6 @@ export default function Form({ submitFunction, open }) {
     }
     return (
         <>
-
             <FormWrapper open={open} valid={valid} onSubmit={submitForm}>
                 <Label>Whats your Username BRO:</Label>
                 <input
@@ -60,7 +57,6 @@ export default function Form({ submitFunction, open }) {
                     onChange={handleChange}
                     value={newBrofile.bro_location} />
 
-
                 <CreateBrofileButton valid={valid} type='submit'> Create Profile</CreateBrofileButton>
             </FormWrapper>
             {valid && <SuccessMessage> <p>YOBrofile is almost complete. Now select YOBrotags</p>
@@ -75,8 +71,6 @@ color:var(--mainorange);
 font-family: "Lucida Grande";
 font-weight:800;
 `
-
-
 const FormWrapper = styled.form`
 display:flex;
 flex-direction: column;
@@ -149,7 +143,6 @@ font-size: 0.7rem;
 text-transform: uppercase;
 cursor: pointer;
 `
-
 Form.propTypes = {
     submitFunction: PropTypes.func
 }

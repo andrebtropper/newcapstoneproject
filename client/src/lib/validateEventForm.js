@@ -1,5 +1,3 @@
-
-
 export const isValidEventTitle = (name) => {
     const letters = /^[a-z ,.'-]+$/i;
     if (name.length >= 2 && name.match(letters)) {
@@ -46,9 +44,6 @@ export const isValidAbout = (description) => {
         return false;
     }
 }
-
-
-
 const isValidEvent = (event) =>
     isValidEventTitle(event.event_title) &&
     isValidEventLocation(event.event_location) &&
