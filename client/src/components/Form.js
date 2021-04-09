@@ -4,8 +4,6 @@ import styled from 'styled-components/macro';
 import isValidBrofile from '../lib/validatFunction';
 import { Link } from 'react-router-dom';
 
-
-
 export default function Form({ submitFunction, open }) {
 
     const initialUserBrofile = {
@@ -36,7 +34,6 @@ export default function Form({ submitFunction, open }) {
     }
     return (
         <>
-
             <FormWrapper open={open} valid={valid} onSubmit={submitForm}>
                 <Label>Whats your Username BRO:</Label>
                 <input
@@ -60,11 +57,11 @@ export default function Form({ submitFunction, open }) {
                     onChange={handleChange}
                     value={newBrofile.bro_location} />
 
-
                 <CreateBrofileButton valid={valid} type='submit'> Create Profile</CreateBrofileButton>
             </FormWrapper>
             {valid && <SuccessMessage> <p>YOBrofile is almost complete. Now select YOBrotags</p>
                 <Link to='/selecttags'>  <ToTagsButton> select YOBrotags</ToTagsButton></Link></SuccessMessage>}
+
         </>
     )
 };
@@ -74,8 +71,6 @@ color:var(--mainorange);
 font-family: "Lucida Grande";
 font-weight:800;
 `
-
-
 const FormWrapper = styled.form`
 display:flex;
 flex-direction: column;
@@ -86,9 +81,6 @@ background:var(--mainwhite);
 border:solid 2px var(--mainorange);
 border-radius:20px;
 box-shadow: 0.1rem 0.2rem 0.2rem 0.1rem rgba(0,0,0, 35%);
-
-
-
 input, select, textarea{
     margin-bottom: 1rem;
     border-radius: 1rem;
@@ -101,7 +93,6 @@ input, select, textarea{
     border:var(--mainorange) 2px solid;
     font-family:  "Lucida Grande";
     }
-
   /*  input:valid,
 select:valid,
 textarea:valid{
@@ -115,7 +106,6 @@ label{
     margin-left: 0.5rem;
     color: var(--mainwhite);
 }*/
-
 `
 const CreateBrofileButton = styled.button`
 background: ${({ valid }) => valid ? 'var(--mainwhite)' : 'var(--mainorange)'};
@@ -133,10 +123,12 @@ font-family:  "Lucida Grande";
 const SuccessMessage = styled.div`
 background: var(--mainblue);
 color: white;
-padding: 1rem;
+padding:1rem;
 margin: 2rem;
-position: relative;
+position: fixed;
 border-radius: 0.3rem;
+border:var(--mainorange) 3px solid;
+
 `
 const ToTagsButton = styled.button`
 border: none; 
@@ -151,7 +143,6 @@ font-size: 0.7rem;
 text-transform: uppercase;
 cursor: pointer;
 `
-
 Form.propTypes = {
     submitFunction: PropTypes.func
 }

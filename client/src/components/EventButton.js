@@ -1,14 +1,11 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-
 export default function EventButton({ buttonText, clickHandler, isStatic }) {
     return (
         <PostEventButton isStatic={isStatic} onClick={clickHandler}>{buttonText}</PostEventButton>
     )
 }
-
-
 const PostEventButton = styled.button`
 background: var(--mainorange);
 bottom: 5%;
@@ -26,7 +23,6 @@ color:var(--mainwhite);
 opacity:70%;
 font-family:"Lucida Grande";
 font-size:0.8rem;
-
 `
 EventButton.propTypes = {
     buttonText: PropTypes.string,

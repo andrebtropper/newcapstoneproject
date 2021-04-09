@@ -1,5 +1,3 @@
-
-
 export const isValidUserName = (name) => {
     const letters = /^[a-z ,.'-]+$/i;
     if (name.length >= 2 && name.match(letters)) {
@@ -9,7 +7,6 @@ export const isValidUserName = (name) => {
         return false;
     }
 }
-
 export const isValidBroName = (name) => {
     const letters = /^[a-z ,.'-]+$/i;
     if (name.length >= 2 && name.match(letters)) {
@@ -28,7 +25,6 @@ export const isValidBroLocation = (name) => {
         alert("Enter a real city Bro!");
         return false;
     }
-
 }
 
 const isValidBrofile = (brofile) =>

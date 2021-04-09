@@ -7,9 +7,7 @@ import { ReactComponent as BrofileIcon } from "../icons/profile.svg";
 import { ReactComponent as TagIcon } from "../icons/tag.svg";
 import { Link } from 'react-router-dom';
 
-
 export default function Navigation({ open, setOpen }) {
-
     return (
         <StyledNavigation open={open}>
             <PseudoButton open={open} onClick={() => setOpen(!open)}>
@@ -22,10 +20,8 @@ export default function Navigation({ open, setOpen }) {
                 <BrofileIcon /> Brofile </Link>
             <Link to='/selecttags'>
                 <TagIcon /> BroTags </Link>
-
             <Link to='/yoevents'>
                 <EventIcon /> YoEvents </Link>
-
         </StyledNavigation>
     )
 }
@@ -44,19 +40,16 @@ top: 0;
 left: 0;
 transition: transform 0.4s ease-in-out;
 z-index: 1;
-
 a{
 text-transform: uppercase;
 text-decoration: none;
 color: white;
 letter-spacing: 0.2rem;
 }
-
 svg{
     margin-right: 1rem;
 }
 `
-
 const PseudoButton = styled.button`
 background: none;
 border: none;
@@ -64,7 +57,6 @@ text-align: left;
 color: white;
 outline: none;
 `
-
 Navigation.propTypes = {
     setOpen: PropTypes.func,
     open: PropTypes.bool
